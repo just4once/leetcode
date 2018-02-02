@@ -30,7 +30,8 @@ return [0, 1].
 ### Solution {#solution}
 
 ```java
-    public static int[] twoSum(int[] nums, int target) {
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
         if (nums == null) return null;
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<>();
@@ -44,6 +45,7 @@ return [0, 1].
         }
         return result;
     }
+}
 ```
 
 ### Additional {#additional}
