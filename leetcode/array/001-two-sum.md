@@ -21,7 +21,7 @@ return [0, 1].
    1. Use every element as an anchor and search its right element
    2. The time complexity is O\(n^2\) = \(n - 1\) + \(n - 2\) + ... + 1
    3. The space complexity is O\(1\)
-2. Optimal
+2. Optimal \(Hash Map\)
    1. Leverage the power of hashmap and store the number and its index in the map
    2. When the map contain target - curNum, we know the search is complete
    3. The time complexity is O\(n\)
