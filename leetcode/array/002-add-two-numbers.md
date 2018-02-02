@@ -16,7 +16,8 @@ Explanation: 342 + 465 = 807.
 
 ### Thought Process {#thought-process}
 
-1. 
+1. ###  {#solution}
+
 ### Solution {#solution}
 
 ```java
