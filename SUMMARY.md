@@ -9,6 +9,8 @@
     * [015-3Sum](leetcode/array/015-3sum.md)
     * [016-3Sum Closest  ](leetcode/array/016-3sum-closest.md)
     * [018-4Sum](leetcode/array/018-4sum.md)
+    * [026-Remove Duplicates from Sorted Array    ](leetcode/array/026-remove-duplicates-from-sorted-array.md)
+    * [027-Remove Element](leetcode/array/027-remove-element.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
