@@ -21,6 +21,8 @@ Your function should return length = 2, with the first two elements of nums bein
 1. Since we have to move non-targeted value to the front and target value to the back, we need two pointers.
 2. One pointer track the location of non-targeted value from forward. T
 3. The other points to the location of at the end where we can insert the target value. 
+4. Time complexity O\(n\)
+5. Space complexity O\(1\)
 
 ### Solution
 

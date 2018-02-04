@@ -19,6 +19,8 @@ It doesn't matter what you leave beyond the new length.
 
 1. Because the question ask we do it in place and return the new length, we have somehow scanning through the array and insert/discard the exploring element
 2. This hint inspires the use of two pointers, where one points to the current element and the other points to the correct position that element should be reside
+3. Time complexity O\(n\)
+4. Space complexity O\(1\)
 
 ### Solution
 
