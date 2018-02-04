@@ -16,6 +16,7 @@
     * [034-Search for a Range    ](leetcode/array/034-search-for-a-range.md)
     * [035-Search Insert Position    ](leetcode/array/035-search-insert-position.md)
     * [039-Combination Sum](leetcode/array/039-combination-sum.md)
+    * [040-Combination Sum II](leetcode/array/040-combination-sum-ii.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
