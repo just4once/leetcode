@@ -22,6 +22,7 @@
     * [045-Jump Game II](leetcode/array/045-jump-game-ii.md)
     * [048-Rotate Image](leetcode/array/048-rotate-image.md)
     * [053-Maximum Subarray](leetcode/array/053-maximum-subarray.md)
+    * [054-Spiral Matrix](leetcode/array/054-spiral-matrix.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
