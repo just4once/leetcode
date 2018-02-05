@@ -15,19 +15,5 @@
 
 * ASDDS
 
-* asdasd
-
-* a
-
-* sda
-
-* sda
-
-* sda
-
-* sd
-
-* sad
-
 
 
