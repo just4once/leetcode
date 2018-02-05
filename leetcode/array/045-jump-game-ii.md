@@ -44,7 +44,7 @@ class Solution {
         jump(nums, memo, 0);
         return memo[0];
     }
-    
+
     public int jump(int[] nums, int[] memo, int id) {
         if (id == nums.length - 1) return 0;
         if (memo[id] != 0) return memo[id];

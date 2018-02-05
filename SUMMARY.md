@@ -20,6 +20,7 @@
     * [041-First Missing Positive    ](leetcode/array/041-first-missing-positive.md)
     * [042-Trapping Rain Water](leetcode/array/042-trapping-rain-water.md)
     * [045-Jump Game II](leetcode/array/045-jump-game-ii.md)
+    * [048-Rotate Image](leetcode/array/048-rotate-image.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
