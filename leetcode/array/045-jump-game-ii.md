@@ -22,18 +22,20 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from inde
    1. Recursion to find the minimum step for each of step we took
    2. To avoid repeatedly doing the same work, we cache the minimum step in the memo
    3. Unfortunately, this solution yield stack overflow for the input of 1's where the length exceed the depth of recursion in Java
-   4. Time complexity O\(n\)
-   5. Space complexity O\(log n\)
+   4. Time complexity O\(n^2\), where every element we can look up at most n elements
+   5. Space complexity O\(2n\) =&gt; O\(n\)
 2. Bottom up
    1. We do the reverse way, we start from the last index
    2. Then for each element before the last, we loop through all the step possible and find the minimum step
    3. Unfortunately, this solution yield stack overflow for case where each number is great and every loop is long
-   4. Time complexity O\(n\)
+   4. Time complexity O\(n^2\)
    5. Space complexity O\(n\)
 3. Greedy
    1. Observe that every we have a choice to jump, we need to maximize our distance travel
    2. Similar to BFS, each jumps cover a range of cell, we have to find the furthest point we can travel
    3. Then from the next cell to the further point, we repeat the same process again until we reach the end
+   4. Time complexity O\(n^2\)
+   5. Space complexity O\(1\)
 
 ### Solution
 
