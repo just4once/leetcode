@@ -27,6 +27,21 @@
     * [056-Merge Intervals](leetcode/array/056-merge-intervals.md)
     * [057-Insert Interval](leetcode/array/057-insert-interval.md)
     * [059-Spiral Matrix II](leetcode/array/059-spiral-matrix-ii.md)
+    * [062-Unique Paths](leetcode/array/062-unique-paths.md)
+    * [063-Unique Paths II](leetcode/array/063-unique-paths-ii.md)
+    * [064-Minimum Path Sum](leetcode/array/064-minimum-path-sum.md)
+    * [066-Plus One](leetcode/array/066-plus-one.md)
+    * [073-Set Matrix Zeroes](leetcode/array/073-set-matrix-zeroes.md)
+    * [074-Search a 2D Matrix](leetcode/array/074-search-a-2d-matrix.md)
+    * [075-Sort Colors](leetcode/array/075-sort-colors.md)
+    * [077-Word Search](leetcode/077-word-search.md)
+    * 078-Remove Duplicates from Sorted Array II
+    * [076-Subsets](leetcode/array/076-subsets.md)
+    * 081-Search in Rotated Sorted Array II
+    * [084-Largest Rectangle in Histogram](leetcode/array/084-largest-rectangle-in-histogram.md)
+    * [085-Maximal Rectangle](leetcode/array/085-maximal-rectangle.md)
+    * [088-Merge Sorted Array](leetcode/array/088-merge-sorted-array.md)
+    * 090-Subsets II
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
