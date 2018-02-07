@@ -34,8 +34,7 @@
     * [073-Set Matrix Zeroes](leetcode/array/073-set-matrix-zeroes.md)
     * [074-Search a 2D Matrix](leetcode/array/074-search-a-2d-matrix.md)
     * [075-Sort Colors](leetcode/array/075-sort-colors.md)
-    * [077-Word Search](leetcode/077-word-search.md)
-    * 078-Remove Duplicates from Sorted Array II
+    * [078-Remove Duplicates from Sorted Array II](leetcode/array/078-remove-duplicates-from-sorted-array-ii.md)
     * [076-Subsets](leetcode/array/076-subsets.md)
     * 081-Search in Rotated Sorted Array II
     * [084-Largest Rectangle in Histogram](leetcode/array/084-largest-rectangle-in-histogram.md)
