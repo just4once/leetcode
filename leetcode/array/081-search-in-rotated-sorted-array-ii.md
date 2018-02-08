@@ -1,6 +1,6 @@
 ### Question {#question}
 
-Follow up for "Search in Rotated Sorted Array":  
+Follow up for "[033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md)":  
 What ifduplicatesare allowed?
 
 Would this affect the run-time complexity? How and why?
