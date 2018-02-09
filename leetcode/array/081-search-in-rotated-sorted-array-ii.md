@@ -21,12 +21,40 @@ The array may contain duplicates.
 
 ### Thought Process {#thought-process}
 
-1. AAAAAA
+1. Similar to [033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md), we need two pointers to search, and we also divide the search into different cases
+   1. The mid is the target, we can return immediately
+   2. The left part is sorted, we then check whether the target is within the range of left and proceed to the correct side
+   3. The right part is sorted, and we perform similar step above
+   4. Lastly, when left, middle and right are the same, we can really decide to search which part, we just increment the lo pointer
+   5. Time complexity O\(n\) worst, O\(log n\) average
+   6. Space complexity O\(1\)
 
 ### Solution
 
 ```java
-
+class Solution {
+    public boolean search(int[] nums, int target) {
+        int lo = 0, hi = nums.length - 1;
+        int mid = 0;
+        while (lo <= hi){
+            mid = lo + (hi - lo)/2;
+            if (nums[mid] == target) return true;
+            // left part is sorted
+            else if (nums[lo] < nums[mid]) {
+                if (target >= nums[lo] && target < nums[mid]) hi = mid - 1;
+                else lo = mid + 1;
+            // right part is sorted
+            } else if (nums[lo] > nums[mid]) {
+                if (target > nums[mid] && target <= nums[hi]) lo = mid + 1;
+                else hi = mid - 1;
+            // this means nums[lo] == nums[mid] == nums[hi]
+            } else {
+                lo++;
+            }
+        }
+        return false;
+    }
+}
 ```
 
 ### Additional {#additional}
