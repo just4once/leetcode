@@ -47,6 +47,7 @@
     * [118-Pascal's Triangle](leetcode/array/118-pascals-triangle.md)
     * [119-Pascal's Triangle II](leetcode/array/119-pascals-triangle-ii.md)
     * [120-Triangle](leetcode/array/120-triangle.md)
+    * [121-Best Time to Buy and Sell Stock](leetcode/array/121-best-time-to-buy-and-sell-stock.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
