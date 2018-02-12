@@ -44,6 +44,7 @@
     * [090-Subsets II](leetcode/array/090-subsets-ii.md)
     * [105-Construct Binary Tree from Preorder and Inorder Traversal](leetcode/array/105-construct-binary-tree-from-preorder-and-inorder-traversal.md)
     * [106-Construct Binary Tree from Inorder and Postorder Traversal](leetcode/array/106-construct-binary-tree-from-inorder-and-postorder-traversal.md)
+    * [118-Pascal's Triangle](leetcode/array/118-pascals-triangle.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
