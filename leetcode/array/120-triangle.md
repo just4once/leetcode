@@ -4,7 +4,6 @@ Given a triangle, find the minimum path sum from top to bottom. Each step you ma
 
 For example, given the following triangle
 
-<span style="color:blue">some *This is Blue italic.* text</span>
 
 **Example:**
 
