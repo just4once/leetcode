@@ -51,6 +51,7 @@
     * [122-Best Time to Buy and Sell Stock II](leetcode/array/122-best-time-to-buy-and-sell-stock-ii.md)
     * [123-Best Time to Buy and Sell Stock III](leetcode/array/123-best-time-to-buy-and-sell-stock-iii.md)
     * [126-Word Ladder II](leetcode/array/126-word-ladder-ii.md)
+    * [128-Longest Consecutive Sequence](leetcode/array/128-longest-consecutive-sequence.md)
   * [Hash Table](leetcode/hash-table.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
