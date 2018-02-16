@@ -19,7 +19,7 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
    1. To reduce the time complexity to O\(n\), we have to avoid sorting
    2. Similar to the last idea, we have to build the sequence as long the cur exploring number is one value away from last, we can leverage this idea to build one as long as we can
    3. Now when the set has num - 1, that means we either explored it before or will explore it at the future, we should skip it
-   4. 
+   4. Space complexity O\(n\)
 
 ### Solution
 
