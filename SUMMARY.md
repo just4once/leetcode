@@ -54,6 +54,7 @@
     * [128-Longest Consecutive Sequence](leetcode/array/128-longest-consecutive-sequence.md)
     * [152-Maximum Product Subarray](leetcode/array/152-maximum-product-subarray.md)
   * [Hash Table](leetcode/hash-table.md)
+    * [003-Longest Substring Without Repeating Characters](leetcode/hash-table/003-longest-substring-without-repeating-characters.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
 * [Template](template.md)

@@ -28,12 +28,14 @@ the contiguous subarray [2,3] has the largest product = 6.
 class Solution {
     public int maxProduct(int[] nums) {
         int r = nums[0];
+        // max and min stores the max/min product of subarray that ends with the current number
         for (int i = 1, min = r, max = r; i < nums.length; i++){
             if (nums[i] < 0) {
                 int tmp = max;
                 max = min;
                 min = tmp;
             }
+            // the max and min are either previous number times cur or the cur itselft
             max = Math.max(max * nums[i], nums[i]);
             min = Math.min(min * nums[i], nums[i]);
             r = Math.max(r, max);
