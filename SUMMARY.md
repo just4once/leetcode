@@ -56,6 +56,8 @@
   * [Hash Table](leetcode/hash-table.md)
     * [003-Longest Substring Without Repeating Characters](leetcode/hash-table/003-longest-substring-without-repeating-characters.md)
     * [030-Substring with Concatenation of All Words](leetcode/hash-table/030-substring-with-concatenation-of-all-words.md)
+    * [036-Valid Sudoku](leetcode/hash-table/036-valid-sudoku.md)
+    * [037-Sudoku Solver](leetcode/hash-table/037-sudoku-solver.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
 * [Template](template.md)
