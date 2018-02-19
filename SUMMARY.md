@@ -64,7 +64,8 @@
     * [136-Single Number](leetcode/hash-table/136-single-number.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
-  * Bit Manipulation
+  * [Bit Manipulation](leetcode/bit-manipulation.md)
+    * [137-Single Number II](leetcode/bit-manipulation/137-single-number-ii.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
