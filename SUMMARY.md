@@ -61,8 +61,10 @@
     * [049-Group Anagrams](leetcode/hash-table/049-group-anagrams.md)
     * [076-Minimum Window Substring](leetcode/hash-table/076-minimum-window-substring.md)
     * [094-Binary Tree Inorder Traversal](leetcode/hash-table/094-binary-tree-inorder-traversal.md)
+    * [136-Single Number](leetcode/hash-table/136-single-number.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
+  * Bit Manipulation
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

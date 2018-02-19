@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/subsets-ii/description/](https://leetcode.com/problems/subsets-ii/description/)
+
 Given a collection of integers that might contain duplicates, **nums**, return all possible subsets \(the power set\).
 
 **Note:**The solution set must not contain duplicate subsets.
@@ -35,7 +37,7 @@ class Solution {
         backtrack(list, new ArrayList<>(), nums, 0);
         return list;
     }
-    
+
     public void backtrack(List<List<Integer>> list, List<Integer> path, int[] nums, int start){
         list.add(new ArrayList<>(path));
         for(int i = start; i < nums.length; i++){

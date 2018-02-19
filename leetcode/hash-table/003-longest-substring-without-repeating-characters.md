@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/longest-substring-without-repeating-characters/description/](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+
 Given a string, find the length of the **longest substring **without repeating characters.
 
 **Example:**
@@ -30,7 +32,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 ### Solution
 
-2. Hash Table
+1. Hash Table
 
 ```java
 class Solution {
@@ -50,7 +52,7 @@ class Solution {
 }
 ```
 
-3. HashTable
+1. HashTable
 
 ```java
 class Solution {

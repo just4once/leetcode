@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
+
 Given preorder and inorder traversal of a tree, construct the binary tree.
 
 **Note:**
@@ -53,7 +55,7 @@ class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return build(preorder, 0, preorder.length -  1, inorder, 0, inorder.length - 1);
     }
-    
+
     private TreeNode build(int[] preorder, int pLo, int pHi, int[] inorder, int inLo, int inHi) {
         if (pLo > pHi) return null;
         if (pLo == pHi) return new TreeNode(preorder[pLo]);
@@ -83,7 +85,7 @@ class Solution {
         }
         return build(preorder, 0, inorder, 0, inorder.length - 1, map);
     }
-    
+
     private TreeNode build(int[] preorder, int pLo, int[] inorder, int inLo, int inHi, Map<Integer, Integer> map) {
         if (inLo > inHi) return null;
         if (inLo == inHi) return new TreeNode(preorder[pLo]);
@@ -104,7 +106,7 @@ class Solution {
         if (preorder.length == 0 || preorder.length != inorder.length) return null;
         return build(preorder, inorder, Integer.MAX_VALUE);
     }
-    
+
     private TreeNode build(int[] preorder, int[] inorder, int rootValue) {
         if (iId == inorder.length || inorder[iId] == rootValue) return null;
         TreeNode node = new TreeNode(preorder[pId]);

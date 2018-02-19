@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/largest-rectangle-in-histogram/description/](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+
 Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
 ![](/assets/084-1.png)
@@ -70,7 +72,7 @@ class Solution {
     public int largestRectangleArea(int[] heights) {
         return maxArea(heights, 0, heights.length - 1);
     }
-    
+
     private int maxArea(int[] heights, int i, int j) {
         if (i > j) return 0;
         if (i == j) return heights[i];

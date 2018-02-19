@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/longest-consecutive-sequence/description/](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
 **Example:**

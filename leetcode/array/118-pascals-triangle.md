@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/pascals-triangle/description/](https://leetcode.com/problems/pascals-triangle/description/)
+
 Given numRows, generate the first numRows of Pascal's triangle.
 
 **Example:**

@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/binary-tree-inorder-traversal/description/](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
+
 Given a binary tree, return the inorder traversal of its nodes' values.
 
 **Example:**
@@ -18,7 +20,7 @@ return [1,3,2].
 
 1. Recursion
    1. Time complexity O\(n\)
-   2. Space complexity O（log n\), worst time O\(log n\) when the tree is like linked list
+   2. Space complexity O\(n\), and extra space due to recursion is O\(log n\), worst time O\(log n\) when the tree is like linked list
 2. Stack
    1. While current node has left leaf, we need to store them to the stack for later exploration
    2. Then pull a node out of the stack, if there is right leaf we need to its left leaf as well
@@ -29,7 +31,7 @@ return [1,3,2].
    2. If the cur has no left child, we can add the node to the result, since it's smallest node
    3. If the cur has left child, we need to find the rightmost node of the left child, so we can add cur to it, so it's in order, now we need to clear the left child for cur, and reset the cur to the original left child, and continue the process
    4. Time complexity O\(n\)
-   5. Space complexity O\(1\)
+   5. Space complexity O\(n\), and O\(1\) extra
 
 ### Solution
 
@@ -42,7 +44,7 @@ class Solution {
         getNode(list, root);
         return list;
     }
-    
+
     private void getNode(List<Integer> list, TreeNode node){
         if(node == null) return;
         getNode(list, node.left);

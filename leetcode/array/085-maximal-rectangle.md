@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/maximal-rectangle/description/](https://leetcode.com/problems/maximal-rectangle/description/)
+
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
 **Example:**
@@ -34,14 +36,14 @@ class Solution {
         }
         return maxArea;
     }
-    
+
     private void updateHeight(char[] row, int[] heights) {
         for (int i = 0; i < row.length; i++) {
             if (row[i] == '1') heights[i]++;
             else heights[i] = 0;
         }
     }
-    
+
     private int getMaxArea(int[] heights) {
         int n = heights.length;
         int[] stack = new int[n + 1];

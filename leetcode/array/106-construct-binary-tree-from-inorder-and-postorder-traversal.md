@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
+
 Given inorder and postorder traversal of a tree, construct the binary tree.
 
 **Note:**
@@ -32,15 +34,15 @@ Return the following binary tree:
 
 ```java
 class Solution {
-	public TreeNode buildTree(int[] inorder, int[] postorder) {
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder == null || inorder.length != postorder.length) return null;
-		Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < inorder.length; i++) {
             map.put(inorder[i], i);
         }
         return build(inorder, 0, inorder.length - 1, postorder, postorder.length - 1, map);
-	}
-    
+    }
+
     private TreeNode build(int[] inorder, int iLo, int iHi, int[] postorder, int pHi, Map<Integer, Integer> map) {
         if (iLo > iHi) return null;
         if (iLo == iHi) return new TreeNode(inorder[iLo]);
@@ -55,9 +57,9 @@ class Solution {
 
 ```java
 class Solution {
-	public TreeNode buildTree(int[] inorder, int[] postorder) {
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder == null || inorder.length == 0 || inorder.length != postorder.length) return null;
-		Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> stack = new Stack<>();
         int iId = inorder.length - 1, pId = iId;
         TreeNode root = new TreeNode(postorder[pId--]);
         TreeNode pre = null;
@@ -76,20 +78,20 @@ class Solution {
             pre = null;
         }
         return root;
-	}
+    }
 }
 ```
 
 ```java
 class Solution {
     int iId, pId;
-	public TreeNode buildTree(int[] inorder, int[] postorder) {
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder == null || inorder.length == 0 || inorder.length != postorder.length) return null;
-		iId = inorder.length - 1;
+        iId = inorder.length - 1;
         pId = iId;
         return build(inorder, postorder, null);
-	}
-    
+    }
+
     private TreeNode build(int[] inorder, int[] postorder, TreeNode pre) {
         if (pId < 0) return null;
         TreeNode root = new TreeNode(postorder[pId--]);

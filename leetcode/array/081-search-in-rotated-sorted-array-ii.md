@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)
+
 Follow up for "[033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md)":  
 What ifduplicatesare allowed?
 

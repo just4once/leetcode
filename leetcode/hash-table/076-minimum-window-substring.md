@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/minimum-window-substring/description/](https://leetcode.com/problems/minimum-window-substring/description/)
+
 Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O\(n\).
 
 **Example:**

@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/pascals-triangle-ii/description/](https://leetcode.com/problems/pascals-triangle-ii/description/)
+
 Given an index k, return the kth row of the Pascal's triangle.
 
 **Example:**
