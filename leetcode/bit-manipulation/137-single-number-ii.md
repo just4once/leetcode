@@ -42,7 +42,19 @@ class Solution {
 ```
 
 ```java
-
+class Solution {
+    public int singleNumber(int[] nums) {
+        int one = 0, two = 0;
+        for (int num : nums){
+            // xor num save the num, if one is set right now, 1, two is 0
+            // the second time we see the number, one will become 0, because
+            // two is set, where & ~two will unset it, then two will become set.
+            one = (one ^ num) & ~two;
+            two = (two ^ num) & ~one;
+        }
+        return one;
+    }
+}
 ```
 
 ### Additional {#additional}

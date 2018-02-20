@@ -62,10 +62,13 @@
     * [076-Minimum Window Substring](leetcode/hash-table/076-minimum-window-substring.md)
     * [094-Binary Tree Inorder Traversal](leetcode/hash-table/094-binary-tree-inorder-traversal.md)
     * [136-Single Number](leetcode/hash-table/136-single-number.md)
+    * [138-Copy List with Random Pointer](leetcode/hash-table/138-copy-list-with-random-pointer.md)
+    * [149-Max Points on a Line](leetcode/hash-table/149-max-points-on-a-line.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
     * [137-Single Number II](leetcode/bit-manipulation/137-single-number-ii.md)
+    * [260-Single Number III](leetcode/bit-manipulation/260-single-number-iii.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
