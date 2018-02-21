@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/max-points-on-a-line/description/](https://leetcode.com/problems/max-points-on-a-line/description/)
+
 Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
 
 **Example:**
@@ -56,7 +58,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int gcd(int x, int y) {
         if (y == 0) return x;
         return gcd(y, x % y);

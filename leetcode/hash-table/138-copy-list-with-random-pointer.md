@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/copy-list-with-random-pointer/description/](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
+
 A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 
 Return a deep copy of the list.
@@ -43,7 +45,7 @@ public class Solution {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         return buildR(head, map);
     }
-    
+
     private RandomListNode buildR(RandomListNode head, Map<RandomListNode, RandomListNode> map) {
         if (head == null) return null;
         if (map.containsKey(head)) return map.get(head);

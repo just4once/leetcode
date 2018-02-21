@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/)
+
 Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
 
 **Example:**
