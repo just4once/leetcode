@@ -71,6 +71,8 @@
     * [202-Happy Number](leetcode/hash-table/202-happy-number.md)
     * [204-Count Primes](leetcode/hash-table/204-count-primes.md)
     * [205-Isomorphic Strings](leetcode/hash-table/205-isomorphic-strings.md)
+    * [217-Contains Duplicate](leetcode/hash-table/217-contains-duplicate.md)
+    * [219-Contains Duplicate II](leetcode/hash-table/219-contains-duplicate-ii.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)

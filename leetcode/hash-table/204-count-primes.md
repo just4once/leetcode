@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/count-primes/description/](https://leetcode.com/problems/count-primes/description/)
+
 Count the number of prime numbers less than a non-negative number, **n**.
 
 **Example:**
@@ -32,7 +34,7 @@ class Solution {
         }
         return count;
     }
-    
+
     private boolean isPrime(int num) {
         for (int f = 2; f * f <= num; f++) {
             if (num % f == 0) return false;

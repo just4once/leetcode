@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/isomorphic-strings/description/](https://leetcode.com/problems/isomorphic-strings/description/)
+
 Given two strings **s **and **t**, determine if they are isomorphic.
 
 Two strings are isomorphic if the characters in **s **can be replaced to get **t**.
