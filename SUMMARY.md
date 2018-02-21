@@ -69,6 +69,8 @@
     * [170-Two Sum III - Data structure design](leetcode/hash-table/170-two-sum-iii-data-structure-design.md)
     * [187-Repeated DNA Sequences](leetcode/hash-table/187-repeated-dna-sequences.md)
     * [202-Happy Number](leetcode/hash-table/202-happy-number.md)
+    * [204-Count Primes](leetcode/hash-table/204-count-primes.md)
+    * [205-Isomorphic Strings](leetcode/hash-table/205-isomorphic-strings.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
