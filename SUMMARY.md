@@ -73,6 +73,7 @@
     * [205-Isomorphic Strings](leetcode/hash-table/205-isomorphic-strings.md)
     * [217-Contains Duplicate](leetcode/hash-table/217-contains-duplicate.md)
     * [219-Contains Duplicate II](leetcode/hash-table/219-contains-duplicate-ii.md)
+    * [242-Valid Anagram](leetcode/hash-table/242-valid-anagram.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
