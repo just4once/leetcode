@@ -1,8 +1,10 @@
 ### Question {#question}
 
-This is a **follow up **of [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance). The only difference is now you are given the list of words and your method will be called _repeatedly _many times with different parameters. How would you optimize it?
+[https://leetcode.com/problems/shortest-word-distance-ii/description/](https://leetcode.com/problems/shortest-word-distance-ii/description/)
 
-Design a class which receives a list of words in the constructor, and implements a method that takes two words _word1 _and _word2 _and return the shortest distance between these two words in the list.
+This is a **follow up **of [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance). The only difference is now you are given the list of words and your method will be called \_repeatedly \_many times with different parameters. How would you optimize it?
+
+Design a class which receives a list of words in the constructor, and implements a method that takes two words \_word1 \_and \_word2 \_and return the shortest distance between these two words in the list.
 
 **Example:**
 
@@ -13,7 +15,8 @@ Given word1 = “coding”, word2 = “practice”, return 3.
 Given word1 = "makes", word2 = "coding", return 1.
 ```
 
-**Note:**
+**Note:  
+**
 
 You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
 
@@ -37,7 +40,7 @@ class WordDistance {
             str2id.get(words[i]).add(i);
         }
     }
-    
+
     public int shortest(String word1, String word2) {
         List<Integer> l1 = str2id.get(word1), l2 = str2id.get(word2);
         int i = 0, j = 0;

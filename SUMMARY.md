@@ -78,6 +78,8 @@
     * [246-Strobogrammatic Number](leetcode/hash-table/246-strobogrammatic-number.md)
     * [249-Group Shifted Strings](leetcode/hash-table/249-group-shifted-strings.md)
     * [266-Palindrome Permutation](leetcode/hash-table/266-palindrome-permutation.md)
+    * [274-H-Index](leetcode/hash-table/274-h-index.md)
+    * [288-Unique Word Abbreviation](leetcode/hash-table/288-unique-word-abbreviation.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)

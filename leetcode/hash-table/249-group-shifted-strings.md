@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/group-shifted-strings/description/](https://leetcode.com/problems/group-shifted-strings/description/)
+
 Given a string, we can "shift" each of its letter to its successive letter, for example: "abc" -&gt; "bcd". We can keep "shifting" which forms the sequence:
 
 "abc" -&gt; "bcd" -&gt; ... -&gt; "xyz"
@@ -42,7 +44,7 @@ class Solution {
         res.addAll(map.values());
         return res;
     }
-    
+
     private String normalize(String s) {
         if (s.length() == 0 || s.charAt(0) == 'a') return s;
         char[] chars = s.toCharArray();
