@@ -84,6 +84,8 @@
     * [299-Bulls and Cows](leetcode/hash-table/299-bulls-and-cows.md)
     * [311-Sparse Matrix Multiplication](leetcode/hash-table/311-sparse-matrix-multiplication.md)
     * [314-Binary Tree Vertical Order Traversal](leetcode/hash-table/314-binary-tree-vertical-order-traversal.md)
+    * [325-Maximum Size Subarray Sum Equals k](leetcode/hash-table/325-maximum-size-subarray-sum-equals-k.md)
+    * [336-Palindrome Pairs](leetcode/hash-table/336-palindrome-pairs.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
