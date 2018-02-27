@@ -28,12 +28,74 @@ The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
    3. Corner case is when there is empty string, we need to add all the strings that are palindrome
    4. Time complexity O\(nw^2\)
    5. Space complexity O\(n\)
-3. asd
+3. Trie
+   1. We can create trie using the reverse of all words
+   2. As we going through each word, we need a indicator for identifying if the node is a word
+   3. The use of int is especially helpful because not only it can identify a node is a word but also avoid adding same word in the solution set when the word is palindrome
+   4. We can also save time by saving the index for current node if the rest of substring is palindrome, when we compare each character to the trie \(reverse order\), which means we can add this word to the front
+   5. Time complexity O\(nw^2\)
+   6. Space complexity O\(n\)
 
 ### Solution
 
 ```java
-
+class Solution {
+    public List<List<Integer>> palindromePairs(String[] words) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (words == null || words.length < 2) return res;
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            map.put(words[i], i);
+        }
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words[i].length(); j++) {
+                String p1 = words[i].substring(0, j);
+                String p2 = words[i].substring(j);
+                // if the first part is palindrome, we try to find the reverse of p2
+                // to prepend in the front to make palindrome
+                if (isPalindrome(p1)) checkReverse(p2, i, map, res, true);
+                if (isPalindrome(p2)) checkReverse(p1, i, map, res, false);
+            }
+        }
+        return res;
+    }
+    
+    private void checkReverse(String s, int i, Map<String, Integer> map, List<List<Integer>> res, boolean addToFront) {
+        String sr = reverse(s);
+        int id = map.getOrDefault(sr, i);
+        if (id != i) {
+            if (addToFront) res.add(Arrays.asList(id, i));
+            else res.add(Arrays.asList(i, id));
+            // this happens when the p2 is the full length, and p1 is empty
+            // we can also add the empty string in the front
+            if (sr.length() == 0) res.add(Arrays.asList(id, i));
+        }
+    }
+    
+    private String reverse(String s) {
+        char[] chars = s.toCharArray();
+        int i = 0, j = chars.length - 1;
+        while (i < j) {
+            char tmp = chars[i];
+            chars[i] = chars[j];
+            chars[j] = tmp;
+            i++;
+            j--;
+        }
+        return String.valueOf(chars);
+    }
+    
+    private boolean isPalindrome(String s) {
+        char[] chars = s.toCharArray();
+        int i = 0, j = chars.length - 1;
+        while (i < j) {
+            if (chars[i] != chars[j]) return false;
+            i++;
+            j--;
+        }
+        return true;
+    }
+}
 ```
 
 ### Additional {#additional}
