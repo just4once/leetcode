@@ -92,6 +92,8 @@
     * [358-Rearrange String k Distance Apart](leetcode/hash-table/358-rearrange-string-k-distance-apart.md)
     * [359-Logger Rate Limiter](leetcode/hash-table/359-logger-rate-limiter.md)
     * [380-Insert Delete GetRandom O\(1\)](leetcode/hash-table/380-insert-delete-getrandom-o1.md)
+    * [381-Insert Delete GetRandom O\(1\) - Duplicates allowed](leetcode/hash-table/381-insert-delete-getrandom-o1-duplicates-allowed.md)
+    * [387-First Unique Character in a String](leetcode/hash-table/387-first-unique-character-in-a-string.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
