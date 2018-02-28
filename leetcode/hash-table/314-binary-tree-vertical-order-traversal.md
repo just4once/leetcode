@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/)
+
 Given a binary tree, return thevertical ordertraversal of its nodes' values. \(ie, from top to bottom, column by column\).
 
 If two nodes are in the same row and column, the order should be from **left to right**.

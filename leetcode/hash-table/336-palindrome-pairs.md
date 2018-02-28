@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/palindrome-pairs/description/](https://leetcode.com/problems/palindrome-pairs/description/)
+
 Given a list of unique words, find all pairs of distinct indices \(i, j\) in the given list, so that the concatenation of the two words, i.e. words\[i\] + words\[j\] is a palindrome.
 
 **Example:**
@@ -105,7 +107,7 @@ class Solution {
         private TrieNode[] next = new TrieNode[26];
         private List<Integer> indices = new ArrayList<>();
     }
-    
+
     public List<List<Integer>> palindromePairs(String[] words) {
         List<List<Integer>> res = new ArrayList<>();
         if (words == null || words.length < 2) return res;
@@ -118,7 +120,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private void buildTrie(TrieNode root, String word, int i) {
         // creating trie from reversed word
         for (int j = word.length() - 1; j >= 0; j--) {
@@ -130,7 +132,7 @@ class Solution {
         root.index = i;
         root.indices.add(i);
     }
-    
+
     private void search(TrieNode root, String word, int i, List<List<Integer>> res) {
         for (int j = 0; j < word.length(); j++) {
             if (root.index >= 0 && root.index != i && isPalindrome(word, j, word.length() - 1)) {
@@ -144,7 +146,7 @@ class Solution {
             res.add(Arrays.asList(i, id));
         }
     }
-    
+
     private boolean isPalindrome(String s, int i, int j) {
         while (i < j) {
             if (s.charAt(i++) != s.charAt(j--)) return false;

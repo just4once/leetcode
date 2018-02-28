@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/)
+
 Given an arraynumsand a target valuek, find the maximum length of a subarray that sums tok. If there isn't one, return 0 instead.
 
 **Note:**  
