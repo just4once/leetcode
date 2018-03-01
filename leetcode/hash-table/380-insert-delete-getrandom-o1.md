@@ -2,7 +2,7 @@
 
 [https://leetcode.com/problems/insert-delete-getrandom-o1/description/](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
 
-Design a data structure that supports all following operations inaverage **O\(1\) **time.
+Design a data structure that supports all following operations in average **O\(1\) **time.
 
 1. insert\(val\): Inserts an item val to the set if not already present.
 2. remove\(val\): Removes an item val from the set if present.
@@ -57,14 +57,14 @@ class RandomizedSet {
         map = new HashMap<>();
         random = new Random();
     }
-    
+
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
         if (map.containsKey(val)) return false;
         map.put(val, list.size());
         return list.add(val);
     }
-    
+
     /** Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
         if (!map.containsKey(val)) return false;
@@ -79,7 +79,7 @@ class RandomizedSet {
         list.remove(lastIndex);
         return true;
     }
-    
+
     /** Get a random element from the set. */
     public int getRandom() {
         int r = random.nextInt(list.size());
