@@ -97,6 +97,7 @@
     * [389-Find the Difference](leetcode/hash-table/389-find-the-difference.md)
     * [409-Longest Palindrome](leetcode/hash-table/409-longest-palindrome.md)
     * [438-Find All Anagrams in a String](leetcode/hash-table/438-find-all-anagrams-in-a-string.md)
+    * [447-Number of Boomerangs](leetcode/hash-table/447-number-of-boomerangs.md)
   * [Linked List](leetcode/linked-list.md)
     * [002-Add Two Numbers](leetcode/linked-list/002-add-two-numbers.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
