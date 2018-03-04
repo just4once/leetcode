@@ -45,7 +45,7 @@ class Solution {
         }
         return dummy.next;
     }
-    
+
     private ListNode kthNode(ListNode head, int k) {
         while (head != null && k > 0) {
             head = head.next;
@@ -53,7 +53,7 @@ class Solution {
         }
         return head;
     }
-    
+
     private ListNode reverseNextK(ListNode pre, int k) {
         ListNode head = pre.next;
         while (--k > 0) {
