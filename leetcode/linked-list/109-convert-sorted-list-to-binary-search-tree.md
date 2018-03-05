@@ -39,7 +39,7 @@ class Solution {
         }
         return buildNode(list, 0, list.size() - 1);
     }
-    
+
     public TreeNode buildNode(List<Integer> list, int lo, int hi){
         if (lo > hi) return null;
         int mid = lo + (hi - lo)/2;
@@ -47,6 +47,27 @@ class Solution {
         node.left = buildNode(list, lo, mid - 1);
         node.right = buildNode(list, mid + 1, hi);
         return node;
+    }
+}
+```
+
+```java
+class Solution {
+    public TreeNode sortedListToBST(ListNode head) {
+        return toBST(head, null);
+    }
+    public TreeNode toBST(ListNode head, ListNode tail){
+        if(head == tail) return null;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != tail && fast.next != tail) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        TreeNode root = new TreeNode(slow.val);
+        root.left = toBST(head, slow);
+        root.right = toBST(slow.next, tail);
+        return root;
     }
 }
 ```
