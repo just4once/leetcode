@@ -1,5 +1,7 @@
 ### Question {#question}
 
+[https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)
+
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 
 **Example:**
