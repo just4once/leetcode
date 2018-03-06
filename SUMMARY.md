@@ -117,6 +117,7 @@
     * [147-Insertion Sort List](leetcode/linked-list/147-insertion-sort-list.md)
     * [148-Sort List](leetcode/linked-list/148-sort-list.md)
     * [160-Intersection of Two Linked Lists](leetcode/linked-list/160-intersection-of-two-linked-lists.md)
+    * [203-Remove Linked List Elements](leetcode/linked-list/203-remove-linked-list-elements.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
     * [137-Single Number II](leetcode/bit-manipulation/137-single-number-ii.md)
     * [260-Single Number III](leetcode/bit-manipulation/260-single-number-iii.md)
