@@ -129,6 +129,9 @@
   * [Bit Manipulation](leetcode/bit-manipulation.md)
     * [137-Single Number II](leetcode/bit-manipulation/137-single-number-ii.md)
     * [260-Single Number III](leetcode/bit-manipulation/260-single-number-iii.md)
+  * [Math](leetcode/math.md)
+    * [007-Reverse Integer](leetcode/math/007-reverse-integer.md)
+    * [008-String to Integer \(atoi\)](leetcode/math/008-string-to-integer-atoi.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
