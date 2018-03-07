@@ -24,6 +24,43 @@ Could you do it in O\(n\) time and O\(1\) space?
 
 ```java
 class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode l1r = reverse(l1), l2r = reverse(l2);
+        ListNode cur = new ListNode(0);
+        int sum = 0;
+        while (l1r != null || l2r != null) {
+            if (l1r != null) {
+                sum += l1r.val;
+                l1r = l1r.next;
+            }
+            if (l2r != null) {
+                sum += l2r.val;
+                l2r = l2r.next;
+            }
+            cur.val = sum % 10;
+            sum /= 10;
+            ListNode head = new ListNode(sum);
+            head.next = cur;
+            cur = head;
+        }
+        return cur.val == 0 ? cur.next : cur;
+    }
+    
+    private ListNode reverse(ListNode node) {
+        ListNode dummy = new ListNode(-1), next;
+        while (node != null) {
+            next = node.next;
+            node.next = dummy.next;
+            dummy.next = node;
+            node = next;
+        }
+        return dummy.next;
+    }
+}
+```
+
+```java
+class Solution {
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;
         ListNode slow = head, fast = head;
@@ -38,7 +75,7 @@ class Solution {
         }
         return head == slow;
     }
-    
+
     public ListNode reverse(ListNode node) {
         ListNode dummy = new ListNode(-1), next;
         while (node != null) {

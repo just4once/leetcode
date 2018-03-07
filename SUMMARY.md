@@ -124,6 +124,8 @@
     * [328-Odd Even Linked List](leetcode/linked-list/328-odd-even-linked-list.md)
     * [369-Plus One Linked List](leetcode/linked-list/369-plus-one-linked-list.md)
     * [379-Design Phone Directory](leetcode/linked-list/379-design-phone-directory.md)
+    * [445-Add Two Numbers II](leetcode/linked-list/445-add-two-numbers-ii.md)
+    * [725-Split Linked List in Parts](leetcode/linked-list/725-split-linked-list-in-parts.md)
   * [Bit Manipulation](leetcode/bit-manipulation.md)
     * [137-Single Number II](leetcode/bit-manipulation/137-single-number-ii.md)
     * [260-Single Number III](leetcode/bit-manipulation/260-single-number-iii.md)
