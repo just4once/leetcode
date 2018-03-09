@@ -137,7 +137,7 @@
     * [013-Roman to Integer](leetcode/math/013-roman-to-integer.md)
     * [029-Divide Two Integers](leetcode/math/029-divide-two-integers.md)
     * [043-Multiply Strings](leetcode/math/043-multiply-strings.md)
+    * [050-Pow\(x, n\)](leetcode/math/050-powx-n.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
-* [050-Pow\(x, n\)](leetcode/math/050-powx-n.md)
 
