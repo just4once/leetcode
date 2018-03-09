@@ -4,7 +4,7 @@
 
 The set \[1,2,3,…,n\] contains a total of n! unique permutations.
 
-By listing and labeling all of the permutations in order,
+By listing and labeling all of the permutations in order,
 
 We get the following sequence \(ie, for n = 3\):
 
@@ -27,7 +27,10 @@ Given n and k, return the kth permutation sequence.
 
 ### Thought Process {#thought-process}
 
-1. 
+1. Find Pattern
+   1. The number of permutation is n!
+   2. 
+
 ### Solution
 
 ```java
