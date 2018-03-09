@@ -139,4 +139,5 @@
     * [043-Multiply Strings](leetcode/math/043-multiply-strings.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
+* [050-Pow\(x, n\)](leetcode/math/050-powx-n.md)
 
