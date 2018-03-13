@@ -140,6 +140,8 @@
     * [050-Pow\(x, n\)](leetcode/math/050-powx-n.md)
     * [060-Permutation Sequence](leetcode/math/060-permutation-sequence.md)
     * [065-Valid Number](leetcode/math/065-valid-number.md)
+    * [067-Add Binary](leetcode/math/067-add-binary.md)
+    * [069-Sqrt\(x\)](leetcode/069-sqrtx.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

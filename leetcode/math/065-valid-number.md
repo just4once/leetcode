@@ -36,27 +36,26 @@ class Solution {
     public boolean isNumber(String s) {
         if (s == null) return false;
         s = s.trim();
-        boolean leftSeen = false, rightSeen = false;
+        boolean numSeen = false;
         boolean pointSeen = false, eSeen = false;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (Character.isDigit(c)) {
-                leftSeen = true;
-                rightSeen = true;
+                numSeen = true;
             } else if (c == '.') {
                 if (pointSeen || eSeen) return false;
                 pointSeen = true;
             } else if (c == 'e') {
-                if (!leftSeen || eSeen) return false;
+                if (!numSeen || eSeen) return false;
                 eSeen = true;
-                rightSeen = false;
+                numSeen = false;
             } else if (c == '+' || c == '-') {
                 if (i != 0 && s.charAt(i - 1) != 'e') return false;
             } else {
                 return false;
             }
         }
-        return leftSeen && rightSeen;
+        return numSeen;
     }
 }
 ```
