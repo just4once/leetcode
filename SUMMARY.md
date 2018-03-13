@@ -142,6 +142,7 @@
     * [065-Valid Number](leetcode/math/065-valid-number.md)
     * [067-Add Binary](leetcode/math/067-add-binary.md)
     * [069-Sqrt\(x\)](leetcode/069-sqrtx.md)
+    * [168-Excel Sheet Column Title](leetcode/math/168-excel-sheet-column-title.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
