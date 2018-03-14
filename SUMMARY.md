@@ -143,6 +143,10 @@
     * [067-Add Binary](leetcode/math/067-add-binary.md)
     * [069-Sqrt\(x\)](leetcode/069-sqrtx.md)
     * [168-Excel Sheet Column Title](leetcode/math/168-excel-sheet-column-title.md)
+    * [171-Excel Sheet Column Number](leetcode/math/171-excel-sheet-column-number.md)
+    * [223-Rectangle Area](leetcode/math/223-rectangle-area.md)
+    * [224-Basic Calculator](leetcode/math/224-basic-calculator.md)
+    * [247-Strobogrammatic Number II](leetcode/math/247-strobogrammatic-number-ii.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

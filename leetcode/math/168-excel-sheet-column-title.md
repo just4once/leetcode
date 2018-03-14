@@ -13,14 +13,14 @@ Given a positive integer, return its corresponding column title as appear in an 
     ...
     26 -> Z
     27 -> AA
-    28 -> AB 
+    28 -> AB
 ```
 
 ### Thought Process {#thought-process}
 
 1. Mod
-   1. Use character table to facilitate the process
-   2. we need to use mod to get the correct character
+   1. we need to use mod to get the correct character
+   2. Reverse the string at the end
    3. Time complexity O\(log n\)
    4. Space complexity O\(1\)
 
@@ -28,12 +28,12 @@ Given a positive integer, return its corresponding column title as appear in an 
 
 ```java
 class Solution {
-    private char[] table = new char []{'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     public String convertToTitle(int n) {
         StringBuilder sb = new StringBuilder();
         while (n > 0){
-            sb.append(table[(n - 1) % 26]);
-            n = (n - 1) / 26;
+            n--;
+            sb.append((char)('A' + n % 26));
+            n /= 26;
         }
         return sb.reverse().toString();
     }
