@@ -35,7 +35,7 @@ class Solution {
     public List<String> findStrobogrammatic(int n) {
         return build(n, n);
     }
-    
+
     private List<String> build(int n, int m) {
         List<String> res = new ArrayList<>();
         if (n <= 0) {
@@ -76,6 +76,80 @@ class Solution {
             r = newList;
         }
         return r;
+    }
+}
+```
+
+```java
+class Solution {
+    public List<String> findStrobogrammatic(int n) {
+        List<String> res = new ArrayList<>();
+        backtrack(res, new char[n], 0, n - 1);
+        return res;
+    }
+
+    private void backtrack(List<String> res, char[] path, int l, int r) {
+        if (l > r) {
+            res.add(String.valueOf(path));
+        } else if (l == r) {
+            // the middle element
+            path[l] = '0';
+            res.add(String.valueOf(path));
+            path[l] = '1';
+            res.add(String.valueOf(path));
+            path[l] = '8';
+            res.add(String.valueOf(path));
+        } else {
+            if (l != 0) {
+                path[l] = '0';
+                path[r] = '0';
+                backtrack(res, path, l + 1, r - 1);
+            }
+            path[l] = '1';
+            path[r] = '1';
+            backtrack(res, path, l + 1, r - 1);
+            path[l] = '6';
+            path[r] = '9';
+            backtrack(res, path, l + 1, r - 1);
+            path[l] = '8';
+            path[r] = '8';
+            backtrack(res, path, l + 1, r - 1);
+            path[l] = '9';
+            path[r] = '6';
+            backtrack(res, path, l + 1, r - 1);
+        }
+    }
+}
+```
+
+```java
+class Solution {
+    private char[] single = {'0', '1', '8'};
+    private char[][] pair = {{'0', '0'}, {'1', '1'}, {'6', '9'}, {'8', '8'}, {'9', '6'}};
+    public List<String> findStrobogrammatic(int n) {
+        List<String> res = new ArrayList<>();
+        backtrack(res, new char[n], 0, n - 1);
+        return res;
+    }
+    
+    private void backtrack(List<String> res, char[] path, int l, int r) {
+        if (l > r) {
+            res.add(String.valueOf(path));
+        } else if (l == r) {
+            // the middle element, single element
+            for (int i = 0; i < single.length; i++) {
+                path[l] = single[i];
+                res.add(String.valueOf(path));
+            }
+        } else {
+            // padding the head and tail to the path
+            for (int i = 0; i < pair.length; i++) {
+                if (i == 0 && l == 0) continue;
+                path[l] = pair[i][0];
+                path[r] = pair[i][1];
+                backtrack(res, path, l + 1, r - 1);
+            }
+        }
     }
 }
 ```

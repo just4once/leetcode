@@ -147,6 +147,12 @@
     * [223-Rectangle Area](leetcode/math/223-rectangle-area.md)
     * [224-Basic Calculator](leetcode/math/224-basic-calculator.md)
     * [247-Strobogrammatic Number II](leetcode/math/247-strobogrammatic-number-ii.md)
+    * [248-Strobogrammatic Number III](leetcode/math/248-strobogrammatic-number-iii.md)
+    * [258-Add Digits](leetcode/math/258-add-digits.md)
+    * [263-Ugly Number](leetcode/math/263-ugly-number.md)
+    * [264-Ugly Number II](leetcode/math/264-ugly-number-ii.md)
+    * [268-Missing Number](leetcode/math/268-missing-number.md)
+    * [273-Integer to English Words](leetcode/math/273-integer-to-english-words.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
