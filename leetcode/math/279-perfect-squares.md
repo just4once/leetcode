@@ -18,7 +18,8 @@ Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13
    3. Time complexity O\(n^1.5\)
    4. Space complexity O\(n\)
 2. Math
-   1. Base on [https://en.wikipedia.org/wiki/Lagrange%27s\_four-square\_theorem](https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem "Lagrange&apos;s four-square theorem"), the answer is limit by 4
+   1. Base on [Lagrange's four-square theorem](https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem), the answer is limit by 4
+   2. 
 
 ### Solution
 
