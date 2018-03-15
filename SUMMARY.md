@@ -153,6 +153,7 @@
     * [264-Ugly Number II](leetcode/math/264-ugly-number-ii.md)
     * [268-Missing Number](leetcode/math/268-missing-number.md)
     * [273-Integer to English Words](leetcode/math/273-integer-to-english-words.md)
+    * [279-Perfect Squares](leetcode/math/279-perfect-squares.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
