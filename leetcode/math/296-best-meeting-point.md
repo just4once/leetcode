@@ -36,6 +36,12 @@ The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2
    1. Write separate function for collecting rows and col
    2. Time complexity O(mn)
    3. Space complexity O(mn)
+4. Two Pointers
+   1. Write separate function for collecting rows and col
+   2. Time complexity O(mn)
+   3. Space complexity O(mn)
+
+
 
 ### Solution
 
