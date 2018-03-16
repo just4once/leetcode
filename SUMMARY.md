@@ -154,6 +154,7 @@
     * [268-Missing Number](leetcode/math/268-missing-number.md)
     * [273-Integer to English Words](leetcode/math/273-integer-to-english-words.md)
     * [279-Perfect Squares](leetcode/math/279-perfect-squares.md)
+    * [296-Best Meeting Point](leetcode/math/296-best-meeting-point.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

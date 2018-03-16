@@ -18,8 +18,14 @@ Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13
    3. Time complexity O\(n^1.5\)
    4. Space complexity O\(n\)
 2. Math
-   1. Base on [Lagrange's four-square theorem](https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem), the answer is limit by 4
-   2. 
+   1. Base on [Lagrange's four-square theorem](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem), the answer is limit by 4
+   2. The number representation can be found here, [http://www.alpertron.com.ar/4SQUARES.HTM](http://www.alpertron.com.ar/4SQUARES.HTM)
+   3. Perfect squares has one factor
+   4. If the representation is 4^k\*\(8\*m + 7\), there are 4 factors
+   5. If the n - perfectSquare is also a perfect square, then there are two factors
+   6. Otherwise there are 3 factors
+   7. Time complexity O\(1\)
+   8. Space complexity O1\)
 
 ### Solution
 
@@ -39,7 +45,22 @@ class Solution {
 ```
 
 ```java
-
+class Solution {
+    public int numSquares(int n) {
+        if (isPerfectSquare(n)) return 1;
+        while (n % 4 == 0) n /= 4;
+        if (n % 8 == 7) return 4;
+        for (int i = 1; i * i <= n; i++) {
+            if (isPerfectSquare(n - i * i)) return 2;
+        }
+        return 3;
+    }
+    
+    private boolean isPerfectSquare(int i) {
+        int a = (int) Math.sqrt(i);
+        return a * a == i;
+    }
+}
 ```
 
 ### Additional {#additional}
