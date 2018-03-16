@@ -30,11 +30,68 @@ The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2
    2. For example, 1-1-0-0-1, the optimal point is at x = 1, and assume the total distance is d
    3. If we move the point to the right, x = 2, the total distance will be d +  2 - 1, since there will be two points on its left and 1 point on its right
    4. For even number of 1's, we can pick either one of middle as the choice, for example 1-1-0-0-1-1
+   5. Time complexity O\(mn + mn log\(mn\)\) = O\(mn log\(mn\)\)
+   6. Space complexity O\(mn\)
+3. Without Sorting
+   1. Write separate function for collecting rows and col
+   2. Time complexity O(mn)
+   3. Space complexity O(mn)
 
 ### Solution
 
 ```java
+class Solution {
+    public int minTotalDistance(int[][] grid) {
+        if (grid.length == 0 || grid[0].length == 0) return 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                int dist = calculate(i, j, grid);
+                min = Math.min(min, dist);
+            }
+        }
+        return min;
+    }
 
+    private int calculate(int m, int n, int[][] grid) {
+        int dist = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) dist += Math.abs(i - m) + Math.abs(n - j);
+            }
+        }
+        return dist;
+    }
+}
+```
+
+```java
+class Solution {
+    public int minTotalDistance(int[][] grid) {
+        if (grid.length == 0 || grid[0].length == 0) return 0;
+        List<Integer> rows = new ArrayList<>();
+        List<Integer> cols = new ArrayList<>();
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
+                    rows.add(i);
+                    cols.add(j);
+                }
+            }
+        }
+        Collections.sort(cols);
+        return calDist(rows) + calDist(cols);
+    }
+
+    private int calDist(List<Integer> list) {
+        int ref = list.get(list.size() / 2);
+        int dist = 0;
+        for (int point : list) {
+            dist += Math.abs(point - ref);
+        }
+        return dist;
+    }
+}
 ```
 
 ### Additional {#additional}
