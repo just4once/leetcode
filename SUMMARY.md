@@ -155,6 +155,10 @@
     * [273-Integer to English Words](leetcode/math/273-integer-to-english-words.md)
     * [279-Perfect Squares](leetcode/math/279-perfect-squares.md)
     * [296-Best Meeting Point](leetcode/math/296-best-meeting-point.md)
+    * [313-Super Ugly Number](leetcode/math/313-super-ugly-number.md)
+    * [319-Bulb Switcher](leetcode/math/319-bulb-switcher.md)
+    * [326-Power of Three](leetcode/math/326-power-of-three.md)
+    * [335-Self Crossing](leetcode/math/335-self-crossing.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

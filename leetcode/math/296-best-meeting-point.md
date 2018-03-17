@@ -45,8 +45,6 @@ The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2
    2. Time complexity O\(mn\)
    3. Space complexity O\(mn\)
 
-
-
 ### Solution
 
 ```java
@@ -112,7 +110,7 @@ class Solution {
         List<Integer> cols = collectCol(grid);
         return calDist(rows) + calDist(cols);
     }
-    
+
     private List<Integer> collectRow(int[][] grid) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < grid.length; i++) {
@@ -124,7 +122,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private List<Integer> collectCol(int[][] grid) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < grid[0].length; i++) {
@@ -136,7 +134,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int calDist(List<Integer> list) {
         int ref = list.get(list.size() / 2);
         int dist = 0;
@@ -156,7 +154,7 @@ class Solution {
         List<Integer> cols = collectCol(grid);
         return calDist(rows) + calDist(cols);
     }
-    
+
     private List<Integer> collectRow(int[][] grid) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < grid.length; i++) {
@@ -168,7 +166,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private List<Integer> collectCol(int[][] grid) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < grid[0].length; i++) {
@@ -180,7 +178,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int calDist(List<Integer> list) {
         int i = 0, j = list.size() - 1;
         int dist = 0;
@@ -210,7 +208,7 @@ class Solution {
         }
         return calDist(rowCount) + calDist(colCount);
     }
-    
+
     private int calDist(int[] count) {
         int i = 0, j = count.length - 1;
         int dist = 0;
