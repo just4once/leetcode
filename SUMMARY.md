@@ -159,6 +159,9 @@
     * [319-Bulb Switcher](leetcode/math/319-bulb-switcher.md)
     * [326-Power of Three](leetcode/math/326-power-of-three.md)
     * [335-Self Crossing](leetcode/math/335-self-crossing.md)
+    * [343-Integer Break](leetcode/math/343-integer-break.md)
+    * [357-Count Numbers with Unique Digits](leetcode/math/357-count-numbers-with-unique-digits.md)
+    * [360-Sort Transformed Array](leetcode/math/360-sort-transformed-array.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
