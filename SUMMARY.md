@@ -162,6 +162,9 @@
     * [343-Integer Break](leetcode/math/343-integer-break.md)
     * [357-Count Numbers with Unique Digits](leetcode/math/357-count-numbers-with-unique-digits.md)
     * [360-Sort Transformed Array](leetcode/math/360-sort-transformed-array.md)
+    * [365-Water and Jug Problem](leetcode/math/365-water-and-jug-problem.md)
+    * [367-Valid Perfect Square](leetcode/math/367-valid-perfect-square.md)
+    * [368-Largest Divisible Subset](leetcode/math/368-largest-divisible-subset.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
