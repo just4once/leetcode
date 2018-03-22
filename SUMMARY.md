@@ -166,6 +166,7 @@
     * [367-Valid Perfect Square](leetcode/math/367-valid-perfect-square.md)
     * [368-Largest Divisible Subset](leetcode/math/368-largest-divisible-subset.md)
     * [372-Super Pow](leetcode/math/372-super-pow.md)
+    * [396-Rotate Function](leetcode/math/396-rotate-function.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
