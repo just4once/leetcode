@@ -30,9 +30,9 @@ Result: 1024
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 2. Euler's Theorem/Fermat's Little Theorem
-   1. Euler's theorem, [https://en.wikipedia.org/wiki/Euler%27s\_theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem)
-   2. Fermat's little theorem, [https://en.wikipedia.org/wiki/Fermat%27s\_little\_theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem)
-   3. Euler's totient function, [https://en.wikipedia.org/wiki/Euler%27s\_totient\_function](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
+   1. Euler's theorem, [https://en.wikipedia.org/wiki/Euler%27s\_theorem](https://en.wikipedia.org/wiki/Euler's_theorem)
+   2. Fermat's little theorem, [https://en.wikipedia.org/wiki/Fermat%27s\_little\_theorem](https://en.wikipedia.org/wiki/Fermat's_little_theorem)
+   3. Euler's totient function, [https://en.wikipedia.org/wiki/Euler%27s\_totient\_function](https://en.wikipedia.org/wiki/Euler's_totient_function)
    4. Examples, [http://mathonline.wikidot.com/examples-using-euler-s-theorem](http://mathonline.wikidot.com/examples-using-euler-s-theorem)
    5. Three cases for reducing the power
       1. a is multiple of 1337, result is 0
@@ -79,15 +79,15 @@ class Solution {
         if (p == 0) p += 1140;
         return powMod(a, p, k);
     }
-    
+
     private int powMod(int a, int b, int k) {
         int result = 1;
         while (b != 0) {
             if (b % 2 != 0) result = result * a % k;
             a = a * a % k;
             b /= 2;
-	}
-	return result;
+        }
+        return result;
     }
 }
 ```
