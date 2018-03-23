@@ -167,6 +167,8 @@
     * [368-Largest Divisible Subset](leetcode/math/368-largest-divisible-subset.md)
     * [372-Super Pow](leetcode/math/372-super-pow.md)
     * [396-Rotate Function](leetcode/math/396-rotate-function.md)
+    * [397-Integer Replacement](leetcode/math/397-integer-replacement.md)
+    * [400-Nth Digit](leetcode/math/400-nth-digit.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
