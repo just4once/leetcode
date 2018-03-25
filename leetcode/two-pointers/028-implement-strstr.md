@@ -26,7 +26,28 @@ Output: -1
 ### Solution
 
 ```java
-
+class Solution {
+    public int strStr(String haystack, String needle) {
+        if(haystack.length() < needle.length()) return -1;
+        if(needle.length() == 0) return 0;
+        char[] hc = haystack.toCharArray();
+        char[] nc = needle.toCharArray();
+        int id = -1;
+        for(int i = 0; i <= hc.length - nc.length; i++){
+            if(hc[i] == nc[0] && match(hc, i, nc)){
+                return i;
+            }
+        }
+        return id;
+    }
+    
+    public boolean match(char[] hc, int start, char[] nc){
+        for(int i = 0; i < nc.length; i++){
+            if(hc[start++] != nc[i]) return false;
+        }
+        return true;
+    }
+}
 ```
 
 ### Additional {#additional}
