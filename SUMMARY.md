@@ -170,6 +170,7 @@
     * [397-Integer Replacement](leetcode/math/397-integer-replacement.md)
     * [400-Nth Digit](leetcode/math/400-nth-digit.md)
   * [Two Pointers](leetcode/two-pointers.md)
+    * [028-Implement strStr\(\)](leetcode/two-pointers/028-implement-strstr.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
