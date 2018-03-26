@@ -34,7 +34,7 @@ class Solution {
         char[] nc = needle.toCharArray();
         int id = -1;
         for(int i = 0; i <= hc.length - nc.length; i++){
-            if(hc[i] == nc[0] && match(hc, i, nc)){
+            if(match(hc, i, nc)){
                 return i;
             }
         }
