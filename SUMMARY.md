@@ -171,6 +171,10 @@
     * [400-Nth Digit](leetcode/math/400-nth-digit.md)
   * [Two Pointers](leetcode/two-pointers.md)
     * [028-Implement strStr\(\)](leetcode/two-pointers/028-implement-strstr.md)
+    * [125-Valid Palindrome](leetcode/two-pointers/125-valid-palindrome.md)
+    * [167-Two Sum II - Input array is sorted](leetcode/two-pointers/167-two-sum-ii-input-array-is-sorted.md)
+    * [209-Minimum Size Subarray Sum](leetcode/two-pointers/209-minimum-size-subarray-sum.md)
+    * [259-3Sum Smaller](leetcode/two-pointers/259-3sum-smaller.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

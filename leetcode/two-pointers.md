@@ -30,5 +30,13 @@
 
 [088-Merge Sorted Array](/leetcode/array/088-merge-sorted-array.md)
 
+[141-Linked List Cycle](/leetcode/linked-list/141-linked-list-cycle.md)
+
+[142-Linked List Cycle II](/leetcode/linked-list/142-linked-list-cycle-ii.md)
+
+[159-Longest Substring with At Most Two Distinct Characters](/leetcode/hash-table/159-longest-substring-with-at-most-two-distinct-characters.md)
+
+[234-Palindrome Linked List](/leetcode/linked-list/234-palindrome-linked-list.md)
+
 
 
