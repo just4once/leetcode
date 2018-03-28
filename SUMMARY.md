@@ -175,6 +175,9 @@
     * [167-Two Sum II - Input array is sorted](leetcode/two-pointers/167-two-sum-ii-input-array-is-sorted.md)
     * [209-Minimum Size Subarray Sum](leetcode/two-pointers/209-minimum-size-subarray-sum.md)
     * [259-3Sum Smaller](leetcode/two-pointers/259-3sum-smaller.md)
+    * [283-Move Zeroes](leetcode/two-pointers/283-move-zeroes.md)
+    * [287-Find the Duplicate Number](leetcode/two-pointers/287-find-the-duplicate-number.md)
+    * [344-Reverse String](leetcode/two-pointers/344-reverse-string.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
