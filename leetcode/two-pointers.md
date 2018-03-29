@@ -38,5 +38,7 @@
 
 [234-Palindrome Linked List](/leetcode/linked-list/234-palindrome-linked-list.md)
 
+[360-Sort Transformed Array](/leetcode/math/360-sort-transformed-array.md)
+
 
 

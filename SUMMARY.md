@@ -180,6 +180,7 @@
     * [344-Reverse String](leetcode/two-pointers/344-reverse-string.md)
     * [345-Reverse Vowels of a String](leetcode/two-pointers/345-reverse-vowels-of-a-string.md)
     * [349-Intersection of Two Arrays](leetcode/two-pointers/349-intersection-of-two-arrays.md)
+    * [350-Intersection of Two Arrays II](leetcode/two-pointers/350-intersection-of-two-arrays-ii.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
