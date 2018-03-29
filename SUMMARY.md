@@ -178,6 +178,8 @@
     * [283-Move Zeroes](leetcode/two-pointers/283-move-zeroes.md)
     * [287-Find the Duplicate Number](leetcode/two-pointers/287-find-the-duplicate-number.md)
     * [344-Reverse String](leetcode/two-pointers/344-reverse-string.md)
+    * [345-Reverse Vowels of a String](leetcode/two-pointers/345-reverse-vowels-of-a-string.md)
+    * [349-Intersection of Two Arrays](leetcode/two-pointers/349-intersection-of-two-arrays.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
