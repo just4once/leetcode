@@ -181,6 +181,9 @@
     * [345-Reverse Vowels of a String](leetcode/two-pointers/345-reverse-vowels-of-a-string.md)
     * [349-Intersection of Two Arrays](leetcode/two-pointers/349-intersection-of-two-arrays.md)
     * [350-Intersection of Two Arrays II](leetcode/two-pointers/350-intersection-of-two-arrays-ii.md)
+    * [487-Max Consecutive Ones II](leetcode/two-pointers/487-max-consecutive-ones-ii.md)
+    * [524-Longest Word in Dictionary through Deleting](leetcode/two-pointers/524-longest-word-in-dictionary-through-deleting.md)
+    * [532-K-diff Pairs in an Array](leetcode/two-pointers/532-k-diff-pairs-in-an-array.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
