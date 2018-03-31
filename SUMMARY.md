@@ -184,6 +184,8 @@
     * [487-Max Consecutive Ones II](leetcode/two-pointers/487-max-consecutive-ones-ii.md)
     * [524-Longest Word in Dictionary through Deleting](leetcode/two-pointers/524-longest-word-in-dictionary-through-deleting.md)
     * [532-K-diff Pairs in an Array](leetcode/two-pointers/532-k-diff-pairs-in-an-array.md)
+    * [567-Permutation in String](leetcode/two-pointers/567-permutation-in-string.md)
+    * [632-Smallest Range](leetcode/two-pointers/632-smallest-range.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
