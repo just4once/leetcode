@@ -186,6 +186,8 @@
     * [532-K-diff Pairs in an Array](leetcode/two-pointers/532-k-diff-pairs-in-an-array.md)
     * [567-Permutation in String](leetcode/two-pointers/567-permutation-in-string.md)
     * [632-Smallest Range](leetcode/two-pointers/632-smallest-range.md)
+    * [713-Subarray Product Less Than K](leetcode/two-pointers/713-subarray-product-less-than-k.md)
+    * [723-Candy Crush](leetcode/two-pointers/723-candy-crush.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

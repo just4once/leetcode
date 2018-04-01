@@ -33,7 +33,10 @@ List 3: [5, 18, 22, 30], 22 is in range [20,24].
    4. To make the range possible smaller, we can either decrease the max or increase the min. However, increasing the min is the only option because the other choice will exclude one of the list
    5. Time complexity O\(mn\), where m is number of rows, and n is total elements
    6. Space complexity O\(m\)
-3. asd
+3. Pointer & Heap
+   1. Instead of looping over all the next pointers, we can use minHeap to poll the minRow
+   2. Time complexity O\(n logm\)
+   3. Space complexity O\(m\)
 
 ### Solution
 
@@ -56,6 +59,35 @@ class Solution {
             }
             next[minRow]++;
             if (next[minRow] == nums.get(minRow).size()) break;
+        }
+        return new int[] {min, max};
+    }
+}
+```
+
+Pointers & Heap
+
+```java
+class Solution {
+    public int[] smallestRange(List<List<Integer>> nums) {
+        int min = 0, max = Integer.MAX_VALUE;
+        int[] next = new int[nums.size()];
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>((i, j) -> nums.get(i).get(next[i]) - nums.get(j).get(next[j]));
+        int end = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.size(); i++) {
+            minHeap.offer(i);
+            end = Math.max(end, nums.get(i).get(0));
+        }
+        while (true) {
+            int minRow = minHeap.poll();
+            if (max - min > end - nums.get(minRow).get(next[minRow])) {
+                max = end;
+                min = nums.get(minRow).get(next[minRow]);
+            }
+            next[minRow]++;
+            if (next[minRow] == nums.get(minRow).size()) break;
+            minHeap.offer(minRow);
+            end = Math.max(end, nums.get(minRow).get(next[minRow]));
         }
         return new int[] {min, max};
     }
