@@ -188,6 +188,9 @@
     * [632-Smallest Range](leetcode/two-pointers/632-smallest-range.md)
     * [713-Subarray Product Less Than K](leetcode/two-pointers/713-subarray-product-less-than-k.md)
     * [723-Candy Crush](leetcode/two-pointers/723-candy-crush.md)
+    * [763-Partition Labels](leetcode/two-pointers/763-partition-labels.md)
+  * [String](leetcode/string.md)
+    * [005-Longest Palindromic Substring](leetcode/string/005-longest-palindromic-substring.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
