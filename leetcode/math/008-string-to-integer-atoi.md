@@ -41,32 +41,32 @@ class Solution {
     public int myAtoi(String str) {
         if (str == null || str.length() == 0) return 0;
         int i = 0, res = 0, sign = 1;
-	char[] chars = str.toCharArray();
-	while (i < chars.length && chars[i] == ' ')
-		i++;
+    char[] chars = str.toCharArray();
+    while (i < chars.length && chars[i] == ' ')
+        i++;
 
-	if (i < chars.length && isSign(chars[i])) {
-		sign = chars[i] == '-' ? -1 : 1;
-		i++;
-	}
-	while (i < chars.length) {
-		int digit = chars[i] - '0';
-		if (!isValidDigit(digit)) break;
-		if (isOutOfBoundary(res, digit)) return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
-		res = res * 10 + digit;
-		i++;
-	}
-	return sign * res;
+    if (i < chars.length && isSign(chars[i])) {
+        sign = chars[i] == '-' ? -1 : 1;
+        i++;
     }
-    
+    while (i < chars.length) {
+        int digit = chars[i] - '0';
+        if (!isValidDigit(digit)) break;
+        if (isOutOfBoundary(res, digit)) return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+        res = res * 10 + digit;
+        i++;
+    }
+    return sign * res;
+    }
+
     public boolean isSign(char c){
         return c == '-' || c == '+';
     }
-    
+
     public boolean isValidDigit(int i) {
-		return i >= 0 && i < 10;
-	}
-    
+        return i >= 0 && i < 10;
+    }
+
     public boolean isOutOfBoundary(int i, int tail){
         return i > Integer.MAX_VALUE / 10 || (i == Integer.MAX_VALUE / 10 && tail > Integer.MAX_VALUE % 10);
     }

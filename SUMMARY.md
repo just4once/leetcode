@@ -191,6 +191,8 @@
     * [763-Partition Labels](leetcode/two-pointers/763-partition-labels.md)
   * [String](leetcode/string.md)
     * [005-Longest Palindromic Substring](leetcode/string/005-longest-palindromic-substring.md)
+    * [006-ZigZag Conversion](leetcode/string/006-zigzag-conversion.md)
+    * [010-Regular Expression Matching](leetcode/string/010-regular-expression-matching.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
