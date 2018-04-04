@@ -6,3 +6,5 @@
 
 [013-Roman to Integer](/leetcode/math/013-roman-to-integer.md)
 
+[028-Implement strStr\(\)](/leetcode/two-pointers/028-implement-strstr.md)
+

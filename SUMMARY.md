@@ -196,6 +196,7 @@
     * [014-Longest Common Prefix](leetcode/014-longest-common-prefix.md)
     * [017-Letter Combinations of a Phone Number](leetcode/string/017-letter-combinations-of-a-phone-number.md)
     * [020-Valid Parentheses](leetcode/string/020-valid-parentheses.md)
+    * [022-Generate Parentheses](leetcode/string/022-generate-parentheses.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
