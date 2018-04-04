@@ -26,22 +26,22 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 ```java
 class Solution {
     public int longestValidParentheses(String s) {
-    	if (s == null) return 0;
-	int[] dp = new int[s.length() + 1];
-	s = 'x' + s;
-	int max = 0;
-	char[] chars = s.toCharArray();
-	for (int i = 2; i < chars.length; i++) {
-		if (chars[i] == ')') {
-			if (chars[i - 1] == '(') {
-				dp[i] = dp[i - 2] + 2;
-			} else if (chars[i - dp[i - 1] - 1] == '(') {
-				dp[i] = dp[i - 1] + dp[i - dp[i - 1] - 2] + 2;
-			}
-			max = Math.max(max, dp[i]);
-		}
-	}
-	return max;
+        if (s == null) return 0;
+        int[] dp = new int[s.length() + 1];
+        s = 'x' + s;
+        int max = 0;
+        char[] chars = s.toCharArray();
+        for (int i = 2; i < chars.length; i++) {
+            if (chars[i] == ')') {
+                if (chars[i - 1] == '(') {
+                    dp[i] = dp[i - 2] + 2;
+                } else if (chars[i - dp[i - 1] - 1] == '(') {
+                    dp[i] = dp[i - 1] + dp[i - dp[i - 1] - 2] + 2;
+                }
+                max = Math.max(max, dp[i]);
+            }
+        }
+        return max;
     }
 }
 ```
