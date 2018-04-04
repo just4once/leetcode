@@ -52,7 +52,7 @@ class Solution {
     public boolean isMatch(String s, String p) {
         return isMatch(s.toCharArray(), 0, p.toCharArray(), 0);
     }
-    
+
     private boolean isMatch(char[] s, int i, char[] p, int j) {
         if (j == p.length) return i == s.length;
         boolean firstMatch = i != s.length && (s[i] == p[j] || p[j] == '.');
@@ -71,7 +71,7 @@ class Solution {
         Boolean[][] memo = new Boolean[s.length() + 1][p.length() + 1];
         return isMatch(s.toCharArray(), 0, p.toCharArray(), 0, memo);
     }
-    
+
     private boolean isMatch(char[] s, int i, char[] p, int j, Boolean[][] memo) {
         if (memo[i][j] != null) return memo[i][j];
         boolean res = false;
@@ -108,6 +108,35 @@ class Solution {
             }
         }
         return dp[0][0];
+    }
+}
+```
+
+```java
+class Solution {
+    public boolean isMatch(String s, String p) {
+        boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
+        dp[0][0] = true;
+        char[] S = s.toCharArray(), P = p.toCharArray();
+        for (int j = 1; j < p.length(); j++) {
+            if (P[j] == '*' && dp[0][j - 1]) dp[0][j + 1] = true;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j < p.length(); j++) {
+                // if they are same, we can use i - 1 and j - 1 result
+                if (S[i] == P[j] || P[j] == '.') dp[i + 1][j + 1] = dp[i][j];
+                // if cur pattern is *, we can check whether the previous character
+                // matches or not
+                else if (P[j] == '*') {
+                    // not use it
+                    dp[i + 1][j + 1] = dp[i + 1][j - 1];
+                    if (S[i] == P[j - 1] || P[j - 1] == '.') {
+                        dp[i + 1][j + 1] |= dp[i][j + 1];
+                    }
+                }
+            }
+        }
+        return dp[s.length()][p.length()];
     }
 }
 ```

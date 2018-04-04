@@ -193,6 +193,9 @@
     * [005-Longest Palindromic Substring](leetcode/string/005-longest-palindromic-substring.md)
     * [006-ZigZag Conversion](leetcode/string/006-zigzag-conversion.md)
     * [010-Regular Expression Matching](leetcode/string/010-regular-expression-matching.md)
+    * [014-Longest Common Prefix](leetcode/014-longest-common-prefix.md)
+    * [017-Letter Combinations of a Phone Number](leetcode/string/017-letter-combinations-of-a-phone-number.md)
+    * [020-Valid Parentheses](leetcode/string/020-valid-parentheses.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
