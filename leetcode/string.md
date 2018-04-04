@@ -8,3 +8,7 @@
 
 [028-Implement strStr\(\)](/leetcode/two-pointers/028-implement-strstr.md)
 
+[030-Substring with Concatenation of All Words](/leetcode/hash-table/030-substring-with-concatenation-of-all-words.md)
+
+
+

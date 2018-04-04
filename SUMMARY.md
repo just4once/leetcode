@@ -197,6 +197,7 @@
     * [017-Letter Combinations of a Phone Number](leetcode/string/017-letter-combinations-of-a-phone-number.md)
     * [020-Valid Parentheses](leetcode/string/020-valid-parentheses.md)
     * [022-Generate Parentheses](leetcode/string/022-generate-parentheses.md)
+    * [032-Longest Valid Parentheses](leetcode/string/032-longest-valid-parentheses.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
