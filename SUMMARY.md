@@ -198,6 +198,7 @@
     * [020-Valid Parentheses](leetcode/string/020-valid-parentheses.md)
     * [022-Generate Parentheses](leetcode/string/022-generate-parentheses.md)
     * [032-Longest Valid Parentheses](leetcode/string/032-longest-valid-parentheses.md)
+    * [038-Count and Say](leetcode/string/038-count-and-say.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

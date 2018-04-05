@@ -70,7 +70,6 @@ class Solution {
 ```
 
 ```java
-
 public class Solution {
     public int longestValidParentheses(String s) {
         int left = 0, right = 0, max = 0;
