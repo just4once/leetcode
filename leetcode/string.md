@@ -10,5 +10,7 @@
 
 [030-Substring with Concatenation of All Words](/leetcode/hash-table/030-substring-with-concatenation-of-all-words.md)
 
+[043-Multiply Strings](/leetcode/math/043-multiply-strings.md)
+
 
 
