@@ -12,5 +12,7 @@
 
 [043-Multiply Strings](/leetcode/math/043-multiply-strings.md)
 
+[049-Group Anagrams](/leetcode/hash-table/049-group-anagrams.md)
+
 
 

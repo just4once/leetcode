@@ -200,6 +200,7 @@
     * [032-Longest Valid Parentheses](leetcode/string/032-longest-valid-parentheses.md)
     * [038-Count and Say](leetcode/string/038-count-and-say.md)
     * [044-Wildcard Matching](leetcode/string/044-wildcard-matching.md)
+    * [058-Length of Last Word](leetcode/string/058-length-of-last-word.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

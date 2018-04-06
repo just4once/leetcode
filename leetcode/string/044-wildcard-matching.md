@@ -28,7 +28,7 @@ isMatch("aab", "c*a*b") → false
 ### Thought Process {#thought-process}
 
 1. DP
-   1. Similar to , we create two dimensional array to store the match result
+   1. Similar to [010-Regular Expression Matching](/leetcode/string/010-regular-expression-matching.md), we create two dimensional array to store the match result
    2. dp\[i\]\[j\] store the match result for 0th to ith character from s and 0th to jth character from p
    3. Time complexity O\(sp\)
    4. Space complexity O\(sp\)
