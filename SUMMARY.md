@@ -201,6 +201,7 @@
     * [038-Count and Say](leetcode/string/038-count-and-say.md)
     * [044-Wildcard Matching](leetcode/string/044-wildcard-matching.md)
     * [058-Length of Last Word](leetcode/string/058-length-of-last-word.md)
+    * [068-Text Justification](leetcode/string/068-text-justification.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

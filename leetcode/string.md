@@ -14,5 +14,9 @@
 
 [049-Group Anagrams](/leetcode/hash-table/049-group-anagrams.md)
 
+[065-Valid Number](/leetcode/math/065-valid-number.md)
+
+[067-Add Binary](/leetcode/math/067-add-binary.md)
+
 
 
