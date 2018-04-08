@@ -36,7 +36,48 @@ Return the formatted lines as:
 ### Solution
 
 ```java
-
+class Solution {
+    public List<String> fullJustify(String[] words, int maxWidth) {
+        List<String> res = new LinkedList<>();
+        int i = 0, len = 0, space = -1;
+        while (i < words.length) {
+            if (len + space <= maxWidth) {
+                space++;
+                len += words[i].length();
+                i++;
+            } else {
+                addLine(res, words, i - space - 1, i - 2, maxWidth, len - words[i - 1].length(), space - 1);
+                i--;
+                len = 0;
+                space = -1;
+            }  
+        }
+        // System.out.println("second last");
+        if (len + space > maxWidth) {
+            addLine(res, words, i - space - 1, i - 2, maxWidth, len - words[i - 1].length(), space - 1);
+            addLine(res, words, i - 1, i - 1, maxWidth, words[i - 1].length(), 1);
+        } else {
+            addLine(res, words, i - space - 1, i - 1, maxWidth, len, maxWidth- len);
+        }
+        return res;
+    }
+    
+    private void addLine(List<String> res, String[] words, int lo, int hi, int maxWidth, int len, int space) {
+        // System.out.println("lo = " + lo + ", hi = " + hi +", len = " + len + ", space = " + space);
+        if (lo > hi) return;
+        if (space < 1) space = 1;
+        int pad = (maxWidth - len) / space;
+        int extra = (maxWidth - len) % space;
+        StringBuilder sb = new StringBuilder(words[lo++]);
+        while (lo <= hi) {
+            for (int i = 0; i < pad; i++) sb.append(' ');
+            if (extra-- > 0) sb.append(' ');
+            sb.append(words[lo++]);
+        }
+        while (sb.length() < maxWidth) sb.append(' ');
+        res.add(sb.toString());
+    }
+}
 ```
 
 ### Additional {#additional}
