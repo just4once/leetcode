@@ -61,7 +61,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private void addLine(List<String> res, String[] words, int lo, int hi, int maxWidth, int len, int space) {
         // System.out.println("lo = " + lo + ", hi = " + hi +", len = " + len + ", space = " + space);
         if (lo > hi) return;
@@ -76,6 +76,36 @@ class Solution {
         }
         while (sb.length() < maxWidth) sb.append(' ');
         res.add(sb.toString());
+    }
+}
+```
+
+```java
+class Solution {
+    public List<String> fullJustify(String[] words, int maxWidth) {
+        List<String> res = new LinkedList<>();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0, j; i < words.length; i = j) {
+            int len = -1;
+            for (j = i; j < words.length && len + 1 + words[j].length() <= maxWidth; j++) {
+                len += 1 + words[j].length();
+            }
+            int space = 1, extra = 0;
+            if (j != i + 1 && j != words.length) {
+                space = (maxWidth - len) / (j - i - 1) + 1;
+                extra = (maxWidth - len) % (j - i - 1);
+            }
+            sb.setLength(0);
+            sb.append(words[i]);
+            for (int k = i + 1; k < j; k++) {
+                for (int s = 0; s < space; s++) sb.append(' ');
+                if (extra-- > 0) sb.append(' ');
+                sb.append(words[k]);
+            }
+            while (sb.length() < maxWidth) sb.append(' ');
+            res.add(sb.toString());
+        }
+        return res;
     }
 }
 ```
