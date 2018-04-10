@@ -204,6 +204,7 @@
     * [068-Text Justification](leetcode/string/068-text-justification.md)
     * [071-Simplify Path](leetcode/string/071-simplify-path.md)
     * [072-Edit Distance](leetcode/string/072-edit-distance.md)
+    * [087-Scramble String](leetcode/string/087-scramble-string.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
