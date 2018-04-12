@@ -61,7 +61,8 @@ r   g  ta  e
    1. We create three dimensional array, dp\[\]\[\]\[\], where dp\[i\]\[j\]\[k\] indicate the scrambleness of length i and jth character from s1 and kth character from s2
    2. We need to check every possible breaking point from 1 to i - 1 using a variable b
    3. There are two ways to check the scrambleness
-      1. Match from i and j with length b, and match from i + b and j + b with length i - b
+      1. Left part match left part, and right part match right part, so we check match from j and k with length b, and match from j + b and k + b with length i - b
+      2. Left part match right part, and right part match left part, so we check match from j and k + i - b with length b, and match from j + b and k for length i - b
    4. Time complexity O\(n^4\)
    5. Space complexity O\(n^3\)
 
@@ -87,6 +88,42 @@ class Solution {
             if (isScramble(s1.substring(0, i), s2.substring(n - i)) && isScramble(s1.substring(i), s2.substring(0, n - i))) return true;
         }
         return false;
+    }
+}
+```
+
+```
+asdsd
+```
+
+```java
+class Solution {
+    public boolean isScramble(String s1, String s2) {
+        if (s1.length() != s2.length()) return false;
+        if (s1.equals(s2)) return true;
+        int n = s1.length();
+        boolean[][][] dp = new boolean[n + 1][n][n];
+        char[] c1 = s1.toCharArray(), c2 = s2.toCharArray();
+        // initialization for length = 1
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k < n; k++) {
+                if (c1[j] == c2[k]) {
+                    dp[1][j][k] = true;
+                }
+            }
+        }
+        // checking for length start from 2 to n
+        for (int i = 2; i <= n; i++) {
+            for (int j = 0; j <= n - i; j++) {
+                for (int k = 0; k <= n - i; k++) {
+                    //check every possible breaking point
+                    for (int b = 1; b < i && !dp[i][j][k]; b++) {
+                        dp[i][j][k] = (dp[b][j][k] && dp[i - b][j + b][k + b]) || (dp[b][j][k + i - b] && dp[i - b][j + b][k]);
+                    }
+                }
+            }
+        }
+        return dp[n][0][0];
     }
 }
 ```
