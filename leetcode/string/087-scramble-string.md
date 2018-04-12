@@ -56,7 +56,14 @@ r   g  ta  e
    3. Also because we swap the text, the match for left could also happen on the right side, we need to check the match between left and right as well
    4. Time complexity O\(2^n\)
    5. Space complexity O\(n\) due to recursion stack
-2. asd
+2. Recursion with Memo
+3. Bottom Up DP
+   1. We create three dimensional array, dp\[\]\[\]\[\], where dp\[i\]\[j\]\[k\] indicate the scrambleness of length i and jth character from s1 and kth character from s2
+   2. We need to check every possible breaking point from 1 to i - 1 using a variable b
+   3. There are two ways to check the scrambleness
+      1. Match from i and j with length b, and match from i + b and j + b with length i - b
+   4. Time complexity O\(n^4\)
+   5. Space complexity O\(n^3\)
 
 ### Solution
 
