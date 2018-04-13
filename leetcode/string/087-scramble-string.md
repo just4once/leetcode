@@ -56,7 +56,11 @@ r   g  ta  e
    3. Also because we swap the text, the match for left could also happen on the right side, we need to check the match between left and right as well
    4. Time complexity O\(2^n\)
    5. Space complexity O\(n\) due to recursion stack
-2. Recursion with Memo
+2. Recursion with Rolling Hash
+   1. Use prime number to facilitate the process of determine the left part and right part equivalence
+   2. We check the scrambless only if the left hash of s1 match with left hash of s2 or right hash of s2
+   3. Time complexity O\(2^n\)
+   4. Space complexity O\(n\) due to recursion
 3. Bottom Up DP
    1. We create three dimensional array, dp\[\]\[\]\[\], where dp\[i\]\[j\]\[k\] indicate the scrambleness of length i and jth character from s1 and kth character from s2
    2. We need to check every possible breaking point from 1 to i - 1 using a variable b
@@ -92,8 +96,27 @@ class Solution {
 }
 ```
 
-```
-asdsd
+```java
+class Solution {
+    int[] p = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101};
+    public boolean isScramble(String s1, String s2) {
+        if (s1.length() != s2.length()) return false;
+        if (s1.length() <= 1) return s1.equals(s2);
+        if (s1.equals(s2)) return true;
+        // l1 is the left of s1, l2 is left of s2, r2 is right of s2
+        // We use rolling hash to make sure that we have same char set.
+        int n = s2.length();
+        long l1 = p[s1.charAt(0) - 'a'], l2 = p[s2.charAt(0) - 'a'], r2 = p[s2.charAt(n - 1) - 'a'];
+        for(int i = 1; i < n; i++){
+            if(l1 == l2 && isScramble(s1.substring(0, i), s2.substring(0, i)) && isScramble(s1.substring(i), s2.substring(i))) return true;
+            if(l1 == r2 && isScramble(s1.substring(0, i), s2.substring(n - i)) && isScramble(s1.substring(i), s2.substring(0, n - i))) return true;
+            l1 *= p[s1.charAt(i) - 'a'];
+            l2 *= p[s2.charAt(i) - 'a'];
+            r2 *= p[s2.charAt(n - i - 1) - 'a'];
+        }
+        return false;
+    }
+}
 ```
 
 ```java
