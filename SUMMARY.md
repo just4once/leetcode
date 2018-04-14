@@ -205,6 +205,8 @@
     * [071-Simplify Path](leetcode/string/071-simplify-path.md)
     * [072-Edit Distance](leetcode/string/072-edit-distance.md)
     * [087-Scramble String](leetcode/string/087-scramble-string.md)
+    * [091-Decode Ways](leetcode/string/091-decode-ways.md)
+    * [093-Restore IP Addresses](leetcode/string/093-restore-ip-addresses.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
