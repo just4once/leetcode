@@ -208,6 +208,7 @@
     * [091-Decode Ways](leetcode/string/091-decode-ways.md)
     * [093-Restore IP Addresses](leetcode/string/093-restore-ip-addresses.md)
     * [097-Interleaving String](leetcode/string/097-interleaving-string.md)
+    * [115-Distinct Subsequences](leetcode/string/115-distinct-subsequences.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
