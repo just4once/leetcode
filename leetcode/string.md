@@ -18,5 +18,7 @@
 
 [067-Add Binary](/leetcode/math/067-add-binary.md)
 
+[125-Valid Palindrome](/leetcode/two-pointers/125-valid-palindrome.md)
+
 
 
