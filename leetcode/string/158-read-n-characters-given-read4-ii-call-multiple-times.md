@@ -8,7 +8,8 @@ The return value is the actual number of characters read. For example, it return
 
 By using the read4 API, implement the function int read\(char \*buf, int n\) that reads n characters from the file.
 
-**Note:**
+**Note:  
+**
 
 The read function may be called multiple times.
 
@@ -31,7 +32,31 @@ The read function may be called multiple times.
 ### Solution
 
 ```java
+/* The read4 API is defined in the parent class Reader4.
+      int read4(char[] buf); */
 
+public class Solution extends Reader4 {
+    /**
+     * @param buf Destination buffer
+     * @param n   Maximum number of characters to read
+     * @return    The number of characters read
+     */
+    char[] prev = new char[4];
+    int start = 0, end = 0;
+    public int read(char[] buf, int n) {
+        // start saving the leftover character
+        int total = 0, j = Math.min(end, n - total + start);
+        while (start < j) buf[total++] = prev[start++];
+        while (total < n) {
+            start = 0;
+            end = read4(prev);
+            j = Math.min(end, n - total);
+            while (start < j) buf[total++] = prev[start++];
+            if (end < 4) break;
+        }
+        return total;
+    }
+}
 ```
 
 ### Additional {#additional}
