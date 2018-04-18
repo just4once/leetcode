@@ -28,7 +28,20 @@ For instance, 2.5 is not "two and a half" or "half way to version three", it is 
 ### Solution
 
 ```java
-
+class Solution {
+    public int compareVersion(String version1, String version2) {
+        String[] ver1 = version1.split("\\.");
+        String[] ver2 = version2.split("\\.");
+        int n = Math.max(ver1.length, ver2.length);
+        for (int i = 0; i < n; i++){
+            int v1 = i >= ver1.length ? 0 : Integer.parseInt(ver1[i]);
+            int v2 = i >= ver2.length ? 0 : Integer.parseInt(ver2[i]);
+            int cmp = Integer.compare(v1, v2);
+            if (cmp != 0) return cmp;
+        }
+        return 0;
+    }
+}
 ```
 
 ### Additional {#additional}
