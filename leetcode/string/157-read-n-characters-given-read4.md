@@ -20,15 +20,39 @@ The read function will only be called once for each test case.
 
 ### Thought Process
 
-1. AAAAAA
+1. Extra Buffer Array and Pointer
+   1. Read and store the characters in a temporary buffer
+   2. Then append the character until we reach the end of file or the nth character
+   3. Time complexity O\(n\)
+   4. Space complexity O\(1\)
 
 ### Solution
 
 ```java
+/* The read4 API is defined in the parent class Reader4.
+      int read4(char[] buf); */
 
+public class Solution extends Reader4 {
+    /**
+     * @param buf Destination buffer
+     * @param n   Maximum number of characters to read
+     * @return    The number of characters read
+     */
+    public int read(char[] buf, int n) {
+        char[] tmp = new char[4];
+        int total = 0;
+        while (total < n) {
+            int count = read4(tmp);
+            int len = Math.min(count, n - total);
+            for (int i = 0; i < len; i++) {
+                buf[total++] = tmp[i];
+            }
+            if (count < 4) break;
+        }
+        return total;
+    }
+}Additional
 ```
-
-### Additional {#additional}
 
 
 
