@@ -15,15 +15,20 @@ Given "abcd", return "dcbabcd".
 ### Thought Process {#thought-process}
 
 1. Expand and Reach the End
-   1. For each character or character pair, we try to use it as palindromic center
-   2. Our goal is to reach the front end, because failing to do so, we need to revert to using the first character or character pair or return 0 from expand function
-   3. Then the answer is simply n - len + n
+   1. The goal is to find the longest palindrome starting from first character
+   2. So we try to expand each character as palindromic center
+   3. After finding the length, then the answer is simply n - len + n
    4. Time complexity O\(n^2\)
    5. Space complexity O\(1\)  
 2. KMP
    1. KMP explains here, [https://blog.csdn.net/v\_july\_v/article/details/7041827](https://blog.csdn.net/v_july_v/article/details/7041827)
    2. Building Partial Table, [http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/](http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/)
-   3. 
+   3. Using KMP table can help us determine the longest palindrome from first character
+   4. asdasd
+   5. asdsad
+3. Manacger
+   1. asdasd
+   2. 
 
 ### Solution
 
@@ -42,7 +47,7 @@ class Solution {
         sb.append(s);
         return sb.toString();
     }
-    
+
     private int expand(char[] chars, int i, int j) {
         while (i >= 0 && j < chars.length && chars[i] == chars[j]) {
             i--;
