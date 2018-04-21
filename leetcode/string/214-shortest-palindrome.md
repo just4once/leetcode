@@ -24,8 +24,10 @@ Given "abcd", return "dcbabcd".
    1. KMP explains here, [https://blog.csdn.net/v\_july\_v/article/details/7041827](https://blog.csdn.net/v_july_v/article/details/7041827)
    2. Building Partial Table, [http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/](http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/)
    3. Using KMP table can help us determine the longest palindrome from first character
-   4. asdasd
-   5. asdsad
+   4. The trick is use s + "\#" + reverse\(s\), and the last cell of the table will be the length
+   5. The match of proper prefix of s and proper suffix of reverse s indicates the that has to be a palindrome
+   6. Time complexity O\(n\)
+   7. Space complexity O\(n\) 
 3. Manacger
    1. asdasd
    2. 
@@ -54,6 +56,34 @@ class Solution {
             j++;
         }
         return i == -1 ? j - i - 1 : 0;
+    }
+}
+```
+
+```java
+class Solution {
+    public String shortestPalindrome(String s) {
+        String rev = reverse(s);
+        int n = s.length();
+        int len = kmp(s + "#" + rev);
+        return rev.substring(0, n - len) + s;
+    }
+    
+    private String reverse(String s) {
+        StringBuilder sb = new StringBuilder(s);
+        return sb.reverse().toString();
+    }
+    
+    private int kmp(String s) {
+        int n = s.length(), i = 0;
+        int[] table = new int[n];
+        char[] chars = s.toCharArray();
+        for (int j = 1; j < n; j++) {
+            while (i > 0 && chars[i] != chars[j]) i = table[i - 1];
+            if (chars[i] == chars[j]) i++;
+            table[j] = i;
+        }
+        return table[n - 1];
     }
 }
 ```
