@@ -21,7 +21,10 @@ You may assume that the given expression is always valid.
 1. Switch at Different Character
    1. When the character is ' ', we skip
    2. We break the expression into different chunks by '+' and '-', because we know it's time to finishing the evaluation. When we encounter '\*' and '/' we need to keep saving the result to a product variable
-   3. When the character is either '+' or '-', we need to finish the previous operation whether it was division or multiplication, sign \* product / num or sign \* product \* num and add it to the result.
+   3. When the character is either '+' or '-', we need to finish the previous operation whether it was division or multiplication, sign \* product / num or sign \* product \* num and add it to the result
+   4. When the character is either '\*' or '/' we need to evaluate the previous operation product / num or product \* num based on previous operator
+   5. Time complexity O\(n\)
+   6. Space complexity O\(1\)
 
 ```java
 class Solution {
@@ -49,7 +52,7 @@ class Solution {
                 default:
                     num = num * 10 + c - '0';
             }
-            
+
         }
         result += wasDivide ? sign * product / num : sign * product * num;
         return result;
