@@ -20,5 +20,7 @@
 
 [125-Valid Palindrome](/leetcode/two-pointers/125-valid-palindrome.md)
 
+[249-Group Shifted Strings](/leetcode/hash-table/249-group-shifted-strings.md)
 
+[273-Integer to English Words](/leetcode/math/273-integer-to-english-words.md)
 
