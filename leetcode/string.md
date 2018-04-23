@@ -24,3 +24,9 @@
 
 [273-Integer to English Words](/leetcode/math/273-integer-to-english-words.md)
 
+[336-Palindrome Pairs](/leetcode/hash-table/336-palindrome-pairs.md)
+
+[340-Longest Substring with At Most K Distinct Characters](/leetcode/hash-table/340-longest-substring-with-at-most-k-distinct-characters.md)
+
+
+
