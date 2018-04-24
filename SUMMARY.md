@@ -222,6 +222,7 @@
     * [344-Reverse String](leetcode/string/344-reverse-string.md)
     * [345-Reverse Vowels of a String](leetcode/string/345-reverse-vowels-of-a-string.md)
     * [383-Ransom Note](leetcode/string/383-ransom-note.md)
+  * [Binary Search](leetcode/binary-search.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 

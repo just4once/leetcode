@@ -33,7 +33,7 @@ Explanation: The square root of 8 is 2.82842..., and since we want to return an 
    2. r1 = r - f\(r\) /f'\(r\)
    3. f\(r\) = r^2 - x
    4. f'\(r\) = 2r
-   5. r1 = r - \(r^2 - x\) / 2r = \(r - x/r\) /2
+   5. r1 = r - \(r^2 - x\) / 2r = \(r + x/r\) /2
    6. Time complexity ??
    7. Space complexity ???
 
