@@ -10,7 +10,7 @@
 
 ### Thought Process {#thought-process}
 
-1. AAAAAA
+1. asd
 
 ### Solution
 

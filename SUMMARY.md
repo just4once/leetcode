@@ -225,6 +225,7 @@
   * [Binary Search](leetcode/binary-search.md)
     * [153-Find Minimum in Rotated Sorted Array](leetcode/binary-search/153-find-minimum-in-rotated-sorted-array.md)
     * [154-Find Minimum in Rotated Sorted Array II](leetcode/binary-search/154-find-minimum-in-rotated-sorted-array-ii.md)
+    * [162-Find Peak Element](leetcode/binary-search/162-find-peak-element.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
