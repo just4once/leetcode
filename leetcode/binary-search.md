@@ -10,5 +10,9 @@
 
 [069-Sqrt\(x\)](/leetcode/069-sqrtx.md)
 
+[074-Search a 2D Matrix](/leetcode/array/074-search-a-2d-matrix.md)
+
+[081-Search in Rotated Sorted Array II](/leetcode/array/081-search-in-rotated-sorted-array-ii.md)
+
 
 

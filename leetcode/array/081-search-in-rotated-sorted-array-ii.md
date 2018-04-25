@@ -26,7 +26,7 @@ The array may contain duplicates.
 1. Similar to [033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md), we need two pointers to search, and we also divide the search into different cases
    1. The mid is the target, we can return immediately
    2. The left part is sorted, we then check whether the target is within the range of left and proceed to the correct side
-   3. The right part is sorted, and we perform similar step above
+   3. The right part is sorted, and we perform similar step as above
    4. Lastly, when left, middle and right are the same, we can really decide to search which part, we just increment the lo pointer
    5. Time complexity O\(n\) worst, O\(log n\) average
    6. Space complexity O\(1\)
