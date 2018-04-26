@@ -34,7 +34,15 @@ Explanation: Your function can return either index number 1 where the peak eleme
    2. If the element is all increasing then the last number has to be the peak
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
-2. asd
+2. Recursion - Binary Search
+   1. We search the array with binary search approach
+   2. To determine the side we go to, we need to check current exploring element with its next element \(because the mid formula is left-leaning\)
+   3. If the number is greater than 
+   4. Time complexity O\(log n\)
+   5. Space complexity O\(log n\) due to recursion
+3. Iteration
+   1. Time complexity O\(log n\)
+   2. Space complexity O\(1\)
 
 ### Solution
 
@@ -45,6 +53,35 @@ class Solution {
             if (nums[i] < nums[i-1]) return i -1;
         }
         return nums.length - 1;
+    }
+}
+```
+
+```java
+class Solution {
+    public int findPeakElement(int[] nums) {
+        return find(nums, 0, nums.length - 1);
+    }
+    
+    private int find(int[] nums, int i, int j) {
+        if (i == j) return i;
+        int m = i + (j - i) / 2;
+        if (nums[m] > nums[m + 1]) return find(nums, i, m);
+        else return find(nums, m + 1, j);
+    }
+}
+```
+
+```java
+class Solution {
+    public int findPeakElement(int[] nums) {
+        int i = 0, j = nums.length - 1;
+        while (i < j) {
+            int m = i + (j - i) / 2;
+            if (nums[m] > nums[m + 1]) j = m;
+            else i = m + 1;
+        }
+        return i;
     }
 }
 ```
