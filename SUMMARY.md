@@ -141,7 +141,7 @@
     * [060-Permutation Sequence](leetcode/math/060-permutation-sequence.md)
     * [065-Valid Number](leetcode/math/065-valid-number.md)
     * [067-Add Binary](leetcode/math/067-add-binary.md)
-    * [069-Sqrt\(x\)](leetcode/069-sqrtx.md)
+    * [069-Sqrt\(x\)](leetcode/math/069-sqrtx.md)
     * [168-Excel Sheet Column Title](leetcode/math/168-excel-sheet-column-title.md)
     * [171-Excel Sheet Column Number](leetcode/math/171-excel-sheet-column-number.md)
     * [223-Rectangle Area](leetcode/math/223-rectangle-area.md)
@@ -193,7 +193,7 @@
     * [005-Longest Palindromic Substring](leetcode/string/005-longest-palindromic-substring.md)
     * [006-ZigZag Conversion](leetcode/string/006-zigzag-conversion.md)
     * [010-Regular Expression Matching](leetcode/string/010-regular-expression-matching.md)
-    * [014-Longest Common Prefix](leetcode/014-longest-common-prefix.md)
+    * [014-Longest Common Prefix](leetcode/string/014-longest-common-prefix.md)
     * [017-Letter Combinations of a Phone Number](leetcode/string/017-letter-combinations-of-a-phone-number.md)
     * [020-Valid Parentheses](leetcode/string/020-valid-parentheses.md)
     * [022-Generate Parentheses](leetcode/string/022-generate-parentheses.md)
@@ -228,7 +228,6 @@
     * [162-Find Peak Element](leetcode/binary-search/162-find-peak-element.md)
   * Divide and Conquer
   * [Dynamic Programing](leetcode/dynamic-programing.md)
-  * [174-Dungeon Game](leetcode/174-dungeon-game.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
