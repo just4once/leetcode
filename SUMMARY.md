@@ -228,7 +228,7 @@
     * [162-Find Peak Element](leetcode/binary-search/162-find-peak-element.md)
   * Divide and Conquer
   * [Dynamic Programing](leetcode/dynamic-programing.md)
-    * 174-Dungeon Game
+    * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
