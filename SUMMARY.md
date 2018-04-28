@@ -226,6 +226,9 @@
     * [153-Find Minimum in Rotated Sorted Array](leetcode/binary-search/153-find-minimum-in-rotated-sorted-array.md)
     * [154-Find Minimum in Rotated Sorted Array II](leetcode/binary-search/154-find-minimum-in-rotated-sorted-array-ii.md)
     * [162-Find Peak Element](leetcode/binary-search/162-find-peak-element.md)
+  * Divide and Conquer
+  * [Dynamic Programing](leetcode/dynamic-programing.md)
+  * [174-Dungeon Game](leetcode/174-dungeon-game.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 
