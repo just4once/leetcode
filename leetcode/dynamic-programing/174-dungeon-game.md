@@ -29,6 +29,13 @@ For example, given the dungeon below, the initial health of the knight must be a
    3. The hp\[i\]\[j\] = min\(right, down\) and right and down hp is equal to hp\(right\) - dungeon\[i\]\[j\] or 1
    4. Time complexity O\(mn\)
    5. Space complexity O\(mn\)
+2. Top Down Memo
+   1. We can use top down approach as well
+   2. For out of boundary search, we return integer max value because we want the min hp requirement
+   3. Once we got the min of right and down, we need to either further increase the hp requirement or reduce the hp requirement
+   4. If the dungeon gives more hp than the requirement, we can reset the hp requirement to 1
+   5. Time complexity O\(mn\)
+   6. Space complexity O\(mn\)
 
 ### Solution
 
@@ -53,6 +60,28 @@ class Solution {
             }
         }
         return hp[0][0];
+    }
+}
+```
+
+```java
+class Solution {
+    public int calculateMinimumHP(int[][] dungeon) {
+        if (dungeon.length == 0 || dungeon[0].length == 0) return 1;
+        int m = dungeon.length, n = dungeon[0].length;
+        int[][] memo = new int[m][n];
+        memo[m - 1][n - 1] = 1 - Math.min(dungeon[m - 1][n - 1], 0);
+        return search(dungeon, 0, 0, memo);
+    }
+    
+    private int search(int[][] dungeon, int i, int j, int[][] memo) {
+        if (i >= dungeon.length || j >= dungeon[i].length) return Integer.MAX_VALUE;
+        if (memo[i][j] != 0) return memo[i][j];
+        int right = search(dungeon, i, j + 1, memo);
+        int down = search(dungeon, i + 1, j, memo);
+        int hp = Math.min(right, down);
+        memo[i][j] = hp > dungeon[i][j] ? hp - dungeon[i][j] : 1;
+        return memo[i][j];
     }
 }
 ```
