@@ -227,6 +227,8 @@
     * [154-Find Minimum in Rotated Sorted Array II](leetcode/binary-search/154-find-minimum-in-rotated-sorted-array-ii.md)
     * [162-Find Peak Element](leetcode/binary-search/162-find-peak-element.md)
     * [222-Count Complete Tree Nodes](leetcode/binary-search/222-count-complete-tree-nodes.md)
+    * [230-Kth Smallest Element in a BST](leetcode/binary-search/230-kth-smallest-element-in-a-bst.md)
+    * [240-Search a 2D Matrix II](leetcode/binary-search/240-search-a-2d-matrix-ii.md)
   * Divide and Conquer
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
