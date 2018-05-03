@@ -229,6 +229,7 @@
     * [222-Count Complete Tree Nodes](leetcode/binary-search/222-count-complete-tree-nodes.md)
     * [230-Kth Smallest Element in a BST](leetcode/binary-search/230-kth-smallest-element-in-a-bst.md)
     * [240-Search a 2D Matrix II](leetcode/binary-search/240-search-a-2d-matrix-ii.md)
+    * [270-Closest Binary Search Tree Value](leetcode/binary-search/270-closest-binary-search-tree-value.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
