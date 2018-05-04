@@ -53,6 +53,31 @@ class Solution {
 }
 ```
 
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int closestValue(TreeNode root, double target) {
+        return closest(root, target, root.val);
+    }
+    
+    private int closest(TreeNode root, double target, int current) {
+        if (root == null || current == target) return current;
+        if (Math.abs(root.val - target) < Math.abs(current - target)) current = root.val;
+        if (root.val < target) current = closest(root.right, target, current);
+        else if (root.val > target) current = closest(root.left, target, current);
+        return current;
+    }
+}
+```
+
 ### Additional {#additional}
 
 
