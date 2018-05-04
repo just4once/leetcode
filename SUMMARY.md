@@ -231,6 +231,7 @@
     * [240-Search a 2D Matrix II](leetcode/binary-search/240-search-a-2d-matrix-ii.md)
     * [270-Closest Binary Search Tree Value](leetcode/binary-search/270-closest-binary-search-tree-value.md)
     * [275-H-Index II](leetcode/binary-search/275-h-index-ii.md)
+    * [278-First Bad Version](leetcode/binary-search/278-first-bad-version.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
