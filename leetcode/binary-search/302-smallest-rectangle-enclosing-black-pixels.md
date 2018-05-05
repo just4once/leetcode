@@ -26,9 +26,14 @@ Return 6.
    4. Space complexity O\(1\)
 2. DFS
    1. By using recursion, we can travel to four directions and marked visited cell '0'
-   2. Time complexity O\(E\), where E is number of edges, in worst case O\(mn\)
-   3. Space complexity O\(V\), where V is number of vertices, in worst case O\(mn\)
-3. ASD
+   2. Time complexity O\(E\) = O\(B\), where E is number of edges, B is number of black pixels, in worst case O\(mn\)
+   3. Space complexity O\(V\) = O\(B\), where V is number of vertices, in worst case O\(mn\)
+3. Binary Search
+   1. To search the boundaries, we can actually use the binary search by looping through all the rows and columns for left and right, and top and bottom respectively
+   2. To find the left and right boundary, we need to limit the search to 0 to y, and y to n respectively
+   3. To find the top and bottom boundary, we need to limit the search to 0 to x, and x to m respectively
+   4. Time complexity O\(mlogn + nlogm\)
+   5. Space complexity O\(1\)
 
 ### Solution
 
@@ -63,7 +68,7 @@ class Solution {
         dfs(image, x, y);
         return (right - left + 1) * (bottom - top + 1);
     }
-    
+
     private void dfs(char[][] image, int i, int j) {
         if (i < 0 || i >= image.length || j < 0 || j >= image[0].length || image[i][j] == '0') return;
         top = Math.min(top, i);
