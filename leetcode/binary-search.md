@@ -16,5 +16,7 @@
 
 [209-Minimum Size Subarray Sum](/leetcode/two-pointers/209-minimum-size-subarray-sum.md)
 
+[287-Find the Duplicate Number](/leetcode/two-pointers/287-find-the-duplicate-number.md)
+
 
 

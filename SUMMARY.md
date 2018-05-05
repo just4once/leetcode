@@ -232,6 +232,8 @@
     * [270-Closest Binary Search Tree Value](leetcode/binary-search/270-closest-binary-search-tree-value.md)
     * [275-H-Index II](leetcode/binary-search/275-h-index-ii.md)
     * [278-First Bad Version](leetcode/binary-search/278-first-bad-version.md)
+    * [300-Longest Increasing Subsequence](leetcode/binary-search/300-longest-increasing-subsequence.md)
+    * [302-Smallest Rectangle Enclosing Black Pixels](leetcode/binary-search/302-smallest-rectangle-enclosing-black-pixels.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
