@@ -30,8 +30,8 @@ Return 6.
    3. Space complexity O\(V\) = O\(B\), where V is number of vertices, in worst case O\(mn\)
 3. Binary Search
    1. To search the boundaries, we can actually use the binary search by looping through all the rows and columns for left and right, and top and bottom respectively
-   2. To find the left and right boundary, we need to limit the search to 0 to y, and y to n respectively
-   3. To find the top and bottom boundary, we need to limit the search to 0 to x, and x to m respectively
+   2. To find the left and right boundary, we need to limit the search \[0, y\), and \[y + 1, n\) respectively
+   3. To find the top and bottom boundary, we need to limit the search \[0,x\), and \[x + 1, m\) respectively
    4. Time complexity O\(mlogn + nlogm\)
    5. Space complexity O\(1\)
 
