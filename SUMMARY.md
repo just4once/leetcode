@@ -234,6 +234,7 @@
     * [278-First Bad Version](leetcode/binary-search/278-first-bad-version.md)
     * [300-Longest Increasing Subsequence](leetcode/binary-search/300-longest-increasing-subsequence.md)
     * [302-Smallest Rectangle Enclosing Black Pixels](leetcode/binary-search/302-smallest-rectangle-enclosing-black-pixels.md)
+    * [349-Intersection of Two Arrays](leetcode/binary-search/349-intersection-of-two-arrays.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
