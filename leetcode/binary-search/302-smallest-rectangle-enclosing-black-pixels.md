@@ -84,6 +84,71 @@ class Solution {
 }
 ```
 
+```java
+class Solution {
+    private int top, bottom, left, right;
+    public int minArea(char[][] image, int x, int y) {
+        if (image.length == 0 || image[0].length == 0) return 0;
+        int m = image.length, n = image[0].length;
+        int left = searchColumns(image, 0, y, 0, m, true);
+        int right = searchColumns(image, y + 1, n, 0, m, false);
+        int top = searchRows(image, 0, x, left, right, true);
+        int bottom = searchRows(image, x + 1, m, left, right, false);
+        return (right - left) * (bottom - top);
+    }
+    
+    private int searchColumns(char[][] image, int i, int j, int top, int bottom, boolean goLower) {
+        while (i < j) {
+            int k = top, mid = (i + j) / 2;
+            while (k < bottom && image[k][mid] == '0') k++;
+            if (k < bottom == goLower) j = mid;
+            else i = mid + 1;
+        }
+        return i;
+    }
+    
+    private int searchRows(char[][] image, int i, int j, int left, int right, boolean goLower) {
+        while (i < j) {
+            int k = left, mid = (i + j) / 2;
+            while (k < right && image[mid][k] == '0') k++;
+            if (k < right == goLower) j = mid;
+            else i = mid + 1;
+        }
+        return i;
+    }
+}
+```
+
+```java
+class Solution {
+    private int top, bottom, left, right;
+    public int minArea(char[][] image, int x, int y) {
+        if (image.length == 0 || image[0].length == 0) return 0;
+        int m = image.length, n = image[0].length;
+        int left = search(image, 0, y, 0, m, true, true);
+        int right = search(image, y + 1, n, 0, m, true, false);
+        int top = search(image, 0, x, left, right, false, true);
+        int bottom = search(image, x + 1, m, left, right, false, false);
+        return (right - left) * (bottom - top);
+    }
+    
+    private int search(char[][] image, int i, int j, int low, int hi, boolean horizontal, boolean goLower) {
+        while (i < j) {
+            boolean found = false;
+            int mid = (i + j) / 2;
+            for (int k = low; k < hi && !found; k++) {
+                if ((horizontal ? image[k][mid] : image[mid][k]) == '1') {
+                    found = true;
+                }
+            }
+            if (found == goLower) j = mid;
+            else i = mid + 1;
+        }
+        return i;
+    }
+}
+```
+
 ### Additional {#additional}
 
 
