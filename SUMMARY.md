@@ -239,6 +239,7 @@
     * [354-Russian Doll Envelopes](leetcode/binary-search/354-russian-doll-envelopes.md)
     * [363-Max Sum of Rectangle No Larger Than K](leetcode/binary-search/363-max-sum-of-rectangle-no-larger-than-k.md)
     * [374-Guess Number Higher or Lower](leetcode/binary-search/374-guess-number-higher-or-lower.md)
+    * [378-Kth Smallest Element in a Sorted Matrix](leetcode/binary-search/378-kth-smallest-element-in-a-sorted-matrix.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
