@@ -18,5 +18,5 @@
 
 [287-Find the Duplicate Number](/leetcode/two-pointers/287-find-the-duplicate-number.md)
 
-
+[367-Valid Perfect Square](/leetcode/math/367-valid-perfect-square.md)
 
