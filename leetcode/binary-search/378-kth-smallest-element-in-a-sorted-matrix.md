@@ -31,9 +31,14 @@ return 13.
    2. We add the first row value into our heap
    3. As we poll the min element out, we can add its bottom element into our heap, which is next smallest element
    4. After looping for k - 1 time, the peek is our solution
-   5. Time complexity O\(n + klogk\)
+   5. Time complexity O\(n + klogn\)
    6. Space complexity O\(n\)
-3. asd
+3. Binary Search
+   1. Using the smallest element as lo pointer and largest element as hi pointer, we can progressively narrow down our search for mid
+   2. Mid is used as way to judge how many element are smaller or equal to it, and the count is used how we narrow our search for step i
+   3. When count is less than k, we need to increase our lo, otherwise we decrease hi
+   4. Time complexity O\(nlogm\), where m = max - min
+   5. Space complexity O\(1\)
 
 ### Solution
 
@@ -63,7 +68,7 @@ class Solution {
             this.col = col;
             this.val = val;
         }
-        
+
         @Override
         public int compareTo(Tuple that) {
             return this.val - that.val;
@@ -100,7 +105,7 @@ class Solution {
         }
         return lo;
     }
-    
+
     private int getCountLessOrEqual(int[][] matrix, int val, int n) {
         int i = 0, j = n - 1;
         int res = 0;
