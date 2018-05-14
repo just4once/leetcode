@@ -241,6 +241,7 @@
     * [374-Guess Number Higher or Lower](leetcode/binary-search/374-guess-number-higher-or-lower.md)
     * [378-Kth Smallest Element in a Sorted Matrix](leetcode/binary-search/378-kth-smallest-element-in-a-sorted-matrix.md)
     * [392-Is Subsequence](leetcode/binary-search/392-is-subsequence.md)
+    * [410-Split Array Largest Sum](leetcode/binary-search/410-split-array-largest-sum.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
