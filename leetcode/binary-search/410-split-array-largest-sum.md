@@ -29,11 +29,29 @@ where the largest sum among the two subarrays is only 18.
 ### Thought Process {#thought-process}
 
 1. Brute Force
-2. 
+   1. 
+2. sad
+
 ### Solution
 
 ```java
-
+class Solution {
+    private int res = Integer.MAX_VALUE;
+    public int splitArray(int[] nums, int m) {
+        dfs(nums, m, 0, 0, 0, 0);
+        return res;
+    }
+    
+    private void dfs(int[] nums, int m, int i, int j, int cur, int max) {
+        if (i == nums.length && j == m) {
+            res = Math.min(max, res);
+            return;
+        }
+        if (i == nums.length) return;
+        if (i > 0) dfs(nums, m, i + 1, j, cur + nums[i], Math.max(max, cur + nums[i]));
+        if (j < m) dfs(nums, m, i + 1, j + 1, nums[i], Math.max(max, nums[i]));
+    }
+}
 ```
 
 ### Additional {#additional}
