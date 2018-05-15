@@ -29,8 +29,13 @@ where the largest sum among the two subarrays is only 18.
 ### Thought Process {#thought-process}
 
 1. Brute Force
-   1. 
-2. sad
+   1. Cutting at every position, we have n - 1Cm - 1 possibilities
+   2. Time complexity O\(n^m\)
+   3. Space complexity O\(n\)
+2. asdasd
+3. asdsad
+
+
 
 ### Solution
 
@@ -41,7 +46,7 @@ class Solution {
         dfs(nums, m, 0, 0, 0, 0);
         return res;
     }
-    
+
     private void dfs(int[] nums, int m, int i, int j, int cur, int max) {
         if (i == nums.length && j == m) {
             res = Math.min(max, res);
@@ -50,6 +55,31 @@ class Solution {
         if (i == nums.length) return;
         if (i > 0) dfs(nums, m, i + 1, j, cur + nums[i], Math.max(max, cur + nums[i]));
         if (j < m) dfs(nums, m, i + 1, j + 1, nums[i], Math.max(max, nums[i]));
+    }
+}
+```
+
+```java
+class Solution {
+    public int splitArray(int[] nums, int m) {
+        int n = nums.length;
+        int[] sum = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            sum[i + 1] = nums[i] + sum[i];
+        }
+        int[][] dp = new int[n + 1][m + 1];
+        for (int i = 0; i <= n; i++) {
+            Arrays.fill(dp[i], Integer.MAX_VALUE);
+        }
+        dp[0][0] = 0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                for (int k = 0; k < i; k++) {
+                    dp[i][j] = Math.min(dp[i][j], Math.max(dp[k][j - 1], sum[i] - sum[k]));
+                }
+            }
+        }
+        return dp[n][m];
     }
 }
 ```
