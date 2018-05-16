@@ -32,10 +32,11 @@ where the largest sum among the two subarrays is only 18.
    1. Cutting at every position, we have n - 1Cm - 1 possibilities
    2. Time complexity O\(n^m\)
    3. Space complexity O\(n\)
-2. asdasd
+2. Dynamic Programing
+   1. Create an array dp, and dp\[i\]\[j\] indicates the minimum of max sum ending at ith element by splitting into j parts
+   2. As we loop through each number using i pointer, we need to determine each of best min max splitting into j parts
+   3. dp\[i\]\[j\] depends on dp\[k\]\[j - 1\], where k range from 0 to i - 1, and also on sum from k + 1th to ith numbers, where remaining numbers become a new part
 3. asdsad
-
-
 
 ### Solution
 
