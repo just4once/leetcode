@@ -46,12 +46,33 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
 
 ### Thought Process {#thought-process}
 
-1. asd
+1. Brute Force
+   1. Simply find the minimum index that has start greater than current end
+   2. As we loop we need to find the start that is smaller than previous found start
+   3. Time complexity O\(n^2\)
+   4. Space complexity O\(1\) extra, O\(n\) for storing result
+2. asd
 
 ### Solution
 
 ```java
-
+public class Solution {
+    public int[] findRightInterval(Interval[] intervals) {
+        int[] res = new int[intervals.length];
+        for (int i = 0; i < intervals.length; i++) {
+            int min = Integer.MAX_VALUE;
+            int minindex = -1;
+            for (int j = 0; j < intervals.length; j++) {
+                if (intervals[j].start >= intervals[i].end && intervals[j].start < min) {
+                    min = intervals[j].start;
+                    minindex = j;
+                }
+            }
+            res[i] = minindex;
+        }
+        return res;
+    }
+}
 ```
 
 ### Additional {#additional}
