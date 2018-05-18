@@ -51,7 +51,15 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
    2. As we loop we need to find the start that is smaller than previous found start
    3. Time complexity O\(n^2\)
    4. Space complexity O\(1\) extra, O\(n\) for storing result
-2. asd
+2. Sort and Binary Search
+   1. Save the position for each starts in map
+   2. Create a separate to store the starts and sort them
+   3. As we loop through the intervals array, we try to search the end in the starts array create in step ii
+   4. If the return index, j, is equal to length that means we could not find a start pointer bigger than the end
+   5. Otherwise, we need to get the index for starts\[j\] from our map and save it to out result array, res\[i\]
+   6. Time complexity O\(nlogn\)
+   7. Space complexity O\(n\)
+3. asdasd
 
 ### Solution
 
