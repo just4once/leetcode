@@ -63,7 +63,10 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
    1. Using treemap to store the entry, where entry's key is the interval's start and the value is the index, we can find each interval's end ceiling interval easily with built-in function
    2. Time complexity O\(nlogn\)
    3. Space complexity O\(n\)
-4. sad
+4. Sorted Both and Linear Scan
+   1. Time complexity O\(nlogn\)
+   2. Space complexity O\(n\)
+   3. 
 
 ### Solution
 
@@ -104,7 +107,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int binarySearch(int[] nums, int target, int i, int j) {
         j--;
         while (i <= j) {
