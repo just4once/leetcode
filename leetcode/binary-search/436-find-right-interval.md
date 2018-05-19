@@ -66,7 +66,6 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
 4. Sorted Both and Linear Scan
    1. Time complexity O\(nlogn\)
    2. Space complexity O\(n\)
-   3. 
 
 ### Solution
 
@@ -133,6 +132,31 @@ class Solution {
         for (int i = 0; i < n; i++) {
             Map.Entry<Integer, Integer> entry = treeMap.ceilingEntry(intervals[i].end);
             res[i] = entry == null? -1 : entry.getValue();
+        }
+        return res;
+    }
+}
+```
+
+```java
+class Solution {
+    public int[] findRightInterval(Interval[] intervals) {
+        int n = intervals.length;
+        Interval[] starts = Arrays.copyOf(intervals, n);
+        Interval[] ends = Arrays.copyOf(intervals, n);
+        HashMap<Interval, Integer> hash = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            hash.put(intervals[i], i);
+        }
+        Arrays.sort(starts, (a, b) -> a.start - b.start);
+        Arrays.sort(ends, (a, b) -> a.end - b.end);
+        int j = 0;
+        int[] res = new int[n];
+        for (int i = 0; i < n; i++) {
+            while (j < n && starts[j].start < ends[i].end) {
+                j++;
+            }
+            res[hash.get(ends[i])] = j == n ? -1 : hash.get(starts[j]);
         }
         return res;
     }
