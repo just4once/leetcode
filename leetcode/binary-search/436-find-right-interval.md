@@ -59,7 +59,11 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
    5. Otherwise, we need to get the index for starts\[j\] from our map and save it to out result array, res\[i\]
    6. Time complexity O\(nlogn\)
    7. Space complexity O\(n\)
-3. asdasd
+3. TreeMap
+   1. Using treemap to store the entry, where entry's key is the interval's start and the value is the index, we can find each interval's end ceiling interval easily with built-in function
+   2. Time complexity O\(nlogn\)
+   3. Space complexity O\(n\)
+4. sad
 
 ### Solution
 
@@ -77,6 +81,55 @@ public class Solution {
                 }
             }
             res[i] = minindex;
+        }
+        return res;
+    }
+}
+```
+
+```java
+class Solution {
+    public int[] findRightInterval(Interval[] intervals) {
+        int n = intervals.length;
+        int[] res = new int[n], starts = new int[n];
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(intervals[i].start, i);
+            starts[i] = intervals[i].start;
+        }
+        Arrays.sort(starts);
+        for (int i = 0; i < n; i++) {
+            int j = binarySearch(starts, intervals[i].end, 0, n);
+            res[i] = j == n ? -1 : map.get(starts[j]);
+        }
+        return res;
+    }
+    
+    private int binarySearch(int[] nums, int target, int i, int j) {
+        j--;
+        while (i <= j) {
+            int m = i + (j - i) / 2;
+            if (nums[m] == target) return m;
+            else if (nums[m] < target) i = m + 1;
+            else j = m - 1;
+        }
+        return i;
+    }
+}
+```
+
+```java
+class Solution {
+    public int[] findRightInterval(Interval[] intervals) {
+        TreeMap<Integer, Integer> treeMap = new TreeMap<>();
+        int n = intervals.length;
+        for (int i = 0; i < n; i++) {
+            treeMap.put(intervals[i].start, i);
+        }
+        int[] res = new int [n];
+        for (int i = 0; i < n; i++) {
+            Map.Entry<Integer, Integer> entry = treeMap.ceilingEntry(intervals[i].end);
+            res[i] = entry == null? -1 : entry.getValue();
         }
         return res;
     }
