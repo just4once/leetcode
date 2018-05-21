@@ -45,9 +45,18 @@ Because the 4th row is incomplete, we return 3.
    1. Since each level contains corresponding number of coins, we can use Gauss formula to find how many level we need
    2. Let's assume that the we need x level, we will have x\(x + 1\)/2 &lt;= n
    3. We declare lo = 1 and hi = n, and perform binary search until we have reach the end
-   4. Obviously if mid\(mid + 1\) is equal to 2n, we can return it
-   5. If mid\(mid + 1\) &lt; 2n, 
-3. asd
+   4. We have three cases
+      1. If mid\(mid + 1\) = 2n, we can return it
+      2. If mid\(mid + 1\) &lt; 2n, we should decrease the range by lo = mid + 1
+      3. If mid\(mid + 1\) &gt; 2n, we should decrease the range by hi = mid - 1
+      4. At the end, we can put case i and ii together, since at the end we want to return the lower one, which is the hi variable
+   5. Time complexity O\(log\(n\)\)
+   6. Space complexity O\(1\)
+3. Math
+   1. Solving the quadratic formula, we got $$x =(1(+-)Sqrt(1 + 8n)) /2$$
+   2. Because - will make the result negative, we should use plus sign
+   3. Time complexity O\(1\)
+   4. Space complexity O\(1\)
 
 ### Solution
 
@@ -75,6 +84,14 @@ class Solution {
             else hi = mid - 1;
         }
         return hi;
+    }
+}
+```
+
+```java
+class Solution {
+    public int arrangeCoins(int n) {
+        return (int) (Math.sqrt(n * 8L + 1) - 1 ) / 2;
     }
 }
 ```
