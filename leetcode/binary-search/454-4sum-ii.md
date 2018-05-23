@@ -27,6 +27,9 @@ The two tuples are:
 ### Thought Process {#thought-process}
 
 1. Binary Search
+   1. Storing sum permutations from A and B, and negative sum permutation from C and D, we can do left bound and right bound search to get number of natches
+   2. Time complexity O\(n^2logn\)
+   3. Space complexity O\(
 2. Hash Table
 
 ### Solution
