@@ -31,6 +31,11 @@ The two tuples are:
    2. Time complexity O\(n^2logn\)
    3. Space complexity O\(n^2\)
 2. Hash Table
+   1. Using map to store the sum from A and B, and separate map for C and D, we can find the pair in O\(1\) time
+   2. The key is sum and value is count
+   3. The number of pair can be calculated from count1 \* count2
+   4. Time complexity O\(n^2\)
+   5. Space complexity O\(n^2\)
 
 ### Solution
 
@@ -66,7 +71,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int binarySearch(int[] nums, int target, int i, int j) {
         while (i < j) {
             int m = i + (j - i) / 2;
@@ -74,6 +79,32 @@ class Solution {
             else j = m;
         }
         return i;
+    }
+}
+```
+
+```java
+class Solution {
+    public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
+        if (A.length == 0) return 0;
+        Map<Integer, Integer> part1 = merge(A, B), part2 = merge(C, D);
+        int res = 0;
+        for (Map.Entry<Integer, Integer> entry : part1.entrySet()) {
+            int count1 = entry.getValue();
+            int count2 = part2.getOrDefault(-entry.getKey(), 0);
+            res += count1 * count2;
+        }
+        return res;
+    }
+    
+    private Map<Integer, Integer> merge(int[] A, int[] B) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int a : A) {
+            for (int b : B) {
+                map.put(a + b, map.getOrDefault(a + b, 0) + 1);
+            }
+        }
+        return map;
     }
 }
 ```
