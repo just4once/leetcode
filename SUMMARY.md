@@ -245,6 +245,7 @@
     * [436-Find Right Interval](leetcode/binary-search/436-find-right-interval.md)
     * [441-Arranging Coins](leetcode/binary-search/441-arranging-coins.md)
     * [454-4Sum II](leetcode/binary-search/454-4sum-ii.md)
+    * [475-Heaters](leetcode/binary-search/475-heaters.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
