@@ -246,9 +246,12 @@
     * [441-Arranging Coins](leetcode/binary-search/441-arranging-coins.md)
     * [454-4Sum II](leetcode/binary-search/454-4sum-ii.md)
     * [475-Heaters](leetcode/binary-search/475-heaters.md)
+    * [483-Smallest Good Base](leetcode/binary-search/483-smallest-good-base.md)
   * [Divide and Conquer](leetcode/divide-and-conquer.md)
   * [Dynamic Programing](leetcode/dynamic-programing.md)
     * [174-Dungeon Game](leetcode/dynamic-programing/174-dungeon-game.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
+* [Other](other.md)
+  * [Summation Identities](other/summation-identities.md)
 
