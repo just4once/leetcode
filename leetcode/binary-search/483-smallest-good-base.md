@@ -4,7 +4,7 @@
 
 For an integer n, we call k&gt;=2 a good base of n, if all digits of n base k are 1.
 
-Now given a string representing n, you should return the smallest good base of n in string format. 
+Now given a string representing n, you should return the smallest good base of n in string format.
 
 **Example 1:**
 
@@ -38,8 +38,8 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
 ### Thought Process {#thought-process}
 
 1. Binary Search
-   1. Since good base should range from 2 to n, we can perform binary search until have a string that is all 1
-   2. 
+   1. Define base to be k, and number of digits to be m
+   2. n = 
 
 ### Solution
 
