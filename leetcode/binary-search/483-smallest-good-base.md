@@ -51,7 +51,28 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
 ### Solution
 
 ```java
+import java.math.*;
 
+class Solution {
+    public String smallestGoodBase(String n) {
+        long nL = Long.valueOf(n);
+        int mHi = (int) (Math.log(nL + 1) / Math.log(2));
+        long res = nL - 1;
+        for (int m = mHi; m >= 2; m--) {
+            System.out.println("current m = " + m);
+            long kLo = 2, kHi = nL - 1;
+            while (kLo <= kHi) {
+                long kMi = kLo + (kHi - kLo) / 2;
+                BigInteger left = BigInteger.valueOf(nL).multiply(BigInteger.valueOf(kMi - 1)), right = BigInteger.valueOf(kMi).pow(m).subtract(BigInteger.valueOf(1));
+                int cmp = left.compareTo(right);
+                if (cmp == 0) return String.valueOf(kMi);
+                else if (cmp < 0) kHi = kMi - 1;
+                else kLo = kMi + 1;
+            }
+        }
+        return String.valueOf(res);
+    }
+}
 ```
 
 ### Additional {#additional}
