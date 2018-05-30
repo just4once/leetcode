@@ -42,9 +42,11 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
    2. n = 1 + k^1 + k^2 + ... + k^\(m-1\)
    3. Using geometric sequence summation, we know n = \(1 - k^m\)/\(1 - k\)
    4. To find the bound for m and k, we need to use the above formula and other observation
-   5. There is one trivial solution k = n - 1, then m = 2
+   5. There is one trivial solution when k = n - 1, then m = 2
    6. When k = 2, which leads to n = 2^m - 1, then m = log\(n + 1\)
-   7. Since we at looking for the minimum k, we 
+   7. Since we at looking for the minimum k, we start with maximum m
+   8. Time complexity O\(mlogn\)
+   9. Space complexity O\(1\)
 
 ### Solution
 
