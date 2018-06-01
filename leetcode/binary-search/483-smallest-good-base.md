@@ -45,7 +45,7 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
    5. There is one trivial solution when k = n - 1, then m = 2
    6. When k = 2, which leads to n = 2^m - 1, then m = log\(n + 1\)
    7. Since we at looking for the minimum k, we start with maximum m
-   8. Time complexity O\(mlogn\)
+   8. Time complexity O\(\(logn\)^2\)
    9. Space complexity O\(1\)
 
 ### Solution
