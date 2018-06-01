@@ -47,6 +47,16 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
    7. Since we at looking for the minimum k, we start with maximum m
    8. Time complexity O\(\(logn\)^2\)
    9. Space complexity O\(1\)
+2. Binary Search with tighter bound
+   1. Let's redefine the m to be number of digits - 1 to make the number look pretty
+   2. n = 1 + k^1 + k^2 + ... + k^m = \(k^\(m+1\) -1\)/\(k - 1\)
+   3. We know that n &gt; k^m, so n^\(1/m\) &gt; k
+   4. We can also use binomial theorem to show that n &lt; \(k+1\)^m, so n^\(1/m\) &lt; k + 1
+   5. Basically, k &lt; n^\(1/m\) &lt; k + 1, so basically n^\(1/m\) is really close to our potential k
+   6. Moreover, rounding down the n^\(1/m\) will be the only candidate to be consider, because rounding up will make it too big \(for example, k = 2, and n^\(1/m\) = 2.5\)
+   7. Also for formula on ii, we can see that when k = 2, m is the max where m = log\(n + 1\)/log2 - 1
+   8. Time complexity O\(logn\)
+   9. Space complexity O\(1\)
 
 ### Solution
 
@@ -59,7 +69,6 @@ class Solution {
         int mHi = (int) (Math.log(nL + 1) / Math.log(2));
         long res = nL - 1;
         for (int m = mHi; m >= 2; m--) {
-            System.out.println("current m = " + m);
             long kLo = 2, kHi = nL - 1;
             while (kLo <= kHi) {
                 long kMi = kLo + (kHi - kLo) / 2;
@@ -69,6 +78,26 @@ class Solution {
                 else if (cmp < 0) kHi = kMi - 1;
                 else kLo = kMi + 1;
             }
+        }
+        return String.valueOf(res);
+    }
+}
+```
+
+```java
+import java.math.*;
+
+class Solution {
+    public String smallestGoodBase(String n) {
+        long nL = Long.valueOf(n);
+        BigInteger nB = BigInteger.valueOf(nL);
+        int mHi = (int) (Math.log(nL + 1) / Math.log(2)) - 1;
+        long res = nL - 1;
+        for (int m = mHi; m > 1; m--) {
+            long k = (long) Math.pow(nL, 1.0 / m);
+            BigInteger right = (BigInteger.valueOf(k).pow(m + 1).subtract(BigInteger.ONE)).divide(BigInteger.valueOf(k).subtract(BigInteger.ONE));
+            // System.out.println("k = " + k + ", m = " + m + ", right = " + right);
+            if (nB.compareTo(right) == 0) return String.valueOf(k);
         }
         return String.valueOf(res);
     }
