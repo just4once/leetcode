@@ -54,9 +54,10 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
    4. We can also use binomial theorem to show that n &lt; \(k+1\)^m, so n^\(1/m\) &lt; k + 1
    5. Basically, k &lt; n^\(1/m\) &lt; k + 1, so basically n^\(1/m\) is really close to our potential k
    6. Moreover, rounding down the n^\(1/m\) will be the only candidate to be consider, because rounding up will make it too big \(for example, k = 2, and n^\(1/m\) = 2.5\)
-   7. Also for formula on ii, we can see that when k = 2, m is the max where m = log\(n + 1\)/log2 - 1
-   8. Time complexity O\(logn\)
-   9. Space complexity O\(1\)
+   7. Also for formula on ii, we can see that when k = 2, m is the max where m = log\(n + 1\)/log2 - 1 \(again round down is preferred here, otherwise we will have number greater than n\)
+   8. Another thing we can notice on formula ii is that the numerator is divisible by denominator, so we can just apply the formula on the right without worrying getting fraction
+   9. Time complexity O\(logn\)
+   10. Space complexity O\(1\)
 
 ### Solution
 
@@ -100,6 +101,29 @@ class Solution {
             if (nB.compareTo(right) == 0) return String.valueOf(k);
         }
         return String.valueOf(res);
+    }
+}
+```
+
+```java
+class Solution {
+    public String smallestGoodBase(String n) {
+        long nL = Long.valueOf(n);
+        int mHi = (int) (Math.log(nL + 1) / Math.log(2)) - 1;
+        long res = nL - 1;
+        for (int m = mHi; m > 1; m--) {
+            long k = (long) Math.pow(nL, 1.0 / m);
+            if (geometric(k, m) == nL) return String.valueOf(k); 
+        }
+        return String.valueOf(res);
+    }
+    
+    private long geometric(long base, int m) {
+        long res = 0;
+        for (int i = 0; i <= m; i++) {
+            res = 1 + res * base;
+        }
+        return res;
     }
 }
 ```
