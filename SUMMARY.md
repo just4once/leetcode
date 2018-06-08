@@ -250,6 +250,7 @@
     * [454-4Sum II](leetcode/binary-search/454-4sum-ii.md)
     * [475-Heaters](leetcode/binary-search/475-heaters.md)
     * [483-Smallest Good Base](leetcode/binary-search/483-smallest-good-base.md)
+    * [644-Maximum Average Subarray II](leetcode/binary-search/644-maximum-average-subarray-ii.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
