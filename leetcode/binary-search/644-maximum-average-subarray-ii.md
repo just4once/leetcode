@@ -15,13 +15,12 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:**
+**Note:  
+**
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
 2. Elements of the given array will be in range \[-10,000, 10,000\].
 3. The answer with the calculation error less than 10-5 will be accepted.
-
-
 
 ### Thought Process {#thought-process}
 
@@ -36,8 +35,11 @@ Thus return 12.75.
    2. We then check our nums array to see if there is a continuous subarray with at least length k that has average greater than mid
    3. If that is the case, we know our average is at least mid, so we set our min to mid
    4. Otherwise, we set our max to mid
-   5. Time complexity O\(nlog\(max-min\)\)
-   6. Space complexity O\(1\)
+   5. We build a valid function to check if the nums array has the subarray
+      1. We first accumulate the first k items difference with target, if the sum is greater than 0, we can return true
+      2. Otherwise, we need to see if the remaining elements' difference can form a sum greater than min sum \(k elements before or min prev sum encountered so far\)
+   6. Time complexity O\(nlog\(max-min\)\)
+   7. Space complexity O\(1\)
 
 ### Solution
 
@@ -60,6 +62,45 @@ class Solution {
             }
         }
         return maxAvg;
+    }
+}
+```
+
+```java
+class Solution {
+    public double findMaxAverage(int[] nums, int k) {
+        int n = nums.length;
+        int nmin = Integer.MAX_VALUE, nmax = Integer.MIN_VALUE;
+        for (int num : nums) {
+            nmin = Math.min(nmin, num);
+            nmax = Math.max(nmax, num);
+        }
+        double min = nmin, max = nmax;
+        double epsilon = 0.00001, error = 1;
+        while (max - min > epsilon) {
+            double mid = min + (max - min) / 2;
+            if (valid(nums, mid, k)) min = mid;
+            else max = mid;
+        }
+        return min;
+    }
+    
+    private boolean valid(int[] nums, double target, int k) {
+        int i = 0;
+        double sum = 0;
+        while (i < k) {
+            sum += nums[i++] - target;
+        }
+        if (sum >= 0) return true;
+        double prev = 0, min = 0;
+        while (i < nums.length) {
+            sum += nums[i] - target;
+            prev += nums[i - k] - target;
+            i++;
+            min = Math.min(min, prev);
+            if (sum >= min) return true;
+        }
+        return false;
     }
 }
 ```
