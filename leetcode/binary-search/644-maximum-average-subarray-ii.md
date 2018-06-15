@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:  
+**Note:    
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -40,6 +40,7 @@ Thus return 12.75.
       2. Otherwise, we need to see if the remaining elements' difference can form a sum greater than min sum \(k elements before or min prev sum encountered so far\)
    6. Time complexity O\(nlog\(max-min\)\)
    7. Space complexity O\(1\)
+3. Convex Hull Window
 
 ### Solution
 
@@ -84,7 +85,7 @@ class Solution {
         }
         return min;
     }
-    
+
     private boolean valid(int[] nums, double target, int k) {
         int i = 0;
         double sum = 0;
