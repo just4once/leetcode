@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:    
+**Note:      
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -41,6 +41,9 @@ Thus return 12.75.
    6. Time complexity O\(nlog\(max-min\)\)
    7. Space complexity O\(1\)
 3. Convex Hull Window
+   1. We create presum array to help calculate average in O\(1\) time
+   2. For every sequence ending with index j, we try to find an index i where the average before i is less than average before j
+   3. We investigate i from \[0, j - k
 
 ### Solution
 
