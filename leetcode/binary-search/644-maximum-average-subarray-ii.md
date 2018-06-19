@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:      
+**Note:        
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -42,8 +42,10 @@ Thus return 12.75.
    7. Space complexity O\(1\)
 3. Convex Hull Window
    1. We create presum array to help calculate average in O\(1\) time
-   2. For every sequence ending with index j, we try to find an index i where the average before i is less than average before j
-   3. We investigate i from \[0, j - k
+   2. For every sequence ending with index j, we try to find an index i where the average before i is less than average before j, simply minimum density and maximum density segments
+   3. Then the max average is ending at j will simply be \(presum\[j\] - presum\[firstId\]\) / \(j - firstId\), where firstId is hull\[0\]
+   4. To preserve this invariant, we need to remove continuously hull\[0\] until average from hull\[0\] to hull\[1\] - 1 is bigger than hull\[0\] to j \(in that case, they will contribute to a bigger average\)
+   5. 
 
 ### Solution
 
