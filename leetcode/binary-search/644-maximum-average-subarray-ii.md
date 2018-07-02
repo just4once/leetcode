@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:                      
+**Note:                        
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -50,6 +50,7 @@ Thus return 12.75.
       1. Using while loop to make sure the last point added follows the condition iii above, and remove it if violate the condition \(not removing will not make the left segment to be the minimum density one\)
       2. Adding j - k + 1 to our hull list as a potential i
       3. Using while loop to discard hull\[0\] if average from hull\[0\] to hull\[1\] - 1 is smaller than hull\[0\] to j
+      4. For example, \[11,12,2,3,10,13,11\]
    7. Time complexity O\(n\)
    8. Space complexity O\(n\)
 
