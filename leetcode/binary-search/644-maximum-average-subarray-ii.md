@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:                        
+**Note:                          
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -43,7 +43,7 @@ Thus return 12.75.
 3. Convex Hull Window
    1. We create presum array to help calculate average in O\(1\) time
    2. For every sequence ending with index j, we try to find an index i where the average before i is less than average ending at j
-   3. We maintain the condition that hull\[i\] to hull\[i + 1\] - 1 is the minimum density segment, so we can discard them as we need
+   3. We maintain the condition that hull\[i\] to hull\[i + 1\] - 1 is the minimum density segment. Alternatively speaking, hull\[i + 1\] is the largest index. This way we can discard the low density segment when calculating our max density
    4. Then the remaining part, from hull\[i\] or hull\[0\] to j is our maximum density segment
    5. At the end, the max average ending at j is simply \(presum\[j\] - presum\[firstId\]\) / \(j - firstId\), where firstId is hull\[i\] or hull\[0\]
    6. To preserve this invariant, we need three steps to achieve this as we loop through each index
