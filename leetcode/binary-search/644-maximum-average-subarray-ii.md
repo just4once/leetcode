@@ -15,7 +15,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:                          
+**Note:                            
 **
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
@@ -44,15 +44,14 @@ Thus return 12.75.
    1. We create presum array to help calculate average in O\(1\) time
    2. For every sequence ending with index j, we try to find an index i where the average before i is less than average ending at j
    3. We maintain the condition that hull\[i\] to hull\[i + 1\] - 1 is the minimum density segment. Alternatively speaking, hull\[i + 1\] is the largest index. This way we can discard the low density segment when calculating our max density
-   4. Then the remaining part, from hull\[i\] or hull\[0\] to j is our maximum density segment
-   5. At the end, the max average ending at j is simply \(presum\[j\] - presum\[firstId\]\) / \(j - firstId\), where firstId is hull\[i\] or hull\[0\]
-   6. To preserve this invariant, we need three steps to achieve this as we loop through each index
+   4. At the end, the max average ending at j is simply \(presum\[j\] - presum\[firstId\]\) / \(j - firstId\), where firstId is hull\[i\] or hull\[0\]
+   5. To preserve this invariant, we need three steps to achieve this as we loop through each index
       1. Using while loop to make sure the last point added follows the condition iii above, and remove it if violate the condition \(not removing will not make the left segment to be the minimum density one\)
       2. Adding j - k + 1 to our hull list as a potential i
       3. Using while loop to discard hull\[0\] if average from hull\[0\] to hull\[1\] - 1 is smaller than hull\[0\] to j
       4. For example, \[11,12,2,3,10,13,11\]
-   7. Time complexity O\(n\)
-   8. Space complexity O\(n\)
+   6. Time complexity O\(n\)
+   7. Space complexity O\(n\)
 
 ### Solution
 
