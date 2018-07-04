@@ -251,6 +251,7 @@
     * [475-Heaters](leetcode/binary-search/475-heaters.md)
     * [483-Smallest Good Base](leetcode/binary-search/483-smallest-good-base.md)
     * [644-Maximum Average Subarray II](leetcode/binary-search/644-maximum-average-subarray-ii.md)
+    * [658-Find K Closest Elements](leetcode/binary-search/658-find-k-closest-elements.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
