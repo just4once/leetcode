@@ -18,7 +18,8 @@ Input: [1,2,3,4,5], k=4, x=-1
 Output: [1,2,3,4]
 ```
 
-**Note:**
+**Note:  
+**
 
 1. The value k is positive and will always be smaller than the length of the sorted array.
 2. Length of the given array is positive and will not exceed 104
@@ -35,8 +36,36 @@ Output: [1,2,3,4]
 ### Solution
 
 ```java
-
+class Solution {
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        int id = binarySearch(arr, x);
+        int l = id, r = id, n = arr.length;
+        while (--k > 0) {
+            if (l == 0) r++;
+            else if (r == n - 1) l--;
+            else if (Math.abs(arr[l - 1] - x) > Math.abs(arr[r + 1] - x)) r++;
+            else l--;
+        }
+        List<Integer> res = new ArrayList<>(k);
+        while (l <= r) res.add(arr[l++]);
+        return res;
+    }
+    
+    private int binarySearch(int[] arr, int x) {
+        int n = arr.length;
+        int i = Arrays.binarySearch(arr, x);
+        if (i < 0) {
+            i = - (i + 1);
+            int leftDiff = i > 0 ? x - arr[i - 1] : Integer.MAX_VALUE;
+            int rightDiff = i < n ? arr[i] - x : Integer.MAX_VALUE;
+            i = leftDiff < rightDiff ? i - 1 : i;
+        }
+        return i;
+    }
+}
 ```
+
+
 
 ### Additional {#additional}
 
