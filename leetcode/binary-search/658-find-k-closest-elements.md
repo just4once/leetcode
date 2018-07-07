@@ -18,7 +18,7 @@ Input: [1,2,3,4,5], k=4, x=-1
 Output: [1,2,3,4]
 ```
 
-**Note:  
+**Note:    
 **
 
 1. The value k is positive and will always be smaller than the length of the sorted array.
@@ -31,7 +31,8 @@ Output: [1,2,3,4]
    1. Locate the closest element using modified binary search
    2. Scan left and right to find the window of length k, where it contains the closest elements to x
    3. Time complexity O\(nlogn\)
-2. asd
+2. Modified Binary Search
+   1. 
 
 ### Solution
 
@@ -50,7 +51,7 @@ class Solution {
         while (l <= r) res.add(arr[l++]);
         return res;
     }
-    
+
     private int binarySearch(int[] arr, int x) {
         int n = arr.length;
         int i = Arrays.binarySearch(arr, x);
@@ -64,8 +65,6 @@ class Solution {
     }
 }
 ```
-
-
 
 ### Additional {#additional}
 
