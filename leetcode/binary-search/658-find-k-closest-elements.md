@@ -18,7 +18,7 @@ Input: [1,2,3,4,5], k=4, x=-1
 Output: [1,2,3,4]
 ```
 
-**Note:    
+**Note:      
 **
 
 1. The value k is positive and will always be smaller than the length of the sorted array.
@@ -32,7 +32,8 @@ Output: [1,2,3,4]
    2. Scan left and right to find the window of length k, where it contains the closest elements to x
    3. Time complexity O\(nlogn\)
 2. Modified Binary Search
-   1. 
+   1. To find the range of k sequence, we know the sequence has to start ranging from 0 to n - k, where n is length of the array
+   2. We use two pointers, lo and hi to narrow our search 
 
 ### Solution
 
