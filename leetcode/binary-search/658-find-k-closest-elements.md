@@ -18,7 +18,7 @@ Input: [1,2,3,4,5], k=4, x=-1
 Output: [1,2,3,4]
 ```
 
-**Note:      
+**Note:        
 **
 
 1. The value k is positive and will always be smaller than the length of the sorted array.
@@ -31,9 +31,13 @@ Output: [1,2,3,4]
    1. Locate the closest element using modified binary search
    2. Scan left and right to find the window of length k, where it contains the closest elements to x
    3. Time complexity O\(nlogn\)
+   4. Space complexity O\(1\)
 2. Modified Binary Search
    1. To find the range of k sequence, we know the sequence has to start ranging from 0 to n - k, where n is length of the array
-   2. We use two pointers, lo and hi to narrow our search 
+   2. We use two pointers, lo and hi to narrow our search for the starting point
+   3. Then we compare x - arr\[mid\] with arr\[mid + k\] - x, if first difference is greater than the second's,  mid cannot be our starting point, so we move lo to mid + 1
+   4. Time complexity O\(logn\)
+   5. Space complexity O\(1\)
 
 ### Solution
 
@@ -63,6 +67,22 @@ class Solution {
             i = leftDiff < rightDiff ? i - 1 : i;
         }
         return i;
+    }
+}
+```
+
+```java
+class Solution {
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        int lo = 0, hi = arr.length - k;
+        while (lo < hi) {
+            int mi = lo + (hi - lo) / 2;
+            if (x - arr[mi] > arr[mi + k] - x) lo = mi + 1;
+            else hi = mi;
+        }
+        List<Integer> res = new ArrayList<>(k);
+        while (k-- > 0) res.add(arr[lo++]);
+        return res;
     }
 }
 ```
