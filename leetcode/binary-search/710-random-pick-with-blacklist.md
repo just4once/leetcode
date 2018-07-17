@@ -4,7 +4,8 @@ Given a blacklist B containing unique integers from \[0, N\), write a function t
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:**
+**Note:  
+**
 
 1. 1 &lt;= N &lt;= 1000000000
 2. 0 &lt;= B.length &lt; min\(100000, N\)
@@ -46,7 +47,8 @@ Input:
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:**
+**Explanation of Input Syntax:  
+**
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
 
@@ -56,11 +58,13 @@ The input is two lists: the subroutines called and their arguments. Solution's c
    1. Use set to save the blacklist and ignore the generated number r if it is inside the set
    2. Time complexity O\(B + x\), where x is times of getting blacklisted item, and the probability = B/N. The x gets worse as B gets close to N
    3. Space complexity O\(B\)
-2. Set and List\(TLE\)
+2. Set and List\(MLE\)
    1. Add all the number to the set and then remove the number form blacklist
    2. Time complexity O\(N\)
    3. Space complexity O\(N - B\)
-3. asd
+3. Binary Search
+   1. Sort the blacklist array and then perform binary search from i to j, where i = 0 and j = 
+4. ad
 
 ### Solution
 
