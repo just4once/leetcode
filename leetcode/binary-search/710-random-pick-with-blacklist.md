@@ -4,7 +4,7 @@ Given a blacklist B containing unique integers from \[0, N\), write a function t
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:  
+**Note:    
 **
 
 1. 1 &lt;= N &lt;= 1000000000
@@ -47,7 +47,7 @@ Input:
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:  
+**Explanation of Input Syntax:    
 **
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
