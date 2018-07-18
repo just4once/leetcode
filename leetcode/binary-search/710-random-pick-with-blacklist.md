@@ -4,7 +4,7 @@ Given a blacklist B containing unique integers from \[0, N\), write a function t
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:      
+**Note:        
 **
 
 1. 1 &lt;= N &lt;= 1000000000
@@ -47,7 +47,7 @@ Input:
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:      
+**Explanation of Input Syntax:        
 **
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
@@ -73,7 +73,8 @@ The input is two lists: the subroutines called and their arguments. Solution's c
       5. Else, B\[mid\] is our candidate, so lo = mid
       6. Step ii is important in avoiding infinite loop. When c &lt;= k, left leaning mid formula will set lo to itself
       7. At the end, our search will narrow to one blacklist number. If it's smaller than W\[k\], then W\[k\] = k + lo + 1. Else there is no blacklist number smaller than W\[k\] and res is simply k.
-   4. Time complexity O\(
+   4. Time complexity O\(BlogB\)
+   5. Space complexity O\(1\)
 4. ad
 
 ### Solution
@@ -87,7 +88,7 @@ class Solution {
         set = new HashSet<>();
         for (int num : blacklist) set.add(num);
     }
-    
+
     public int pick() {
         int r = (int) (Math.random() * N);
         while (set.contains(r)) {
@@ -110,7 +111,7 @@ class Solution {
         for (int b : blacklist) set.remove(b);
         for (int w : set) list.add(w);
     }
-    
+
     public int pick() {
         return list.get(random.nextInt(list.size()));
     }
