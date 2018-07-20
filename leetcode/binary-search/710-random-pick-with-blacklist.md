@@ -4,7 +4,7 @@ Given a blacklist B containing unique integers from \[0, N\), write a function t
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:        
+**Note:          
 **
 
 1. 1 &lt;= N &lt;= 1000000000
@@ -47,7 +47,7 @@ Input:
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:        
+**Explanation of Input Syntax:          
 **
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
@@ -119,7 +119,28 @@ class Solution {
 ```
 
 ```java
-
+class Solution {
+    private Random random;
+    private int N;
+    private int[] black;
+    public Solution(int N, int[] blacklist) {
+        this.random = new Random();
+        this.N = N;
+        this.black = blacklist;
+        Arrays.sort(black);
+    }
+    
+    public int pick() {
+        int k = random.nextInt(N - black.length);
+        int lo = 0, hi = black.length - 1;
+        while (lo < hi) {
+            int mi = lo + (hi - lo) / 2 + 1;
+            if (black[mi]  - mi > k) hi = mi - 1;
+            else lo = mi;
+        }
+        return lo == hi && black[lo] - lo <= k ? hi + k + 1 : k;
+    }
+}
 ```
 
 ### Additional {#additional}
