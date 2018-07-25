@@ -4,7 +4,7 @@ Given a blacklist B containing unique integers from \[0, N\), write a function t
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:          
+**Note:            
 **
 
 1. 1 &lt;= N &lt;= 1000000000
@@ -47,7 +47,7 @@ Input:
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:          
+**Explanation of Input Syntax:            
 **
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
@@ -75,7 +75,14 @@ The input is two lists: the subroutines called and their arguments. Solution's c
       7. At the end, our search will narrow to one blacklist number. If it's smaller than W\[k\], then W\[k\] = k + lo + 1. Else there is no blacklist number smaller than W\[k\] and res is simply k.
    4. Time complexity O\(BlogB\)
    5. Space complexity O\(1\)
-4. ad
+4. HashMap Remapping
+   1. Split these N numbers into two parts from 0 to N - M - 1 and from N - M  to N - 1
+   2. Now, we remap the blacklisted numbers on the left part to the white ones
+      1. Find all the white numbers on the right
+      2. Loop through the blacklist and remap the number that are less than N - M to the numbers above
+   3. We can simply generate an random number and pick from the map, and return the default k if it's not present in the map
+   4. Time complexity O\(B\)
+   5. Space complexity O\(B\)
 
 ### Solution
 
@@ -129,7 +136,7 @@ class Solution {
         this.black = blacklist;
         Arrays.sort(black);
     }
-    
+
     public int pick() {
         int k = random.nextInt(N - black.length);
         int lo = 0, hi = black.length - 1;
@@ -139,6 +146,33 @@ class Solution {
             else lo = mi;
         }
         return lo == hi && black[lo] - lo <= k ? hi + k + 1 : k;
+    }
+}
+```
+
+```java
+class Solution {
+    private Random random;
+    private Map<Integer, Integer> map;
+    private int L;
+    public Solution(int N, int[] blacklist) {
+        this.random = new Random();
+        this.map = new HashMap<>();
+        this.L = N - blacklist.length;
+        Set<Integer> set = new HashSet<>();
+        for (int i = L; i < N; i++) set.add(i);
+        for (int b : blacklist) set.remove(b);
+        Iterator<Integer> it = set.iterator();
+        for (int b : blacklist) {
+            if (b < L) {
+                map.put(b, it.next());
+            }
+        }
+    }
+    
+    public int pick() {
+        int k = random.nextInt(L);
+        return map.getOrDefault(k, k);
     }
 }
 ```
