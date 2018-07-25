@@ -254,6 +254,7 @@
     * [658-Find K Closest Elements](leetcode/binary-search/658-find-k-closest-elements.md)
     * [668-Kth Smallest Number in Multiplication Table](leetcode/binary-search/668-kth-smallest-number-in-multiplication-table.md)
     * [702-Search in a Sorted Array of Unknown Size](leetcode/binary-search/702-search-in-a-sorted-array-of-unknown-size.md)
+    * [704-Binary Search](leetcode/binary-search/704-binary-search.md)
     * [710-Random Pick with Blacklist](leetcode/binary-search/710-random-pick-with-blacklist.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
