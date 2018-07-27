@@ -256,6 +256,7 @@
     * [702-Search in a Sorted Array of Unknown Size](leetcode/binary-search/702-search-in-a-sorted-array-of-unknown-size.md)
     * [704-Binary Search](leetcode/binary-search/704-binary-search.md)
     * [710-Random Pick with Blacklist](leetcode/binary-search/710-random-pick-with-blacklist.md)
+    * [718-Maximum Length of Repeated Subarray](leetcode/binary-search/718-maximum-length-of-repeated-subarray.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
