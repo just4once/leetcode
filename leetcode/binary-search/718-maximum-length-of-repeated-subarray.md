@@ -15,7 +15,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:  
+**Note:    
 **
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
@@ -34,7 +34,8 @@ The repeated subarray with maximum length is [3, 2, 1].
    2. Using the above fact, we can use binary search to narrow our search
    3. We create a separate function checkLength\(x, A, B\) to check if there is length x subarray common to both arrays
    4. Our binary search needs to maintain the invariant that checkLength\(hi, A, B\) always return false, otherwise we will stuck in infinite loop
-   5. Time complexity 
+   5. Time complexity O\(mnl\(logl\)\), where m is length of A, n is length of B, l is min of m and n
+   6. Space complexity O\(m^2\)
 3. ads
 
 ### Solution
@@ -70,7 +71,7 @@ class Solution {
         }
         return lo - 1;
     }
-    
+
     private boolean checkLength(int x, int[] A, int[] B) {
         if (x == 0) return true;
         else if (x > Math.min(A.length, B.length)) return false;
