@@ -15,7 +15,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:    
+**Note:      
 **
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
@@ -33,10 +33,18 @@ The repeated subarray with maximum length is [3, 2, 1].
    1. Having length k subarray appear in both array indicates having shorter length of subarray as well
    2. Using the above fact, we can use binary search to narrow our search
    3. We create a separate function checkLength\(x, A, B\) to check if there is length x subarray common to both arrays
-   4. Our binary search needs to maintain the invariant that checkLength\(hi, A, B\) always return false, otherwise we will stuck in infinite loop
-   5. Time complexity O\(mnl\(logl\)\), where m is length of A, n is length of B, l is min of m and n
-   6. Space complexity O\(m^2\)
-3. ads
+   4. If x is checked, we need to continue search the right part, so lo = mi
+   5. Else hi = mi
+   6. However, we need special formula to take care of infinite loop to make mi calculation right leaning
+   7. Time complexity O\(mnl\(logl\)\), where m is length of A, n is length of B, l is min of m and n
+   8. Space complexity O\(m^2\)
+3. Dynamic Programing
+   1. Use similar idea as typical longest subsequence of string, we use dynamic programing to record the best length so far
+   2. If the integers are the same for ith A and jth B element, we set dp\[i\]\[j\] = dp\[i - 1\]\[j - 1\] + 1
+   3. Else we set dp\[i\]\[j\] = Math.max\(dp\[i - 1\]\[j\], dp\[i\]\[j - 1\], dp\[i - 1\]\[j - 1\]\)
+   4. Time complexity O\(mn\)
+   5. Space complexity O\(mn\)
+4. adasd
 
 ### Solution
 
@@ -60,18 +68,20 @@ class Solution {
 }
 ```
 
+Naive Binary Search
+
 ```java
 class Solution {
     public int findLength(int[] A, int[] B) {
-        int lo = 0, hi = Math.min(A.length, B.length) + 1;
+        int lo = 0, hi = Math.min(A.length, B.length);
         while (lo < hi) {
-            int mi = lo + (hi - lo) / 2;
-            if (checkLength(mi, A, B)) lo = mi + 1;
-            else hi = mi;
+            int mi = lo + (hi - lo + 1) / 2;
+            if (checkLength(mi, A, B)) lo = mi;
+            else hi = mi - 1;
         }
-        return lo - 1;
+        return lo;
     }
-
+    
     private boolean checkLength(int x, int[] A, int[] B) {
         if (x == 0) return true;
         else if (x > Math.min(A.length, B.length)) return false;
@@ -87,6 +97,27 @@ class Solution {
             }
             return false;
         }
+    }
+}
+```
+
+DP
+
+```java
+class Solution {
+    public int findLength(int[] A, int[] B) {
+        int m = A.length, n = B.length;
+        int[][] dp = new int[m + 1][n + 1];
+        int ans = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (A[i] == B[j]) {
+                    dp[i + 1][j + 1] = dp[i][j] + 1;
+                    ans = Math.max(ans, dp[i + 1][j + 1]);
+                }
+            }
+        }
+        return ans;
     }
 }
 ```
