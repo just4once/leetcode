@@ -15,7 +15,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:      
+**Note:        
 **
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
@@ -81,7 +81,7 @@ class Solution {
         }
         return lo;
     }
-    
+
     private boolean checkLength(int x, int[] A, int[] B) {
         if (x == 0) return true;
         else if (x > Math.min(A.length, B.length)) return false;

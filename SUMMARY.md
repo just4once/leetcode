@@ -261,4 +261,5 @@
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
   * [Summation Identities](other/summation-identities.md)
+  * [Rabin-Karp-Rolling-Hash](other/rabin-karp-rolling-hash.md)
 
