@@ -15,7 +15,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:          
+**Note:              
 **
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
@@ -47,8 +47,10 @@ The repeated subarray with maximum length is [3, 2, 1].
 4. Binary Search with Rolling Hash
    1. Instead of using string to check whether the two subarrays are equal, we use hash
    2. To efficiently calculate the hash, we use rolling hash function, more specifically Rabin-Karp algorithm
-   3. The formula is
-   4. Using a map to store the A's hash and its indices, then we can loop through the hash from B and check corresponding subarray is the same
+   3. The formula is h\(i\) = Sum\(a\[i\]p^i\), where i range from  0 to L - 1, calculating the next hash is h\(i+1\) = \(h\(i\) - a\[0\]\)/p + a\[i+1\]p^\(L - 1\)
+   4. Using a map to store the A's hash and its indices, then we can loop through the hash from B
+   5. Instead of relying in the hash, we double check whether these two subarrays match even if they have same hash
+   6. 
 
 ### Solution
 
@@ -127,8 +129,6 @@ class Solution {
 ```
 
 Binary Search with Rolling Hash
-
-
 
 ### Additional {#additional}
 
