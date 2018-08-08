@@ -262,4 +262,5 @@
 * [Other](other.md)
   * [Summation Identities](other/summation-identities.md)
   * [Rabin-Karp-Rolling-Hash](other/rabin-karp-rolling-hash.md)
+  * [Euclidean Algorithm](other/euclidean-algorithm.md)
 
