@@ -15,7 +15,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:                    
+**Note:                      
 **
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
@@ -130,6 +130,73 @@ class Solution {
 ```
 
 Binary Search with Rolling Hash
+
+```java
+import java.math.BigInteger;
+
+class Solution {
+    private int p = 113;
+    private int M = 1000000007;
+    private int pInv = BigInteger.valueOf(p).modInverse(BigInteger.valueOf(M)).intValue();
+    
+    public int findLength(int[] A, int[] B) {
+        int lo = 0, hi = Math.min(A.length, B.length);
+        while (lo < hi) {
+            int mi = lo + (hi - lo + 1) / 2;
+            if (checkLength(mi, A, B)) lo = mi;
+            else hi = mi - 1;
+        }
+        return lo;
+    }
+    
+    private boolean checkLength(int x, int[] A, int[] B) {
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        int k = 0;
+        for (int h : getHashes2(A, x)) {
+            map.computeIfAbsent(h, z -> new ArrayList<>()).add(k++);
+        }
+        int j = 0;
+        for (int h : getHashes2(B, x)) {
+            for (int i : map.getOrDefault(h, new ArrayList<>())) {
+                if (Arrays.equals(Arrays.copyOfRange(A, i, i + x), Arrays.copyOfRange(B, j, j + x))) return true;
+            }
+            j++;
+        }
+        return false;
+    }
+    
+    private int[] getHashes(int[] a, int L) {
+        int[] res = new int[a.length - L + 1];
+        long h = 0, power = 1;
+        for (int i = 0; i < L - 1; i++) {
+            h = (h + a[i] * power) % M;
+            power = (power * p) % M;
+        }
+        for (int i = L - 1; i < a.length; i++) {
+            h = (h + a[i] * power) % M;
+            res[i - L + 1] = (int) h;
+            h = (h - a[i - L + 1]) * pInv % M;
+        }
+        return res;
+    }
+    
+    private int[] getHashes2(int[] a, int L) {
+        int[] res = new int[a.length - L + 1];
+        long h = 0, power = 1;
+        for (int i = 0; i < L - 1; i++) {
+            h = (h * p % M + a[i]) % M;
+            power = (power * p) % M;
+        }
+        for (int i = L - 1; i < a.length; i++) {
+            h = (h * p % M + a[i]) % M;
+            res[i - L + 1] = (int) h;
+            h = (h - a[i - L + 1] * power) % M;
+            if (h < 0) h += M;
+        }
+        return res;
+    }
+}
+```
 
 ### Additional {#additional}
 
