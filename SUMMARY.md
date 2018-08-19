@@ -251,6 +251,7 @@
     * [475-Heaters](leetcode/binary-search/475-heaters.md)
     * [483-Smallest Good Base](leetcode/binary-search/483-smallest-good-base.md)
     * [497-Random Point in Non-overlapping Rectangles](leetcode/binary-search/497-random-point-in-non-overlapping-rectangles.md)
+    * [528-Random Pick with Weight](leetcode/binary-search/528-random-pick-with-weight.md)
     * [644-Maximum Average Subarray II](leetcode/binary-search/644-maximum-average-subarray-ii.md)
     * [658-Find K Closest Elements](leetcode/binary-search/658-find-k-closest-elements.md)
     * [668-Kth Smallest Number in Multiplication Table](leetcode/binary-search/668-kth-smallest-number-in-multiplication-table.md)
