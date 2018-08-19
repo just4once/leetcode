@@ -4,7 +4,7 @@
 
 Given an array w of positive integers, where w\[i\] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight.
 
-**Note:  
+**Note:    
 **
 
 1. 1 &lt;= w.length &lt;= 10000
@@ -29,7 +29,7 @@ Input:
 Output: [null,0,1,1,1,0]
 ```
 
-**Explanation of Input Syntax:  
+**Explanation of Input Syntax:    
 **
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.
@@ -43,7 +43,10 @@ The input is two lists: the subroutines called and their arguments. Solution's c
    4. Time complexity O\(n\)
    5. Space complexity O\(n\)
 2. TreeMap
-   1. 
+   1. We can leverage the treemap built-in treemap to do similar thing as above
+   2. Save the accumulated sum and its index, we can retrieve the index latter
+   3. Time complexity O\(n\)
+   4. Space complexity O\(n\)
 3. asd
 
 ### Solution
@@ -67,6 +70,35 @@ class Solution {
         int i = Arrays.binarySearch(presum, r);
         if (i < 0) i = -(i + 1);
         return i;
+    }
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(w);
+ * int param_1 = obj.pickIndex();
+ */
+```
+
+```java
+class Solution {
+    private TreeMap<Integer, Integer> map;
+    private Random rand;
+    private int total;
+
+    public Solution(int[] w) {
+        map = new TreeMap<>();
+        total = 0;
+        rand = new Random();
+        for (int i = 0; i < w.length; i++) {
+            total += w[i];
+            map.put(total, i);
+        }
+    }
+    
+    public int pickIndex() {
+        int k = map.higherKey(rand.nextInt(total));
+        return map.get(k);
     }
 }
 
