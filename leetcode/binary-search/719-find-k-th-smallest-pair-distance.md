@@ -19,7 +19,8 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:**
+**Note:  
+**
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
 2. 0 &lt;= nums\[i\] &lt; 1000000.
@@ -38,7 +39,9 @@ Then the 1st smallest distance pair is (1,1), and its distance is 0.
    3. After looping for k times, the top node in the heap will contain the pair with kth distance
    4. Time complexity O\(nlogn + kLogn\)
    5. Space complexity O\(n\)
-3. asd
+3. Binary Search
+   1. Since all numbers are non-negative, the kth distance must be in between \[0, max - min\]
+   2. We perform binary search on this range until find a distance that has at least k pairs 
 
 ### Solution
 
@@ -68,7 +71,7 @@ class Solution {
             this.j = j;
         }
     }
-    
+
     public int smallestDistancePair(int[] nums, int k) {
         Arrays.sort(nums);
         PriorityQueue<Node> minHeap = new PriorityQueue<>((a, b) -> (nums[a.j] - nums[a.i]) - (nums[b.j] - nums[b.i]));
