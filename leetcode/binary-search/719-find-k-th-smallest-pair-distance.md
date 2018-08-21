@@ -19,7 +19,7 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:  
+**Note:    
 **
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
@@ -40,8 +40,10 @@ Then the 1st smallest distance pair is (1,1), and its distance is 0.
    4. Time complexity O\(nlogn + kLogn\)
    5. Space complexity O\(n\)
 3. Binary Search
-   1. Since all numbers are non-negative, the kth distance must be in between \[0, max - min\]
-   2. We perform binary search on this range until find a distance that has at least k pairs 
+   1. Since all numbers are non-negative, the kth distance must be in between \[0, max - min\], lo and hi respectively
+   2. We perform binary search on this range until lo and hi merge, and we narrow our search using a separate function count\(mi\), where count\(mi\) return numbers of distances smaller than or equal to mi
+   3. If count\(mi\) is smaller than k, we have to set lo = mi + 1
+   4. Else hi = mi
 
 ### Solution
 
