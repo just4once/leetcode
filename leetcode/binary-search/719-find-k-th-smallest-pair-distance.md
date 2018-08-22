@@ -19,7 +19,7 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:    
+**Note:      
 **
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
@@ -41,9 +41,11 @@ Then the 1st smallest distance pair is (1,1), and its distance is 0.
    5. Space complexity O\(n\)
 3. Binary Search
    1. Since all numbers are non-negative, the kth distance must be in between \[0, max - min\], lo and hi respectively
-   2. We perform binary search on this range until lo and hi merge, and we narrow our search using a separate function count\(mi\), where count\(mi\) return numbers of distances smaller than or equal to mi
+   2. We perform binary search on this range until lo and hi merge, and we narrow our search using a separate function count\(nums, mi\), where count\(nums, mi\) return numbers of distances &lt;= mi
    3. If count\(mi\) is smaller than k, we have to set lo = mi + 1
    4. Else hi = mi
+   5. The count\(nums, mi\) can be efficiently implemented using two pointers \(sliding window\) method
+   6. Time complexity O\(nlogn + n^2logw\), where w = max - min
 
 ### Solution
 
@@ -86,6 +88,33 @@ class Solution {
             if (cur.j + 1 < nums.length) minHeap.offer(new Node(cur.i, cur.j + 1));
         }
         return nums[cur.j] - nums[cur.i];
+    }
+}
+```
+
+```java
+class Solution {
+    public int smallestDistancePair(int[] nums, int k) {
+        Arrays.sort(nums);
+        int lo = 0, hi = nums[nums.length - 1] - nums[0];
+        while (lo != hi) {
+            int mi = lo + (hi - lo) / 2;
+            if (count(nums, mi) < k) lo = mi + 1;
+            else hi = mi;
+        }
+        return lo;
+    }
+    
+    private int count(int[] nums, int d) {
+        int right = 1;
+        int count = 0;
+        while (right < nums.length) {
+            int left = 0;
+            while (nums[right] - nums[left] > d) left++;
+            count += right - left;
+            right++;
+        }
+        return count;
     }
 }
 ```
