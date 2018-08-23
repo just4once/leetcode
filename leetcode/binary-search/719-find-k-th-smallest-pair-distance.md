@@ -19,7 +19,7 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:      
+**Note:        
 **
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
@@ -46,6 +46,7 @@ Then the 1st smallest distance pair is (1,1), and its distance is 0.
    4. Else hi = mi
    5. The count\(nums, mi\) can be efficiently implemented using two pointers \(sliding window\) method
    6. Time complexity O\(nlogn + n^2logw\), where w = max - min
+   7. Space complexity O\(1\)
 
 ### Solution
 
@@ -104,7 +105,7 @@ class Solution {
         }
         return lo;
     }
-    
+
     private int count(int[] nums, int d) {
         int right = 1;
         int count = 0;

@@ -260,6 +260,7 @@
     * [710-Random Pick with Blacklist](leetcode/binary-search/710-random-pick-with-blacklist.md)
     * [718-Maximum Length of Repeated Subarray](leetcode/binary-search/718-maximum-length-of-repeated-subarray.md)
     * [719-Find K-th Smallest Pair Distance](leetcode/binary-search/719-find-k-th-smallest-pair-distance.md)
+    * [744-Find Smallest Letter Greater Than Target](leetcode/binary-search/744-find-smallest-letter-greater-than-target.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
