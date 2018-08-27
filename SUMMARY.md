@@ -261,6 +261,7 @@
     * [718-Maximum Length of Repeated Subarray](leetcode/binary-search/718-maximum-length-of-repeated-subarray.md)
     * [719-Find K-th Smallest Pair Distance](leetcode/binary-search/719-find-k-th-smallest-pair-distance.md)
     * [744-Find Smallest Letter Greater Than Target](leetcode/binary-search/744-find-smallest-letter-greater-than-target.md)
+    * [774-Minimize Max Distance to Gas Station](leetcode/binary-search/774-minimize-max-distance-to-gas-station.md)
 * [Template](template.md)
   * [LeetCode](template/leetcode.md)
 * [Other](other.md)
