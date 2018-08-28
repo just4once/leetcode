@@ -32,7 +32,14 @@ Output: 0.500000
    4. Then the answer will be on top of the heap
    5. Time complexity O\(Klogn\)
    6. Space complexity O\(n\)
-3. ASD
+3. Binary Search
+   1. Using the boundaries of stations, the possible width will be in between 0 and 1e8
+   2. Perform binary search on the width within these boundaries, we will narrow down our search until these boundaries differ less than our desired delta
+   3. Now the conditions to narrow our search to left or right depends on a separate function possible\(mi, stations, K\), where it check if we can use less than or equal to K stations to achieve the mi distance
+   4. If possible return true, we set hi = mi to find better distance
+   5. Else we set lo = mi
+   6. Time complexity O\(nlogW\), where w = 1e8/1e-6 = 1e14
+   7. Space complexity O\(1\)
 
 ### Solution
 
