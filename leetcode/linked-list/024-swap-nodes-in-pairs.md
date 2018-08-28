@@ -1,4 +1,6 @@
-### Question {#question}
+# 024-swap-nodes-in-pairs
+
+## Question {#question}
 
 [https://leetcode.com/problems/swap-nodes-in-pairs/description/](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
 
@@ -6,13 +8,13 @@ Given a linked list, swap every two adjacent nodes and return its head.
 
 **Example:**
 
-```
+```text
 Given 1->2->3->4, you should return the list as 2->1->4->3.
 ```
 
 Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Iterative
    1. Make sure we have next two nodes available to swap the position
@@ -22,7 +24,7 @@ Your algorithm should use only constant space. You may not modify the values in 
    1. Time complexity O\(n\)
    2. Space complexity O\(n\) for recursion stack
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -54,7 +56,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

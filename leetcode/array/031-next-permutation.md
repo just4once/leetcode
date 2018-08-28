@@ -1,4 +1,6 @@
-### Question {#question}
+# 031-next-permutation
+
+## Question {#question}
 
 [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 
@@ -10,13 +12,13 @@ The replacement must be in-place, do not allocate extra memory.
 
 **Example:**
 
-```
+```text
 1,2,3 → 1,3,2
 3,2,1 → 1,2,3
 1,1,5 → 1,5,1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Since we want the next greater number, we better scan from the back toward the front
 2. When we find an element that is smaller than its right element\(s\) we know this location needs to be updated with a greater element, let's called this index i
@@ -26,7 +28,7 @@ The replacement must be in-place, do not allocate extra memory.
 6. Time complexity O\(n\)
 7. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

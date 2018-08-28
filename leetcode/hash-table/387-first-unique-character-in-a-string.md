@@ -1,4 +1,6 @@
-### Question {#question}
+# 387-first-unique-character-in-a-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/first-unique-character-in-a-string/description/](https://leetcode.com/problems/first-unique-character-in-a-string/description/)
 
@@ -6,7 +8,7 @@ Given a string, find the first non-repeating character in it and return it's ind
 
 **Example:**
 
-```
+```text
 s = "leetcode"
 return 0.
 
@@ -14,7 +16,7 @@ s = "loveleetcode",
 return 2.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Map
    1. Store the count for each character
@@ -26,7 +28,7 @@ return 2.
    2. Time complexity O\(1\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -59,7 +61,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

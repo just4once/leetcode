@@ -1,4 +1,6 @@
-### Question {#question}
+# 138-copy-list-with-random-pointer
+
+## Question {#question}
 
 [https://leetcode.com/problems/copy-list-with-random-pointer/description/](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
 
@@ -8,11 +10,11 @@ Return a deep copy of the list.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. We simply construct the listnode by recursion
@@ -29,7 +31,7 @@ Return a deep copy of the list.
    4. Time complexity O\(n\)
    5. Space complexity O\(n\), O\(1\) extra
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -111,7 +113,5 @@ public class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

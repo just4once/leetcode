@@ -1,4 +1,6 @@
-### Question {#question}
+# 410-split-array-largest-sum
+
+## Question {#question}
 
 [https://leetcode.com/problems/split-array-largest-sum/description/](https://leetcode.com/problems/split-array-largest-sum/description/)
 
@@ -12,7 +14,7 @@ Ifnis the length of array, assume the following constraints are satisfied:
 
 **Example:**
 
-```
+```text
 Input:
 nums = [7,2,5,10,8]
 m = 2
@@ -26,7 +28,7 @@ The best way is to split it into [7,2,5] and [10,8],
 where the largest sum among the two subarrays is only 18.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Cutting at every position, we have n - 1Cm - 1 possibilities
@@ -47,7 +49,7 @@ where the largest sum among the two subarrays is only 18.
    5. Time complexity O\(nlog\(s\)\) where n is number of elements and s is sum of array
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -109,7 +111,7 @@ class Solution {
         }
         return (int) right;
     }
-    
+
     private boolean validGroup(int[] nums, long target, int m) {
         int count = 1;
         long sum = 0;
@@ -126,7 +128,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

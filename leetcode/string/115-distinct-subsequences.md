@@ -1,4 +1,6 @@
-### Question {#question}
+# 115-distinct-subsequences
+
+## Question {#question}
 
 [https://leetcode.com/problems/distinct-subsequences/description/](https://leetcode.com/problems/distinct-subsequences/description/)
 
@@ -8,14 +10,14 @@ A subsequence of a string is a new string which is formed from the original stri
 
 **Example:**
 
-```
+```text
 Here is an example:
 S = "rabbbit", T = "rabbit"
 
 Return 3.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic programing
    1. Create an array of dp\[m + 1\]\[n + 1\], where m is the length of T and s is length of S
@@ -28,7 +30,7 @@ Return 3.
    8. Space complexity O\(mn\)
 2. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -66,7 +68,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

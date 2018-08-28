@@ -1,11 +1,13 @@
-### Question {#question}
+# 528-random-pick-with-weight
+
+## Question {#question}
 
 [https://leetcode.com/problems/random-pick-with-weight/description/](https://leetcode.com/problems/random-pick-with-weight/description/)
 
 Given an array w of positive integers, where w\[i\] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight.
 
-**Note:      
-**
+**Note:**    
+
 
 1. 1 &lt;= w.length &lt;= 10000
 2. 1 &lt;= w\[i\] &lt;= 10^5
@@ -13,7 +15,7 @@ Given an array w of positive integers, where w\[i\] describes the weight of inde
 
 **Example 1:**
 
-```
+```text
 Input: 
 ["Solution","pickIndex"]
 [[[1]],[]]
@@ -22,19 +24,19 @@ Output: [null,0]
 
 **Example 2:**
 
-```
+```text
 Input: 
 ["Solution","pickIndex","pickIndex","pickIndex","pickIndex","pickIndex"]
 [[[1,3]],[],[],[],[],[]]
 Output: [null,0,1,1,1,0]
 ```
 
-**Explanation of Input Syntax:      
-**
+**Explanation of Input Syntax:**    
+
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Since every integer is weighted, we need to get the total sum before we pick a point
@@ -49,7 +51,7 @@ The input is two lists: the subroutines called and their arguments. Solution's c
    4. Space complexity O\(n\)
 3. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -109,7 +111,5 @@ class Solution {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

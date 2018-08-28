@@ -1,4 +1,6 @@
-### Question {#question}
+# 357-count-numbers-with-unique-digits
+
+## Question {#question}
 
 [https://leetcode.com/problems/count-numbers-with-unique-digits/description/](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
 
@@ -6,13 +8,13 @@ Given a non-negative integer n, count all numbers with unique digits, x, where 0
 
 **Example:**
 
-```
+```text
 Given n = 2, return 91. 
 (The answer should be the total numbers in the range of 0 ≤ x < 100, 
 excluding [11,22,33,44,55,66,77,88,99])
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
    1. Start from n = 1, we have 10 choices
@@ -21,7 +23,7 @@ excluding [11,22,33,44,55,66,77,88,99])
    4. Time complexity O\(n\) or O\(10\) at most
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -38,7 +40,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

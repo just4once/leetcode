@@ -1,4 +1,6 @@
-### Question {#question}
+# 143-reorder-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/reorder-list/description/](https://leetcode.com/problems/reorder-list/description/)
 
@@ -9,18 +11,18 @@ You must do this in-place without altering the nodes' values.
 
 **Example:**
 
-```
+```text
 Given {1,2,3,4}, reorder it to {1,4,2,3}.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Reverse and Link
    1. Reverse the second half of linked list and then relink
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +46,7 @@ class Solution {
             left = nLeft;
         }
     }
-    
+
     private ListNode reverse(ListNode head) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 009-palindrome-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/palindrome-number/description/](https://leetcode.com/problems/palindrome-number/description/)
 
@@ -6,11 +8,11 @@ Determine whether an integer is a palindrome. Do this without extra space.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Revert Half
    1. Create the reverse of right half of the number
@@ -18,7 +20,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
    3. Time complexity O\(log n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -34,7 +36,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

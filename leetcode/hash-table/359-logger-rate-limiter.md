@@ -1,4 +1,6 @@
-### Question {#question}
+# 359-logger-rate-limiter
+
+## Question {#question}
 
 [https://leetcode.com/problems/logger-rate-limiter/description/](https://leetcode.com/problems/logger-rate-limiter/description/)
 
@@ -10,7 +12,7 @@ It is possible that several messages arrive roughly at the same time.
 
 **Example:**
 
-```
+```text
 Logger logger = new Logger();
 
 // logging string "foo" at timestamp 1
@@ -32,7 +34,7 @@ logger.shouldPrintMessage(10,"foo"); returns false;
 logger.shouldPrintMessage(11,"foo"); returns true;
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Map
    1. Typical map for storing message and its time stamp
@@ -40,7 +42,7 @@ logger.shouldPrintMessage(11,"foo"); returns true;
    3. Space complexity O\(n\)
    4. We can also record the next valid time
 
-### Solution
+## Solution
 
 ```java
 class Logger {
@@ -50,7 +52,7 @@ class Logger {
     public Logger() {
         map = new HashMap<>();
     }
-    
+
     /** Returns true if the message should be printed in the given timestamp, otherwise returns false.
         If this method returns false, the message will not be printed.
         The timestamp is in seconds granularity. */
@@ -77,7 +79,7 @@ class Logger {
     public Logger() {
         next = new HashMap<>();
     }
-    
+
     public boolean shouldPrintMessage(int timestamp, String message) {
         if (timestamp < next.getOrDefault(message, 0)) return false;
         next.put(message, timestamp + 10);
@@ -86,7 +88,5 @@ class Logger {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

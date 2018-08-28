@@ -1,4 +1,6 @@
-### Question {#question}
+# 447-number-of-boomerangs
+
+## Question {#question}
 
 [https://leetcode.com/problems/number-of-boomerangs/description/](https://leetcode.com/problems/number-of-boomerangs/description/)
 
@@ -8,7 +10,7 @@ Find the number of boomerangs. You may assume that n will be at most 500 and coo
 
 **Example:**
 
-```
+```text
 Input:
 [[0,0],[1,0],[2,0]]
 
@@ -19,7 +21,7 @@ Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Use map to record the count of point that are equidistance to current point
@@ -27,7 +29,7 @@ The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
    3. Time complexity O\(n^2\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

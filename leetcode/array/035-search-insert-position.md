@@ -1,4 +1,6 @@
-### Question {#question}
+# 035-search-insert-position
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-insert-position/description/](https://leetcode.com/problems/search-insert-position/description/)
 
@@ -8,23 +10,23 @@ You may assume no duplicates in the array.
 
 **Example 1:**
 
-```
+```text
 Input: [1,3,5,6], 5
 Output: 2
 ```
 
 **Example 2:**
 
-```
+```text
 Input: [1,3,5,6], 2
 Output: 1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Basically this is regular binary search
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -42,7 +44,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

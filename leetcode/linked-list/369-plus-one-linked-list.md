@@ -1,4 +1,6 @@
-### Question {#question}
+# 369-plus-one-linked-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/plus-one-linked-list/description/](https://leetcode.com/problems/plus-one-linked-list/description/)
 
@@ -10,7 +12,7 @@ The digits are stored such that the most significant digit is at the head of the
 
 **Example:**
 
-```
+```text
 Input:
 1->2->3
 
@@ -18,7 +20,7 @@ Output:
 1->2->4
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. To List and Back
    1. Time complexity O\(n\)
@@ -28,7 +30,7 @@ Output:
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

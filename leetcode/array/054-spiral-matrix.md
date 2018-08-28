@@ -1,4 +1,6 @@
-### Question {#question}
+# 054-spiral-matrix
+
+## Question {#question}
 
 [https://leetcode.com/problems/spiral-matrix/description/](https://leetcode.com/problems/spiral-matrix/description/)
 
@@ -8,7 +10,7 @@ Given a matrix of m x n elements \(m rows, n columns\), return all elements of t
 
 Given the following matrix:
 
-```
+```text
 [
  [ 1, 2, 3 ],
  [ 4, 5, 6 ],
@@ -18,14 +20,14 @@ Given the following matrix:
 
 You should return`[1,2,3,6,9,8,7,4,5]`.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Collect in the order top, right, bottom, left
 2. We go from outer layer inward
 3. Time complexity O\(n\)
 4. Space complexity O\(n\), O\(1\) extra space
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -54,7 +56,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

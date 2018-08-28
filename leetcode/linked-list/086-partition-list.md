@@ -1,4 +1,6 @@
-### Question {#question}
+# 086-partition-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/partition-list/description/](https://leetcode.com/problems/partition-list/description/)
 
@@ -6,12 +8,12 @@ Given a linked list and a value x, partition it such that all nodes less than x 
 
 **Example:**
 
-```
+```text
 Given 1->4->3->2->5->2 and x = 3,
 return 1->2->2->4->3->5.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Save the vale into different pointers
@@ -19,7 +21,7 @@ return 1->2->2->4->3->5.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -43,7 +45,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

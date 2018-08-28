@@ -1,4 +1,6 @@
-### Question {#question}
+# 487-max-consecutive-ones-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/max-consecutive-ones-ii/description/](https://leetcode.com/problems/max-consecutive-ones-ii/description/)
 
@@ -6,7 +8,7 @@ Given a binary array, find the maximum number of consecutive 1s in this array if
 
 **Example:**
 
-```
+```text
 Input: [1,0,1,1,0]
 Output: 4
 
@@ -14,7 +16,7 @@ Explanation: Flip the first zero will get the the maximum number of consecutive 
 After flipping, the maximum number of consecutive 1s is 4.
 ```
 
-**Note:**
+**Note:** 
 
 The input array will only contain 0 and 1.
 
@@ -26,7 +28,7 @@ What if the input numbers come in one by one as an **infinite stream**?
 
 In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. We use one pointer to move though the elements. and another for the last zero
@@ -39,7 +41,7 @@ In other words, you can't store all numbers coming from the stream as it's too l
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -79,7 +81,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

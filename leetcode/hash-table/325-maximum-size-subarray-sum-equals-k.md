@@ -1,4 +1,6 @@
-### Question {#question}
+# 325-maximum-size-subarray-sum-equals-k
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/)
 
@@ -9,7 +11,7 @@ The sum of the entirenumsarray is guaranteed to fit within the 32-bit signed int
 
 **Example:**
 
-```
+```text
 Given nums = [1, -1, 5, -2, 3], k = 3,
 return 4. (because the subarray [1, -1, 5, -2] sums to 3 and is the longest)
 
@@ -18,7 +20,7 @@ Given nums = [-2, -1, 2, 1], k = 1,
 return 2. (because the subarray [-1, 2] sums to 1 and is the longest)
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Time complexity O\(n^2\)
@@ -30,7 +32,7 @@ return 2. (because the subarray [-1, 2] sums to 1 and is the longest)
    4. Time complexity O\(n\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -67,7 +69,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

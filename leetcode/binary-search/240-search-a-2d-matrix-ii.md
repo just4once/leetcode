@@ -1,4 +1,6 @@
-### Question {#question}
+# 240-search-a-2d-matrix-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-a-2d-matrix-ii/description/](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
 
@@ -9,7 +11,7 @@ Write an efficient algorithm that searches for a value in anmxnmatrix. This matr
 
 **Example:**
 
-```
+```text
 [
   [1,   4,  7, 11, 15],
   [2,   5,  8, 12, 19],
@@ -23,7 +25,7 @@ Given target = 5, return true.
 
 Given target = 20, return false.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Four Quadrants and Recursion
    1. We can leverage the fact the the top left will be the smallest element and bottom right is largest element to filler out the quadrants that won't contain the target
@@ -40,7 +42,7 @@ Given target = 20, return false.
    4. Time complexity O\(m + n\), because every iteration we move 1 step in one of directions
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,7 @@ class Solution {
         if (mat == null || mat.length == 0 || mat[0].length == 0) return false;
         return search(mat, targ, 0, mat.length - 1, 0, mat[0].length - 1);
     }
-    
+
     private boolean search(int[][] mat, int targ, int top, int bottom, int left, int right) {
         if (top > bottom || left > right) return false;
         if (targ < mat[top][left] || targ > mat[bottom][right]) return false;
@@ -78,7 +80,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

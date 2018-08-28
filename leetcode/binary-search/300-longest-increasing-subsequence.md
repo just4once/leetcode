@@ -1,4 +1,6 @@
-### Question {#question}
+# 300-longest-increasing-subsequence
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-increasing-subsequence/description/](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 
@@ -16,11 +18,11 @@ Follow up: Could you improve it to O\(n log n\) time complexity?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing
    1. Using dp array to store the longest length ending, where dp\[i\] stores the information for sequence ending with ith element
@@ -34,7 +36,7 @@ Follow up: Could you improve it to O\(n log n\) time complexity?
    5. Time complexity O\(nlogn\)
    6. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -75,7 +77,7 @@ class Solution {
         }
         return id + 1;
     }
-    
+
     private int binarySearch(int[] nums, int start, int end, int target) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

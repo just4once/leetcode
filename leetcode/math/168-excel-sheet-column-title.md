@@ -1,4 +1,6 @@
-### Question {#question}
+# 168-excel-sheet-column-title
+
+## Question {#question}
 
 [https://leetcode.com/problems/excel-sheet-column-title/description/](https://leetcode.com/problems/excel-sheet-column-title/description/)
 
@@ -6,7 +8,7 @@ Given a positive integer, return its corresponding column title as appear in an 
 
 **Example:**
 
-```
+```text
     1 -> A
     2 -> B
     3 -> C
@@ -16,7 +18,7 @@ Given a positive integer, return its corresponding column title as appear in an 
     28 -> AB
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Mod
    1. we need to use mod to get the correct character
@@ -24,7 +26,7 @@ Given a positive integer, return its corresponding column title as appear in an 
    3. Time complexity O\(log n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -40,7 +42,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

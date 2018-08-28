@@ -1,4 +1,6 @@
-### Question {#question}
+# 170-two-sum-iii-data-structure-design
+
+## Question {#question}
 
 [https://leetcode.com/problems/two-sum-iii-data-structure-design/description/](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/)
 
@@ -9,13 +11,13 @@ Design and implement a TwoSum class. It should support the following operations:
 
 **Example:**
 
-```
+```text
 add(1); add(3); add(5);
 find(4) -> true
 find(7) -> false
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force - Two Sets \(TLE\)
    1. Use one set to store the numbers, and one set to store the sum
@@ -23,7 +25,7 @@ find(7) -> false
    3. Find takes O\(1\)
 2. ad
 
-### Solution
+## Solution
 
 ```java
 class TwoSum {
@@ -34,20 +36,20 @@ class TwoSum {
         num = new HashSet<>();
         sum = new HashSet<>();
     }
-    
+
     /** Add the number to an internal data structure.. */
     public void add(int number) {
-    	if(num.contains(number)){
-    	    sum.add(number * 2);
-    	} else{
-    	    Iterator<Integer> iter = num.iterator();
-    	    while(iter.hasNext()){
-    	        sum.add(iter.next() + number);
-    	    }
-    	    num.add(number);
-    	}
+        if(num.contains(number)){
+            sum.add(number * 2);
+        } else{
+            Iterator<Integer> iter = num.iterator();
+            while(iter.hasNext()){
+                sum.add(iter.next() + number);
+            }
+            num.add(number);
+        }
     }
-    
+
     /** Find if there exists any pair of numbers which sum is equal to the value. */
     public boolean find(int value) {
         return sum.contains(value);
@@ -70,12 +72,12 @@ class TwoSum {
     public TwoSum() {
         num = new HashMap<>();
     }
-    
+
     /** Add the number to an internal data structure.. */
     public void add(int number) {
-    	num.put(number, num.getOrDefault(number, 0) + 1);
+        num.put(number, num.getOrDefault(number, 0) + 1);
     }
-    
+
     /** Find if there exists any pair of numbers which sum is equal to the value. */
     public boolean find(int value) {
         Iterator<Integer> iter = num.keySet().iterator();
@@ -98,7 +100,5 @@ class TwoSum {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

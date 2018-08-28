@@ -1,14 +1,16 @@
-### Question {#question}
+# 311-sparse-matrix-multiplication
+
+## Question {#question}
 
 [https://leetcode.com/problems/sparse-matrix-multiplication/description/](https://leetcode.com/problems/sparse-matrix-multiplication/description/)
 
-Given two [sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) **A **and **B**, return the result of **AB**.
+Given two [sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) **A** and **B**, return the result of **AB**.
 
 You may assume that **A**'s column number is equal to **B**'s row number.
 
 **Example:**
 
-```
+```text
 A = [
   [ 1, 0, 0],
   [-1, 0, 3]
@@ -26,7 +28,7 @@ AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
                   | 0 0 1 |
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dot Product \(TLE\)
    1. Follow the rule of dot product
@@ -38,7 +40,7 @@ AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
    3. Time complexity O\(mno\), depends on the density of the graph
    4. Space complexity O\(mo\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -79,7 +81,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

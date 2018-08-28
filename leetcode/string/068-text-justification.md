@@ -1,4 +1,6 @@
-### Question {#question}
+# 068-text-justification
+
+## Question {#question}
 
 [https://leetcode.com/problems/text-justification/description/](https://leetcode.com/problems/text-justification/description/)
 
@@ -12,7 +14,7 @@ For the last line of text, it should be left justified and no extra space is ins
 
 **Example:**
 
-```
+```text
 words: ["This", "is", "an", "example", "of", "text", "justification."]
 L: 16.
 
@@ -24,7 +26,7 @@ Return the formatted lines as:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Char Array
    1. For every line, we try to accommodate as many string as possible
@@ -33,7 +35,7 @@ Return the formatted lines as:
    4. Time complexity O\(n\)
    5. Space complexity O\(mL\), where m is the maxWidth, L is number of lines and approximately equals to nw / 16
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -110,7 +112,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

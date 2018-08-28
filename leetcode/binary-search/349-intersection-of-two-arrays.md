@@ -1,4 +1,6 @@
-### Question {#question}
+# 349-intersection-of-two-arrays
+
+## Question {#question}
 
 [https://leetcode.com/problems/intersection-of-two-arrays/description/](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 
@@ -6,7 +8,7 @@ Given two arrays, write a function to compute their intersection.
 
 **Example:**
 
-```
+```text
 Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
 ```
 
@@ -15,7 +17,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
 * Each element in the result must be unique.
 * The result can be in any order.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Set
    1. Using set we can easily store the number we have seen in nums1 and compare with nums2
@@ -23,7 +25,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
    3. Space complexity O\(m\) or O\(min\(m, n\)\)
 2. Binary Search
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +46,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

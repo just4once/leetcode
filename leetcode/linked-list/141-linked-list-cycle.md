@@ -1,4 +1,6 @@
-### Question {#question}
+# 141-linked-list-cycle
+
+## Question {#question}
 
 [https://leetcode.com/problems/linked-list-cycle/description/](https://leetcode.com/problems/linked-list-cycle/description/)
 
@@ -10,11 +12,11 @@ Can you solve it without using extra space?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Use hash table to record the node visited
@@ -28,7 +30,7 @@ Can you solve it without using extra space?
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 public class Solution {
@@ -44,7 +46,5 @@ public class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

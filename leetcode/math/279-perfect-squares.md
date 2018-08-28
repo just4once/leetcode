@@ -1,4 +1,6 @@
-### Question {#question}
+# 279-perfect-squares
+
+## Question {#question}
 
 [https://leetcode.com/problems/perfect-squares/description/](https://leetcode.com/problems/perfect-squares/description/)
 
@@ -6,11 +8,11 @@ Given a positive integer n, find the least number of perfect square numbers \(fo
 
 **Example:**
 
-```
+```text
 Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
    1. Use array of n + 1 to store the count
@@ -18,7 +20,7 @@ Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13
    3. Time complexity O\(n^1.5\)
    4. Space complexity O\(n\)
 2. Math
-   1. Base on [Lagrange's four-square theorem](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem), the answer is limit by 4
+   1. Base on \[Lagrange's four-square theorem\]\([https://en.wikipedia.org/wiki/Lagrange's\_four-square\_theorem](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem)\), the answer is limit by 4
    2. The number representation can be found here, [http://www.alpertron.com.ar/4SQUARES.HTM](http://www.alpertron.com.ar/4SQUARES.HTM)
    3. Perfect squares has one factor
    4. If the representation is 4^k\*\(8\*m + 7\), there are 4 factors
@@ -27,7 +29,7 @@ Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13
    7. Time complexity O\(1\)
    8. Space complexity O1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -55,7 +57,7 @@ class Solution {
         }
         return 3;
     }
-    
+
     private boolean isPerfectSquare(int i) {
         int a = (int) Math.sqrt(i);
         return a * a == i;
@@ -63,7 +65,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

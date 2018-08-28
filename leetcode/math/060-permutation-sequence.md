@@ -1,4 +1,6 @@
-### Question {#question}
+# 060-permutation-sequence
+
+## Question {#question}
 
 [https://leetcode.com/problems/permutation-sequence/description/](https://leetcode.com/problems/permutation-sequence/description/)
 
@@ -21,11 +23,11 @@ Given n and k, return the kth permutation sequence.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Find Pattern
    1. The number of permutation is n!
@@ -35,7 +37,7 @@ Given n and k, return the kth permutation sequence.
    5. Time complexity O\(n^2\)
    6. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -66,7 +68,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

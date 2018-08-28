@@ -1,4 +1,6 @@
-### Question {#question}
+# 246-strobogrammatic-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/strobogrammatic-number/description/](https://leetcode.com/problems/strobogrammatic-number/description/)
 
@@ -8,11 +10,11 @@ Write a function to determine if a number is strobogrammatic. The number is repr
 
 **Example:**
 
-```
+```text
 The numbers "69", "88", and "818" are all strobogrammatic.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Put characters and their respective strobogrammatic pair in the map as key and value pair
@@ -24,7 +26,7 @@ The numbers "69", "88", and "818" are all strobogrammatic.
    2. Time complexity O\(14 \* n/2\) -&gt; O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 567-permutation-in-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/permutation-in-string/description/](https://leetcode.com/problems/permutation-in-string/description/)
 
@@ -6,18 +8,18 @@ Given two strings s1 and s2, write a function to return true if s2 contains the 
 
 **Example:**
 
-```
+```text
 Input:s1 = "ab" s2 = "eidbaooo"
 Output:True
 Explanation: s2 contains one permutation of s1 ("ba").
 ```
 
-```
+```text
 Input:s1= "ab" s2 = "eidboaoo"
 Output: False
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Scanning left to right with sliding window
@@ -25,7 +27,7 @@ Output: False
    3. Time complexity O\(n\)
    4. Space complexity O\(
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -49,7 +51,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

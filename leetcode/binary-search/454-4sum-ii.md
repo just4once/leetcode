@@ -1,4 +1,6 @@
-### Question {#question}
+# 454-4sum-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/4sum-ii/description/](https://leetcode.com/problems/4sum-ii/description/)
 
@@ -8,7 +10,7 @@ To make problem a bit easier, all A, B, C, D have same length of N where 0 ≤ N
 
 **Example:**
 
-```
+```text
 Input:
 A = [ 1, 2]
 B = [-2,-1]
@@ -24,7 +26,7 @@ The two tuples are:
 2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Storing sum permutations from A and B, and negative sum permutation from C and D, we can do left bound and right bound search to get number of natches
@@ -37,7 +39,7 @@ The two tuples are:
    4. Time complexity O\(n^2\)
    5. Space complexity O\(n^2\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -96,7 +98,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private Map<Integer, Integer> merge(int[] A, int[] B) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int a : A) {
@@ -109,7 +111,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

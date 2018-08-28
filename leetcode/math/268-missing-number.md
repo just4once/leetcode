@@ -1,4 +1,6 @@
-### Question {#question}
+# 268-missing-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/missing-number/description/](https://leetcode.com/problems/missing-number/description/)
 
@@ -6,17 +8,17 @@ Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find th
 
 **Example:**
 
-```
+```text
 Input: [3,0,1]
 Output: 2
 ```
 
-```
+```text
 Input: [9,6,4,2,3,5,7,0,1]
 Output: 8
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sort
    1. Sort the array, if the number is not equal to i, we know this index is the missing number
@@ -33,7 +35,7 @@ Output: 8
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -76,7 +78,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

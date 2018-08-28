@@ -1,4 +1,6 @@
-### Question {#question}
+# 374-guess-number-higher-or-lower
+
+## Question {#question}
 
 [https://leetcode.com/problems/guess-number-higher-or-lower/description/](https://leetcode.com/problems/guess-number-higher-or-lower/description/)
 
@@ -10,7 +12,7 @@ Every time you guess wrong, I'll tell you whether the number is higher or lower.
 
 You call a pre-defined API guess\(int num\) which returns 3 possible results \(-1, 1, or 0\):
 
-```
+```text
 -1 : My number is lower
  1 : My number is higher
  0 : Congrats! You got it!
@@ -18,20 +20,20 @@ You call a pre-defined API guess\(int num\) which returns 3 possible results \(-
 
 **Example:**
 
-```
+```text
 n = 10, I pick 6.
 
 Return 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Very Typical binary search, where we return when we get 0, search the lower half when we got -1 \(the solution is lower\), otherwise we search the higher half
    2. Time complexity O\(nlogn\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /* The guess API is defined in the parent class GuessGame.
@@ -55,7 +57,5 @@ public class Solution extends GuessGame {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

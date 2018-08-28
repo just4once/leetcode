@@ -1,4 +1,6 @@
-### Question {#question}
+# 744-find-smallest-letter-greater-than-target
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
 
@@ -8,7 +10,7 @@ Letters also wrap around. For example, if the target is target = 'z' and letters
 
 **Example:**
 
-```
+```text
 Input:
 letters = ["c", "f", "j"]
 target = "a"
@@ -40,14 +42,14 @@ target = "k"
 Output: "c"
 ```
 
-**Note:  
-**
+**Note:**    
+
 
 1. letters has a length in range \[2, 10000\].
 2. letters consists of lowercase letters, and contains at least 2 unique letters.
 3. target is a lowercase letter.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Linear Scan
    1. Scan from left to right, at anytime we see a character greater than our target, we can return immediately
@@ -66,7 +68,7 @@ Output: "c"
    3. Time complexity O\(logn\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -105,7 +107,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

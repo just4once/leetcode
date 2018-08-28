@@ -1,4 +1,6 @@
-### Question {#question}
+# 248-strobogrammatic-number-iii
+
+## Question {#question}
 
 [https://leetcode.com/problems/strobogrammatic-number-iii/description/](https://leetcode.com/problems/strobogrammatic-number-iii/description/)
 
@@ -8,11 +10,11 @@ Write a function to count the total strobogrammatic numbers that exist in the ra
 
 **Example:**
 
-```
+```text
 Given low = "50", high = "100", return 3. Because 69, 88, and 96 are three strobogrammatic numbers.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Construct strobogrammatic number
    1. We construct the number from length low to high and compare it with the range
@@ -27,7 +29,7 @@ Given low = "50", high = "100", return 3. Because 69, 88, and 96 are three strob
    1. We can actually use the count difference to get the number of strobogrammtic number in range
    2. Count\(num &lt;= high\) - count\(num &lt; low\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -39,7 +41,7 @@ class Solution {
         }
         return count[0];
     }
-    
+
     private void dfs(String low, String high, char[] chars, int l, int r, int[] count) {
         if (l > r) {
             String num = String.valueOf(chars);
@@ -73,7 +75,7 @@ class Solution {
         }
         return count[0];
     }
-    
+
     private void dfs(String low, String high, char[] chars, int l, int r, int[] count) {
         if (l > r) {
             String num = String.valueOf(chars);
@@ -93,7 +95,7 @@ class Solution {
             }
         }
     }
-    
+
     private int getCount(int k) {
         int res = 4;
         if (k % 2 == 1) res *= 3;
@@ -114,7 +116,7 @@ class Solution {
         int lowCount = count(low, false);
         return count(high, true) - count(low, false);
     }
-    
+
     private int count(String num, boolean include) {
         int count = 0, n = num.length();
         // count all smaller numbers
@@ -125,7 +127,7 @@ class Solution {
         count += getEqualLength(num.toCharArray(), new char[n], 0, n - 1, include);
         return count;
     }
-    
+
     private int getEqualLength(char[] num, char[] chars, int l, int r, boolean include) {
         if (l > r) {
             int compare = compare(chars, num);
@@ -145,7 +147,7 @@ class Solution {
         }
         return count;
     }
-    
+
     private int compare(char[] n1, char[] n2) {
         for (int i = 0; i < n1.length; i++) {
             if (n1[i] < n2[i]) return -1;
@@ -153,7 +155,7 @@ class Solution {
         }
         return 0;
     }
-    
+
     private int getCount(int k) {
         if (k == 1) return 3;
         int res = 4;
@@ -166,7 +168,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

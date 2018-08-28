@@ -1,4 +1,6 @@
-### Question {#question}
+# 058-length-of-last-word
+
+## Question {#question}
 
 [https://leetcode.com/problems/length-of-last-word/description/](https://leetcode.com/problems/length-of-last-word/description/)
 
@@ -12,12 +14,12 @@ A word is defined as a character sequence consists of non-space characters only.
 
 **Example:**
 
-```
+```text
 Input: "Hello World"
 Output: 5
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Scanning Backward
    1. Having a pointer points at the end of the string and move forward the string if it's a space
@@ -26,7 +28,7 @@ Output: 5
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -42,7 +44,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

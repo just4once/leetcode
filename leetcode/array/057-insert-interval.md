@@ -1,4 +1,6 @@
-### Question {#question}
+# 057-insert-interval
+
+## Question {#question}
 
 [https://leetcode.com/problems/insert-interval/description/](https://leetcode.com/problems/insert-interval/description/)
 
@@ -8,19 +10,19 @@ You may assume that the intervals were initially sorted according to their start
 
 **Example 1:**
 
-```
+```text
 Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
 ```
 
 **Example 2:**
 
-```
+```text
 Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10],[12,16].
 
 This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Since the input it's sorted, we can easily compare our merge interval overlap with our exploring interval
 2. If there is no overlap between this interval and the merge interval, we can just add it to the result list
@@ -29,7 +31,7 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 5. Time complexity O\(n\)
 6. Space complexity O\(n\), O\(1\) extra
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

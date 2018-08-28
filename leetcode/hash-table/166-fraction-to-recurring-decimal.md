@@ -1,4 +1,6 @@
-### Question {#question}
+# 166-fraction-to-recurring-decimal
+
+## Question {#question}
 
 [https://leetcode.com/problems/fraction-to-recurring-decimal/description/](https://leetcode.com/problems/fraction-to-recurring-decimal/description/)
 
@@ -8,20 +10,20 @@ If the fractional part is repeating, enclose the repeating part in parentheses.
 
 **Example:**
 
-```
+```text
 Given numerator = 1, denominator = 2, return "0.5".
 Given numerator = 2, denominator = 1, return "2".
 Given numerator = 2, denominator = 3, return "0.(6)".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. StringBuilder and Map
    1. Follow the rule of division, save the output to the string builder
    2. The repeating part happens when we have visited the remainder before, then we need to insert the "\(" at the position provided by the map
    3. Time com
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -53,7 +55,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

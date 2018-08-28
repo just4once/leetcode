@@ -1,4 +1,6 @@
-### Question {#question}
+# 067-add-binary
+
+## Question {#question}
 
 [https://leetcode.com/problems/add-binary/description/](https://leetcode.com/problems/add-binary/description/)
 
@@ -6,13 +8,13 @@ Given two binary strings, return their sum \(also a binary string\).
 
 **Example:**
 
-```
+```text
 a = "11"
 b = "1"
 Return "100".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Scan Backward
    1. At the number from the back
@@ -20,7 +22,7 @@ Return "100".
    3. When the character is different, we append the opposite of the carry
    4. At the end, we reverse the string builder
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

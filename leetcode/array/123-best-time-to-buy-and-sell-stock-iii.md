@@ -1,4 +1,6 @@
-### Question {#question}
+# 123-best-time-to-buy-and-sell-stock-iii
+
+## Question {#question}
 
 [https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
 
@@ -12,11 +14,11 @@ You may not engage in multiple transactions at the same time \(ie, you must sell
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
    1. Create an array of dp, and dp\[k\]\[i\] denotes the maximum profit for kth transaction on selling at ith prices
@@ -39,7 +41,7 @@ You may not engage in multiple transactions at the same time \(ie, you must sell
    8. Time complexity O\(n\)
    9. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -96,7 +98,5 @@ class Solution {
 }
 ```
 
-### Additional
-
-
+## Additional
 

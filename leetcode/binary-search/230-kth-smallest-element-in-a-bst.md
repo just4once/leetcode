@@ -1,10 +1,12 @@
-### Question {#question}
+# 230-kth-smallest-element-in-a-bst
+
+## Question {#question}
 
 [https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
 
 Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
 
-**Note: **
+**Note:** 
 
 You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
 
@@ -14,11 +16,11 @@ What if the BST is modified \(insert/delete operations\) often and you need to f
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. In-Order Traversal
    1. We have a counter to count how many elements we have encounters during the in order travel
@@ -26,7 +28,7 @@ What if the BST is modified \(insert/delete operations\) often and you need to f
    3. Time complexity O\(logn\)
    4. Space complexity O\(k\) or O\(1\), and O\(logn\) for recursion stack
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -69,7 +71,7 @@ class Solution {
         inorder(list, root, k);
         return list.get(k - 1);
     }
-    
+
     private void inorder(List<Integer> list, TreeNode node, int k) {
         if (node == null || list.size() == k) return;
         inorder(list, node.left, k);
@@ -86,7 +88,7 @@ class Solution {
         inorder(root, k);
         return v;
     }
-    
+
     private void inorder(TreeNode root, int k) {
         if (root == null || i == k)  return;
         inorder(root.left, k);
@@ -100,7 +102,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 055-jump-game
+
+## Question {#question}
 
 [https://leetcode.com/problems/jump-game/description/](https://leetcode.com/problems/jump-game/description/)
 
@@ -10,13 +12,13 @@ Determine if you are able to reach the last index.
 
 **Example:**
 
-```
+```text
 A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Typical process
    1. Start with the recursive backtracking solution
@@ -30,7 +32,7 @@ A = [3,2,1,0,4], return false.
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 Bottom up
 
@@ -69,7 +71,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 014-longest-common-prefix
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-common-prefix/description/](https://leetcode.com/problems/longest-common-prefix/description/)
 
@@ -6,11 +8,11 @@ Write a function to find the longest common prefix string amongst an array of st
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Horizontal Scanning
    1. Use first string as basis, then loop through all the other string
@@ -31,7 +33,7 @@ Write a function to find the longest common prefix string amongst an array of st
    2. Time complexity O\(m\), where m is length of word, building trie takes O\(S\) times
    3. Space complexity O\(S\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {    
@@ -74,7 +76,7 @@ class Solution {
         if(strs == null || strs.length == 0) return "";
         return longestCommonPrefix(strs, 0, strs.length - 1);
     }
-    
+
     private String longestCommonPrefix(String[] strs, int i, int j) {
         if (i == j) return strs[i];
         else {
@@ -84,7 +86,7 @@ class Solution {
             return common(left, right);
         }
     }
-    
+
     private String common(String left, String right) {
         int n = Math.min(left.length(), right.length());
         int i = 0;
@@ -99,7 +101,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

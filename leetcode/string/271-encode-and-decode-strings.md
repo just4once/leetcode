@@ -1,4 +1,6 @@
-### Question {#question}
+# 271-encode-and-decode-strings
+
+## Question {#question}
 
 [https://leetcode.com/problems/encode-and-decode-strings/description/](https://leetcode.com/problems/encode-and-decode-strings/description/)
 
@@ -6,7 +8,7 @@ Design an algorithm to encode a list of strings to a string. The encoded string 
 
 Machine 1 \(sender\) has the function:
 
-```
+```text
 string encode(vector<string> strs) {
   // ... your code
   return encoded_string;
@@ -15,7 +17,7 @@ string encode(vector<string> strs) {
 
 Machine 2 \(receiver\) has the function:
 
-```
+```text
 vector<string> decode(string s) {
   //... your code
   return strs;
@@ -24,13 +26,13 @@ vector<string> decode(string s) {
 
 So Machine 1 does:
 
-```
+```text
 string encoded_string = encode(strs);
 ```
 
 and Machine 2 does:
 
-```
+```text
 vector<string> strs2 = decode(encoded_string);
 ```
 
@@ -38,7 +40,7 @@ strs2 in Machine 2 should be the same as strs in Machine 1.
 
 Implement the encode and decode methods.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Delimiter and String Length
    1. Using simple symbol such as '/' or '-' won't work because that could be part of the string as well
@@ -48,7 +50,7 @@ Implement the encode and decode methods.
    5. Space complexity O\(nw\), where w is the average length of words
 2. asd
 
-### Solution
+## Solution
 
 ```java
 public class Codec {
@@ -82,7 +84,5 @@ public class Codec {
 // codec.decode(codec.encode(strs));
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

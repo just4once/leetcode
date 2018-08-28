@@ -1,4 +1,6 @@
-### Question {#question}
+# 258-add-digits
+
+## Question {#question}
 
 [https://leetcode.com/problems/add-digits/description/](https://leetcode.com/problems/add-digits/description/)
 
@@ -6,11 +8,11 @@ Given a non-negative integer num, repeatedly add all its digits until the result
 
 **Example:**
 
-```
+```text
 Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Loop
    1. While the num &gt; 9, we compute
@@ -21,7 +23,7 @@ Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one
    1. If you observe the cycle repeats from 1 to 9 for range of 9, such as 1 to 9, 10 - 18, 19 to 27, and etc
    2. Time complexity 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

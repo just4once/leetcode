@@ -1,4 +1,6 @@
-### Question {#question}
+# 356-line-reflection
+
+## Question {#question}
 
 [https://leetcode.com/problems/line-reflection/description/](https://leetcode.com/problems/line-reflection/description/)
 
@@ -6,12 +8,12 @@ Given n points on a 2D plane, find if there is such a line parallel to y-axis th
 
 **Example:**
 
-```
+```text
 Given points = [[1,1],[-1,1]], return true.
 Given points = [[1,1],[-1,-1]], return false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table - Two pass
    1. The reflection line has to be in the middle, meaning xref = \(xmin + xmax\) / 2
@@ -19,7 +21,7 @@ Given points = [[1,1],[-1,-1]], return false.
    3. Time complexity O\(n\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

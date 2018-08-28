@@ -1,4 +1,6 @@
-### Question {#question}
+# 069-sqrtx
+
+## Question {#question}
 
 [https://leetcode.com/problems/sqrtx/description/](https://leetcode.com/problems/sqrtx/description/)
 
@@ -10,18 +12,18 @@ x is guaranteed to be a non-negative integer.
 
 **Example:**
 
-```
+```text
 Input: 4
 Output: 2
 ```
 
-```
+```text
 Input: 8
 Output: 2
 Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part will be truncated.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Use lo and hi to track the possible range of root
@@ -37,7 +39,7 @@ Explanation: The square root of 8 is 2.82842..., and since we want to return an 
    6. Time complexity ??
    7. Space complexity ???
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -67,7 +69,5 @@ class Solution {
 }
 ```
 
-### Additional
-
-
+## Additional
 

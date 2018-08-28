@@ -1,4 +1,6 @@
-### Question {#question}
+# 344-reverse-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-string/description/](https://leetcode.com/problems/reverse-string/description/)
 
@@ -6,18 +8,18 @@ Write a function that takes a string as input and returns the string reversed.
 
 **Example:**
 
-```
+```text
 Given s = "hello", return "olleh".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Start from the ends of the string and swap the pair as we increment left pointer and decrement right pointer
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -27,7 +29,7 @@ class Solution {
         while (i < j) swap(chars, i++, j--);
         return String.valueOf(chars);
     }
-    
+
     private void swap(char[] chars, int i, int j) {
         char tmp = chars[i];
         chars[i] = chars[j];
@@ -36,7 +38,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

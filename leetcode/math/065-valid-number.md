@@ -1,4 +1,6 @@
-### Question {#question}
+# 065-valid-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/valid-number/description/](https://leetcode.com/problems/valid-number/description/)
 
@@ -6,7 +8,7 @@ Validate if a given string is numeric.
 
 **Example:**
 
-```
+```text
 "0" => true
 " 0.1 " => true
 "abc" => false
@@ -16,7 +18,7 @@ Validate if a given string is numeric.
 
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Trim
    1. We first trim the leading spaces and trailing spaces
@@ -29,7 +31,7 @@ Note: It is intended for the problem statement to be ambiguous. You should gathe
    8. Time complexity O\(n\)
    9. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

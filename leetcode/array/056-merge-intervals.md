@@ -1,4 +1,6 @@
-### Question {#question}
+# 056-merge-intervals
+
+## Question {#question}
 
 [https://leetcode.com/problems/merge-intervals/description/](https://leetcode.com/problems/merge-intervals/description/)
 
@@ -6,12 +8,12 @@ Given a collection of intervals, merge all overlapping intervals.
 
 **Example:**
 
-```
+```text
 Given [1,3],[2,6],[8,10],[15,18],
 return [1,6],[8,10],[15,18]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. We can check current interval against previously inserted intervals for interval overlaping
@@ -26,7 +28,7 @@ return [1,6],[8,10],[15,18]
    4. Time complexity O\(n log n\)
    5. Space complexity O\(n\), extra space depends on it we allowed to sort on the original list
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -89,7 +91,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

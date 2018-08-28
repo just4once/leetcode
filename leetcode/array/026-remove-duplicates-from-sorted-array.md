@@ -1,28 +1,30 @@
-### Question {#question}
+# 026-remove-duplicates-from-sorted-array
+
+## Question {#question}
 
 [https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 
 Given a sorted array, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that each element appear only once and return the new length.
 
-Do not allocate extra space for another array, you must do this by **modifying the input array **[**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) with O\(1\) extra memory.
+Do not allocate extra space for another array, you must do this by **modifying the input array** [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) with O\(1\) extra memory.
 
 **Example:**
 
-```
+```text
 Given nums = [1,1,2],
 
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 It doesn't matter what you leave beyond the new length.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Because the question ask we do it in place and return the new length, we have somehow scanning through the array and insert/discard the exploring element
 2. This hint inspires the use of two pointers, where one points to the current element and the other points to the correct position that element should be reside
 3. Time complexity O\(n\)
 4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -40,7 +42,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

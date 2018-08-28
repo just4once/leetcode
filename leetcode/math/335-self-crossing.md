@@ -1,4 +1,6 @@
-### Question {#question}
+# 335-self-crossing
+
+## Question {#question}
 
 [https://leetcode.com/problems/self-crossing/description/](https://leetcode.com/problems/self-crossing/description/)
 
@@ -8,7 +10,7 @@ Write a one-pass algorithm with O\(1\) extra space to determine, if your path cr
 
 **Example:**
 
-```
+```text
 Given x = [2, 1, 1, 2],
 ?????
 ?   ?
@@ -18,7 +20,7 @@ Given x = [2, 1, 1, 2],
 Return true (self crossing)
 ```
 
-```
+```text
 Given x = [1, 2, 3, 4],
 ????????
 ?      ?
@@ -29,7 +31,7 @@ Given x = [1, 2, 3, 4],
 Return false (not self crossing)
 ```
 
-```
+```text
 Given x = [1, 1, 1, 1],
 ?????
 ?   ?
@@ -38,7 +40,7 @@ Given x = [1, 1, 1, 1],
 Return true (self crossing)
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Spiral Directions
    1. Spiraling outward: If the parallel lines' keep increasing, there will not be any cross, x\[i\] &gt; x\[i - 2\]
@@ -46,7 +48,7 @@ Return true (self crossing)
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

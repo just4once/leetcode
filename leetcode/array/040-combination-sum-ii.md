@@ -1,4 +1,6 @@
-### Question {#question}
+# 040-combination-sum-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/combination-sum-ii/description/](https://leetcode.com/problems/combination-sum-ii/description/)
 
@@ -6,15 +8,14 @@ Given a collection of candidate numbers \(**C**\) and a target number \(**T**\),
 
 Each number in**C**may only be used**once**in the combination.
 
-**Note:**  
-
+**Note:**
 
 * All numbers \(including target\) will be positive integers.
 * The solution set must not contain duplicate combinations.
 
 **Example:**
 
-```
+```text
 For example, given candidate set [10, 1, 2, 7, 6, 1, 5] and target 8, 
 A solution set is: 
 [
@@ -25,7 +26,7 @@ A solution set is:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. To avoid the duplicated solution, we have to sort the input
 2. If the number is the same as the last number, we skip them
@@ -34,7 +35,7 @@ A solution set is:
 5. Time complexity O\(n^2\)
 6. Space complexity O\(log n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +45,7 @@ class Solution {
         backtrack(res, new ArrayList<>(), candidates, target, 0);
         return res;
     }
-    
+
     public void backtrack(List<List<Integer>> res, List<Integer> sol, int[] candidates, int target, int start){
         if (target == 0) res.add(new ArrayList<>(sol));
         else {
@@ -60,7 +61,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

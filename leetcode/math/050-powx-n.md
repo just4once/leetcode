@@ -1,4 +1,6 @@
-### Question {#question}
+# 050-powx-n
+
+## Question {#question}
 
 [https://leetcode.com/problems/powx-n/description/](https://leetcode.com/problems/powx-n/description/)
 
@@ -6,17 +8,17 @@ Implement pow\(x, n\).
 
 **Example:**
 
-```
+```text
 Input: 2.00000, 10
 Output: 1024.00000
 ```
 
-```
+```text
 Input: 2.10000, 3
 Output: 9.26100
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recurision
    1. We can multiply the x by itself and reduce the power by 2
@@ -25,7 +27,7 @@ Output: 9.26100
    4. Space complexity O\(log n\) due to recursion stack
 2. Iterative
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -68,7 +70,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

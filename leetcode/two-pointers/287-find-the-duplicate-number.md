@@ -1,4 +1,6 @@
-### Question {#question}
+# 287-find-the-duplicate-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-the-duplicate-number/description/](https://leetcode.com/problems/find-the-duplicate-number/description/)
 
@@ -6,11 +8,11 @@ Given an array nums containing n + 1 integers where each integer is between 1 an
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers and Mid Element
    1. Use the mid as way to count the number that is smaller than it
@@ -27,7 +29,7 @@ Given an array nums containing n + 1 integers where each integer is between 1 an
    1. We can treat this as linked list while every value in the array is the index
    2. 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -92,7 +94,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

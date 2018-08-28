@@ -1,4 +1,6 @@
-### Question {#question}
+# 713-subarray-product-less-than-k
+
+## Question {#question}
 
 [https://leetcode.com/problems/subarray-product-less-than-k/description/](https://leetcode.com/problems/subarray-product-less-than-k/description/)
 
@@ -8,7 +10,7 @@ Count and print the number of \(contiguous\) subarrays where the product of all 
 
 **Example:**
 
-```
+```text
 Input: nums = [10, 5, 2, 6], k = 100
 Output: 8
 Explanation: The 8 subarrays that have product less than 100 are: [10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6].
@@ -21,7 +23,7 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
 * 0 &lt; nums\[i\] &lt; 1000.
 * 0 &lt;= k &lt; 10^6.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Since the multiplication will not overflow, we can use one variable to store the product
@@ -30,7 +32,7 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

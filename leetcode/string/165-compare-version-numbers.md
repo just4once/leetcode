@@ -1,4 +1,6 @@
-### Question {#question}
+# 165-compare-version-numbers
+
+## Question {#question}
 
 [https://leetcode.com/problems/compare-version-numbers/description/](https://leetcode.com/problems/compare-version-numbers/description/)
 
@@ -14,18 +16,18 @@ For instance, 2.5 is not "two and a half" or "half way to version three", it is 
 
 **Example:**
 
-```
+```text
 0.1 < 1.1 < 1.2 < 13.37
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Split and Compare
    1. Start from the first field until we reach the end or the numbers are different
    2. Time complexity O\(n\), where n is number of fields
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +46,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 006-zigzag-conversion
+
+## Question {#question}
 
 [https://leetcode.com/problems/zigzag-conversion/description/](https://leetcode.com/problems/zigzag-conversion/description/)
 
@@ -6,7 +8,7 @@ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 
 **Example:**
 
-```
+```text
 P   A   H   N
 A P L S I I G
 Y   I   R
@@ -18,7 +20,7 @@ Write the code that will take a string and make this conversion given a number o
 
 convert\("PAYPALISHIRING", 3\) should return "PAHNAPLSIIGYIR".
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Magic Number
    1. The first row and last row always insert next 2 \* num - 2th position, or referred as num in the code  \(excluding the character in the middle\)
@@ -26,7 +28,7 @@ convert\("PAYPALISHIRING", 3\) should return "PAHNAPLSIIGYIR".
    3. Time complexity O\(n\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

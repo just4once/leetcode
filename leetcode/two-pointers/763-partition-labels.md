@@ -1,4 +1,6 @@
-### Question {#question}
+# 763-partition-labels
+
+## Question {#question}
 
 [https://leetcode.com/problems/partition-labels/description/](https://leetcode.com/problems/partition-labels/description/)
 
@@ -6,7 +8,7 @@ A string S of lowercase letters is given. We want to partition this string into 
 
 **Example:**
 
-```
+```text
 Input: S = "ababcbacadefegdehijhklij"
 Output: [9,7,8]
 Explanation:
@@ -20,7 +22,7 @@ A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits 
 1. S will have length in range \[1, 500\].
 2. S will consist of lowercase letters \('a' to 'z'\) only.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. For each character, we need to find the rightest index for it, then within this range, we need to further expand the right boundary
@@ -28,7 +30,7 @@ A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits 
    3. Time complexity O\(n\)
    4. Space complexity O\(128\) or O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -49,7 +51,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

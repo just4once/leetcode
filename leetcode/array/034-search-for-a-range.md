@@ -1,4 +1,6 @@
-### Question {#question}
+# 034-search-for-a-range
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-for-a-range/description/](https://leetcode.com/problems/search-for-a-range/description/)
 
@@ -10,12 +12,12 @@ If the target is not found in the array, return`[-1, -1]`.
 
 **Example:**
 
-```
+```text
 Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. A requirement for O\(log n\) hints the use of binary search
 2. However because we want the range, we need to use modified binary search
@@ -29,18 +31,18 @@ return [3, 4].
       2. hi = mid - 1
    3. Those above steps will make sure we are moving the pointers outward and find the border
 
-### Solution
+## Solution
 
 ```java
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] result = { -1, -1 };
-		if (nums == null) return result;
+        if (nums == null) return result;
         result[0] = searchLeft(nums, target, 0, nums.length - 1);
         result[1] = searchRight(nums, target, result[0], nums.length - 1);
         return result;
     }
-    
+
     public int searchLeft(int[] nums, int target, int lo, int hi) {
         if (lo > hi || lo < 0) return -1;
         while (lo < hi) {
@@ -50,7 +52,7 @@ class Solution {
         }
         return nums[lo] == target ? lo : -1;
     }
-    
+
     public int searchRight(int[] nums, int target, int lo, int hi) {
         if (lo > hi || lo < 0) return -1;
         if (lo == hi) return nums[lo] == target ? lo : -1;
@@ -70,14 +72,14 @@ Instead of writing two similar function, we can do a small trick. When we search
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] result = { -1, -1 };
-		if (nums == null || nums.length == 0) return result;
+        if (nums == null || nums.length == 0) return result;
         int left = search(nums, target, 0, nums.length);
         if (left >= nums.length || (left >= 0 && nums[left] != target)) return result;
         result[0] = left;
         result[1] = search(nums, target + 1, left, nums.length) - 1;
         return result;
     }
-    
+
     public int search(int[] nums, int target, int lo, int hi) {
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
@@ -89,7 +91,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

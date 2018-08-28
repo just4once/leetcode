@@ -1,4 +1,6 @@
-### Question {#question}
+# 053-maximum-subarray
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
@@ -6,18 +8,18 @@ Find the contiguous subarray within an array \(containing at least one number\) 
 
 **Example:**
 
-```
+```text
 Given the array [-2,1,-3,4,-1,2,1,-5,4],
 the contiguous subarray [4,-1,2,1] has the largest sum = 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Typical maximum subarray problem
 2. We add the element if it doesn't make the sum negative
 3. If the sum goes negative, we reset the sum
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -34,7 +36,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

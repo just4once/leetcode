@@ -1,4 +1,6 @@
-### Question {#question}
+# 247-strobogrammatic-number-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/strobogrammatic-number-ii/description/](https://leetcode.com/problems/strobogrammatic-number-ii/description/)
 
@@ -8,11 +10,11 @@ Find all strobogrammatic numbers that are of length = n.
 
 **Example:**
 
-```
+```text
 Given n = 2, return ["11","69","88","96"].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. We need to get previous string, meaning n - 2 set, and append the strobogrammatic pair to the head and tail
@@ -28,7 +30,7 @@ Given n = 2, return ["11","69","88","96"].
    1. We can use an array of character to save the path to reach to the end
    2. 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -131,7 +133,7 @@ class Solution {
         backtrack(res, new char[n], 0, n - 1);
         return res;
     }
-    
+
     private void backtrack(List<String> res, char[] path, int l, int r) {
         if (l > r) {
             res.add(String.valueOf(path));
@@ -154,7 +156,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

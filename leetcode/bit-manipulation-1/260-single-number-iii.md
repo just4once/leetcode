@@ -1,4 +1,6 @@
-### Question {#question}
+# 260-single-number-iii
+
+## Question {#question}
 
 [https://leetcode.com/problems/single-number-iii/description/](https://leetcode.com/problems/single-number-iii/description/)
 
@@ -6,11 +8,11 @@ Given an array of numbers nums, in which exactly two elements appear only once a
 
 **Example:**
 
-```
+```text
 Given nums = [1, 2, 1, 3, 2, 5], return [3, 5].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. XOR
    1. Initialize a variable call mask. after XOR with all the numbers, we have the XOR of target1 and target2 save
@@ -19,7 +21,7 @@ Given nums = [1, 2, 1, 3, 2, 5], return [3, 5].
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -43,7 +45,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

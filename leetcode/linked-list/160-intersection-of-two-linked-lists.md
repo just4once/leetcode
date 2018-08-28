@@ -1,14 +1,14 @@
-### Question {#question}
+# 160-intersection-of-two-linked-lists
+
+## Question {#question}
 
 [https://leetcode.com/problems/intersection-of-two-linked-lists/description/](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
 
 Write a program to find the node at which the intersection of two singly linked lists begins.
 
-
-
 **Example:**
 
-```
+```text
 A:          a1 → a2
                    ↘
                      c1 → c2 → c3
@@ -25,7 +25,7 @@ Notes:
 * You may assume there are no cycles anywhere in the entire linked structure.
 * Your code should preferably run in O\(n\) time and use only O\(1\) memory.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Set
    1. Add all the node to hashset from list A
@@ -38,7 +38,7 @@ Notes:
    3. If the end of list for A and B is not the same, we have no intersection
    4. Otherwise, they will eventually meet
 
-### Solution
+## Solution
 
 ```java
 public class Solution {
@@ -71,7 +71,5 @@ public class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

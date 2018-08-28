@@ -1,4 +1,6 @@
-### Question {#question}
+# 264-ugly-number-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/ugly-number-ii/description/](https://leetcode.com/problems/ugly-number-ii/description/)
 
@@ -10,11 +12,11 @@ Note that 1 is typically treated as an ugly number, and n does not exceed 1690.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. PriorityQueue
    1. Every number polled out, we multiply by 2, 3, and 5 and add it back to queue
@@ -29,7 +31,7 @@ Note that 1 is typically treated as an ugly number, and n does not exceed 1690.
    5. Time complexity O\(n\)
    6. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -69,7 +71,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

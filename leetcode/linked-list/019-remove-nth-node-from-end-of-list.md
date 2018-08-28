@@ -1,4 +1,6 @@
-### Question {#question}
+# 019-remove-nth-node-from-end-of-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
 
@@ -6,13 +8,13 @@ Given a linked list, remove the nth node from the end of list and return its hea
 
 **Example:**
 
-```
+```text
 Given linked list: 1->2->3->4->5, and n = 2.
 
 After removing the second node from the end, the linked list becomes 1->2->3->5.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Passes
    1. Count the length and then we know where to remove the element
@@ -25,7 +27,7 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -75,7 +77,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 149-max-points-on-a-line
+
+## Question {#question}
 
 [https://leetcode.com/problems/max-points-on-a-line/description/](https://leetcode.com/problems/max-points-on-a-line/description/)
 
@@ -6,11 +8,11 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force - HashMap
    1. We simply create all possible pair of points, and calculate their slope and intercept
@@ -18,7 +20,7 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
    3. Time complexity O\(n^2\)
    4. Space complexity O\(n^2\)
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -66,7 +68,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

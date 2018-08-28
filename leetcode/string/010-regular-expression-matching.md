@@ -1,4 +1,6 @@
-### Question {#question}
+# 010-regular-expression-matching
+
+## Question {#question}
 
 [https://leetcode.com/problems/regular-expression-matching/description/](https://leetcode.com/problems/regular-expression-matching/description/)
 
@@ -6,7 +8,7 @@ Implement regular expression matching with support for '.' and '\*'.
 
 **Example:**
 
-```
+```text
 '.' Matches any single character.
 '*' Matches zero or more of the preceding element.
 
@@ -25,7 +27,7 @@ isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. We check the first characters matched by s\[0\] == p\[0\] or p\[0\] == '.'
@@ -45,7 +47,7 @@ isMatch("aab", "c*a*b") → true
    2. Time complexity O\(TP\)
    3. Space complexity O\(TP\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -141,7 +143,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

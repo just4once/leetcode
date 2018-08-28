@@ -1,10 +1,12 @@
-### Question {#question}
+# 043-multiply-strings
+
+## Question {#question}
 
 [https://leetcode.com/problems/multiply-strings/description/](https://leetcode.com/problems/multiply-strings/description/)
 
 Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
 
-**Note:**
+**Note:** 
 
 1. The length of both num1 and num2 is &lt; 110.
 2. Both num1 and num2 contains only digits 0-9.
@@ -13,17 +15,17 @@ Given two non-negative integers num1 and num2 represented as strings, return the
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Multiply from Back
    1. Start the multiplication from the back, each time we will have at most 2 digits
    2. We need 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

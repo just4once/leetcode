@@ -1,10 +1,12 @@
-### Question {#question}
+# 153-find-minimum-in-rotated-sorted-array
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
 
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 
-\(i.e.,  \[0,1,2,4,5,6,7\] might become  \[4,5,6,7,0,1,2\]\).
+\(i.e., \[0,1,2,4,5,6,7\] might become \[4,5,6,7,0,1,2\]\).
 
 Find the minimum element.
 
@@ -12,12 +14,12 @@ You may assume no duplicate exists in the array.
 
 **Example:**
 
-```
+```text
 Input: [3,4,5,1,2],
 Output: 1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. We use two pointers to track the start and the end of the array
@@ -27,7 +29,7 @@ Output: 1
    5. Time complexity O\(log n\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

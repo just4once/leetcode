@@ -1,4 +1,6 @@
-### Question {#question}
+# 202-happy-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/happy-number/description/](https://leetcode.com/problems/happy-number/description/)
 
@@ -8,7 +10,7 @@ A happy number is a number defined by the following process: Starting with any p
 
 **Example:**
 
-```
+```text
 19 is a happy number
 
 1^2 + 9^2 = 82
@@ -17,18 +19,18 @@ A happy number is a number defined by the following process: Starting with any p
 1^2 + 0^2 + 0^2 = 1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force - Set
    1. Use set to record the squared sum through the process
    2. If we have seen this number before, we know there is loop, and we cannot reach to 1
 2. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
-	public boolean isHappy(int n) {
+    public boolean isHappy(int n) {
         Set<Integer> set = new HashSet<>();
         int res = 0;
         while (set.add(n)) {
@@ -42,21 +44,21 @@ class Solution {
             res = 0;
         }
         return false;
-	}
+    }
 }
 ```
 
 ```java
 class Solution {
-	public boolean isHappy(int n) {
+    public boolean isHappy(int n) {
         int slow = n, fast = n;
         do {
             slow = cal(slow);
             fast = cal(cal(fast));
         } while (slow != fast);
         return slow == 1;
-	}
-    
+    }
+
     private int cal(int n) {
         int res = 0;
         while (n > 0) {
@@ -69,7 +71,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

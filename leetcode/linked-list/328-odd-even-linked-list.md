@@ -1,4 +1,6 @@
-### Question {#question}
+# 328-odd-even-linked-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/odd-even-linked-list/description/](https://leetcode.com/problems/odd-even-linked-list/description/)
 
@@ -8,24 +10,24 @@ You should try to do it in place. The program should run in O\(1\) space complex
 
 **Example:**
 
-```
+```text
 Given 1->2->3->4->5->NULL,
 return 1->3->5->2->4->NULL.
 ```
 
-**Note:**
+**Note:** 
 
-The relative order inside both the even and odd groups should remain as it was in the input. 
+The relative order inside both the even and odd groups should remain as it was in the input.
 
 The first node is considered odd, the second node even and so on ...
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two pointers
    1. Time complexity O\(n\)
    2. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +46,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

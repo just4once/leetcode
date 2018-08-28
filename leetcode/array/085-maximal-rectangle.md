@@ -1,4 +1,6 @@
-### Question {#question}
+# 085-maximal-rectangle
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximal-rectangle/description/](https://leetcode.com/problems/maximal-rectangle/description/)
 
@@ -6,7 +8,7 @@ Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle con
 
 **Example:**
 
-```markdown
+```text
 1 0 1 0 0
 1 0 1 1 1
 1 1 1 1 1
@@ -15,13 +17,13 @@ Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle con
 Return 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. This is very similar to , instead of giving heights directly to us, we have to computer row by row. Therefore we need an additional array to hold the heights of the column
 2. Time complexity O\(n^2\)
 3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -63,7 +65,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

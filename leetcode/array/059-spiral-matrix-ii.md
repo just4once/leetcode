@@ -1,4 +1,6 @@
-### Question {#question}
+# 059-spiral-matrix-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/spiral-matrix-ii/description/](https://leetcode.com/problems/spiral-matrix-ii/description/)
 
@@ -6,7 +8,7 @@ Given an integer n, generate a square matrix filled with elements from 1 to n2 i
 
 **Example:**
 
-```
+```text
 Given n = 3,
 You should return the following matrix:
 [
@@ -16,14 +18,14 @@ You should return the following matrix:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Very similar to [054-Spiral Matrix](/leetcode/array/054-spiral-matrix.md), we can reuse very much the same code
+1. Very similar to [054-Spiral Matrix](054-spiral-matrix.md), we can reuse very much the same code
 2. Fill the top, right, bottom, and left
 3. Time complexity O\(n^2\)
 4. Space complexity O\(n^2\), O\(1\) extra
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -59,7 +61,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

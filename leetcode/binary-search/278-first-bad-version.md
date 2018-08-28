@@ -1,4 +1,6 @@
-### Question {#question}
+# 278-first-bad-version
+
+## Question {#question}
 
 [https://leetcode.com/problems/first-bad-version/description/](https://leetcode.com/problems/first-bad-version/description/)
 
@@ -10,11 +12,11 @@ You are given an API bool isBadVersion\(version\) which will return whether vers
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. We test the mid version is bad or not
@@ -23,7 +25,7 @@ You are given an API bool isBadVersion\(version\) which will return whether vers
    4. Time complexity O\(logn\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /* The isBadVersion API is defined in the parent class VersionControl.
@@ -42,7 +44,5 @@ public class Solution extends VersionControl {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

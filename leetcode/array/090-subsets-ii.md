@@ -1,4 +1,6 @@
-### Question {#question}
+# 090-subsets-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/subsets-ii/description/](https://leetcode.com/problems/subsets-ii/description/)
 
@@ -8,7 +10,7 @@ Given a collection of integers that might contain duplicates, **nums**, return a
 
 **Example:**
 
-```
+```text
 If nums = [1,2,2], a solution is:
 [
   [2],
@@ -20,14 +22,14 @@ If nums = [1,2,2], a solution is:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Similar to [078-Subsets](/leetcode/array/078-subsets.md), we need to generate the power sets
+1. Similar to [078-Subsets](078-subsets.md), we need to generate the power sets
 2. To remove the duplicate set, we have sort the input and make sure that that current element is not the same as previous element
 3. Time complexity O\(2^n\)
 4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

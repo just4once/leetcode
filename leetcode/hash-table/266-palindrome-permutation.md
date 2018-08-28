@@ -1,4 +1,6 @@
-### Question {#question}
+# 266-palindrome-permutation
+
+## Question {#question}
 
 [https://leetcode.com/problems/palindrome-permutation/description/](https://leetcode.com/problems/palindrome-permutation/description/)
 
@@ -6,11 +8,11 @@ Given a string, determine if a permutation of the string could form a palindrome
 
 **Example:**
 
-```
+```text
 "code" -> False, "aab" -> True, "carerac" -> True.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table - Two passes
    1. Use map to store the frequency of character, if we have seen odd frequency more than once, we can't make a permutation that is palindrom
@@ -18,7 +20,7 @@ Given a string, determine if a permutation of the string could form a palindrome
    3. Space complexity O\(n\)
 2. Hash Table - One pass 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -55,7 +57,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 379-design-phone-directory
+
+## Question {#question}
 
 [https://leetcode.com/problems/design-phone-directory/description/](https://leetcode.com/problems/design-phone-directory/description/)
 
@@ -10,7 +12,7 @@ Design a Phone Directory which supports the following operations:
 
 **Example:**
 
-```
+```text
 // Init a phone directory containing a total of 3 numbers: 0, 1, and 2.
 PhoneDirectory directory = new PhoneDirectory(3);
 
@@ -36,13 +38,13 @@ directory.release(2);
 directory.check(2);
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Queue and Boolean array
    1. Time complexity O\(1\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class PhoneDirectory {
@@ -58,7 +60,7 @@ class PhoneDirectory {
         }
         used = new boolean[maxNumbers];
     }
-    
+
     /** Provide a number which is not assigned to anyone.
         @return - Return an available number. Return -1 if none is available. */
     public int get() {
@@ -66,12 +68,12 @@ class PhoneDirectory {
         used[queue.peek()] = true;
         return queue.poll();
     }
-    
+
     /** Check if a number is available or not. */
     public boolean check(int number) {
         return !used[number];
     }
-    
+
     /** Recycle or release a number. */
     public void release(int number) {
         if (used[number]) {
@@ -90,7 +92,5 @@ class PhoneDirectory {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

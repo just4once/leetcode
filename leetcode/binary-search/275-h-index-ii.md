@@ -1,4 +1,6 @@
-### Question {#question}
+# 275-h-index-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/h-index-ii/description/](https://leetcode.com/problems/h-index-ii/description/)
 
@@ -6,11 +8,11 @@ Follow up for H-Index: What if the citations array is sorted in ascending order?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Since there are n index, we have h index range from 1 to n
@@ -19,7 +21,7 @@ Follow up for H-Index: What if the citations array is sorted in ascending order?
    4. Time complexity O\(logn\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -41,7 +43,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

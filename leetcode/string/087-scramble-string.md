@@ -1,4 +1,6 @@
-### Question {#question}
+# 087-scramble-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/scramble-string/description/](https://leetcode.com/problems/scramble-string/description/)
 
@@ -8,7 +10,7 @@ Given a string s1, we may represent it as a binary tree by partitioning it to tw
 
 Below is one possible representation of s1 = "**great**":
 
-```
+```text
     great
    /    \
   gr    eat
@@ -24,7 +26,7 @@ For example, if we choose the node "**gr**" and swap its two children, it produc
 
 We say that "**rgeat**" is a scrambled string of "**great**".
 
-```
+```text
     rgeat
    /    \
   rg    eat
@@ -38,7 +40,7 @@ Similarly, if we continue to swap the children of nodes "**eat**" and "**at**", 
 
 We say that "**rgtae**" is a scrambled string of "**great**".
 
-```
+```text
     rgtae
    /    \
   rg    tae
@@ -48,7 +50,7 @@ r   g  ta  e
       t   a
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. If the string lengths do not equal or the characters are mismatch \(use map\), we can return false
@@ -70,7 +72,7 @@ r   g  ta  e
    4. Time complexity O\(n^4\)
    5. Space complexity O\(n^3\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -151,7 +153,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

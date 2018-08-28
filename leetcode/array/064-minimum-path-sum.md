@@ -1,4 +1,6 @@
-### Question {#question}
+# 064-minimum-path-sum
+
+## Question {#question}
 
 [https://leetcode.com/problems/minimum-path-sum/description/](https://leetcode.com/problems/minimum-path-sum/description/)
 
@@ -6,7 +8,7 @@ Given a m x n grid filled with non-negative numbers, find a path from top left t
 
 **Example:**
 
-```
+```text
 [[1,3,1],
  [1,5,1],
  [4,2,1]]
@@ -14,11 +16,11 @@ Given a m x n grid filled with non-negative numbers, find a path from top left t
 Given the above grid map, return 7. Because the path 1→3→1→1→1 minimizes the sum.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Similar to the [062-Unique Paths](/leetcode/array/062-unique-paths.md) and [063-Unique Paths II ](/leetcode/array/063-unique-paths-ii.md)we can create two dimensional dp array and reduce to one dimentional
+1. Similar to the [062-Unique Paths](062-unique-paths.md) and [063-Unique Paths II ](063-unique-paths-ii.md)we can create two dimensional dp array and reduce to one dimentional
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -38,7 +40,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

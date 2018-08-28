@@ -1,4 +1,6 @@
-### Question {#question}
+# 075-sort-colors
+
+## Question {#question}
 
 [https://leetcode.com/problems/sort-colors/description/](https://leetcode.com/problems/sort-colors/description/)
 
@@ -14,11 +16,11 @@ Could you come up with an one-pass algorithm using only constant space?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Counting sort - Two passes
    1. We can count the number of each color and fill the array
@@ -31,7 +33,7 @@ Could you come up with an one-pass algorithm using only constant space?
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -74,7 +76,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

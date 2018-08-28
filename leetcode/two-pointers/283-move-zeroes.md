@@ -1,4 +1,6 @@
-### Question {#question}
+# 283-move-zeroes
+
+## Question {#question}
 
 [https://leetcode.com/problems/move-zeroes/description/](https://leetcode.com/problems/move-zeroes/description/)
 
@@ -6,13 +8,13 @@ Given an array nums, write a function to move all 0's to the end of it while mai
 
 **Example:**
 
-```
+```text
 Given nums = [0, 1, 0, 3, 12], 
 after calling your function, 
 nums should be [1, 3, 12, 0, 0].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Use one pointer to keep track the last inserted position
@@ -21,7 +23,7 @@ nums should be [1, 3, 12, 0, 0].
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -35,7 +37,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

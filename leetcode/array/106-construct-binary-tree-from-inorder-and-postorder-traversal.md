@@ -1,4 +1,6 @@
-### Question {#question}
+# 106-construct-binary-tree-from-inorder-and-postorder-traversal
+
+## Question {#question}
 
 [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
 
@@ -10,7 +12,7 @@ You may assume that duplicates do not exist in the tree.
 
 **Example:**
 
-```
+```text
 inorder = [9,3,15,20,7]
 postorder = [9,15,7,20,3]
 
@@ -22,15 +24,15 @@ Return the following binary tree:
    15   7
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Inorder travels by the order of left, parent, right
 2. Postorder travels by left, right, parent
-3. This is similar to[105-Construct Binary Tree from Preorder and Inorder Traversal](/leetcode/array/105-construct-binary-tree-from-preorder-and-inorder-traversal.md) , unlike preorder where the root is at the front, postorder's root is at the end
+3. This is similar to[105-Construct Binary Tree from Preorder and Inorder Traversal](105-construct-binary-tree-from-preorder-and-inorder-traversal.md) , unlike preorder where the root is at the front, postorder's root is at the end
 4. Time complexity O\(n\)
 5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -103,7 +105,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

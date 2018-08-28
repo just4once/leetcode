@@ -1,21 +1,23 @@
-### Question {#question}
+# 274-h-index
+
+## Question {#question}
 
 [https://leetcode.com/problems/h-index/description/](https://leetcode.com/problems/h-index/description/)
 
 Given an array of citations \(each citation is a non-negative integer\) of a researcher, write a function to compute the researcher's h-index.
 
-According to the [definition of h-index on Wikipedia](https://en.wikipedia.org/wiki/H-index): "A scientist has index h if h of his/her N papers have **at least **h citations each, and the other N − h papers have **no more than **hcitations each."
+According to the [definition of h-index on Wikipedia](https://en.wikipedia.org/wiki/H-index): "A scientist has index h if h of his/her N papers have **at least** h citations each, and the other N − h papers have **no more than** hcitations each."
 
 **Example:**
 
-```
+```text
 Given citations = [3, 0, 6, 1, 5], 
 which means the researcher has 5 papers in total and each of them had received 3, 0, 6, 1, 5 citations respectively.
 Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations 
 each, his h-index is 3.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sort
    1. If we sort citations in descending order and every index is a potential h-index
@@ -27,7 +29,7 @@ each, his h-index is 3.
    1. Store the respective count in each potential h-index bucket
    2. 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -58,7 +60,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

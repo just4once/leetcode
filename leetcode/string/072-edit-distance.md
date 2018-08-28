@@ -1,4 +1,6 @@
-### Question {#question}
+# 072-edit-distance
+
+## Question {#question}
 
 [https://leetcode.com/problems/edit-distance/description/](https://leetcode.com/problems/edit-distance/description/)
 
@@ -12,11 +14,11 @@ c\) Replace a character
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing
    1. Create two dimensional array, dp, where dp\[i\]\[j\] store the minimum steps require for converting w1's 0th to ith character to w2's 0th to jth character
@@ -28,12 +30,12 @@ c\) Replace a character
    1. Time complexity O\(mn\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
     public int minDistance(String word1, String word2) {
-		int m = word1.length(), n = word2.length();
+        int m = word1.length(), n = word2.length();
         char[] w1 = word1.toCharArray(), w2 = word2.toCharArray();
         int[][] dp = new int[m + 1][n + 1];
         for (int i = 1; i <= m; i++) dp[i][0] = i;
@@ -72,7 +74,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

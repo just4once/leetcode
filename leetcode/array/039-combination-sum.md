@@ -1,10 +1,12 @@
-### Question {#question}
+# 039-combination-sum
+
+## Question {#question}
 
 [https://leetcode.com/problems/combination-sum/description/](https://leetcode.com/problems/combination-sum/description/)
 
-Given a **set **of candidate numbers \(**C**\)**\(without duplicates\)**and a target number \(**T**\), find all unique combinations in **C **where the candidate numbers sums to**T**.
+Given a **set** of candidate numbers \(**C**\)**\(without duplicates\)**and a target number \(**T**\), find all unique combinations in **C** where the candidate numbers sums to**T**.
 
-The **same **repeated number may be chosen from **C **unlimited number of times.
+The **same** repeated number may be chosen from **C** unlimited number of times.
 
 **Note:**
 
@@ -13,7 +15,7 @@ The **same **repeated number may be chosen from **C **unlimited number of times.
 
 **Example:**
 
-```
+```text
 Given candidate set [2, 3, 6, 7] and target 7, 
 A solution set is: 
 [
@@ -22,7 +24,7 @@ A solution set is:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. This is classic question asking for use of backtrack
 2. We loop through every element, if adding this element will not exceed the target
@@ -30,7 +32,7 @@ A solution set is:
 4. Time complexity O\(n^2\)
 5. Space complexity O\(log n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -40,7 +42,7 @@ class Solution {
         backtrack(res, new ArrayList<>(), candidates, target, 0);
         return res;
     }
-    
+
     public void backtrack(List<List<Integer>> res, List<Integer> sol, int[] candidates, int target, int start){
         if (target < 0) return;
         else if (target == 0) res.add(new ArrayList<>(sol));
@@ -55,7 +57,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

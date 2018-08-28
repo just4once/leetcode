@@ -1,8 +1,10 @@
-### Question {#question}
+# 360-sort-transformed-array
+
+## Question {#question}
 
 [https://leetcode.com/problems/sort-transformed-array/description/](https://leetcode.com/problems/sort-transformed-array/description/)
 
-Given a **sorted **array of integersnumsand integer valuesa,bandc. Apply a quadratic function of the form f\(x\) =ax2+bx+cto each elementxin the array.
+Given a **sorted** array of integersnumsand integer valuesa,bandc. Apply a quadratic function of the form f\(x\) =ax2+bx+cto each elementxin the array.
 
 The returned array must be in **sorted order**.
 
@@ -10,7 +12,7 @@ Expected time complexity: **O\(n\)**
 
 **Example:**
 
-```
+```text
 nums = [-4, -2, 2, 4], a = 1, b = 3, c = 5,
 
 Result: [3, 9, 15, 33]
@@ -20,7 +22,7 @@ nums = [-4, -2, 2, 4], a = -1, b = 3, c = 5
 Result: [-23, -5, 1, 7]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Start from the end of the array, the value is either the max or min depends on the value of a
@@ -29,7 +31,7 @@ Result: [-23, -5, 1, 7]
    4. Time complexity O\(n\)
    5. Space complexity O\(n\) or O\(1\) extra
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -60,14 +62,12 @@ class Solution {
         }
         return res;
     }
-    
+
     private int cal(int a, int b, int c, int x) {
         return a * x * x + b * x + c;
     }
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

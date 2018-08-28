@@ -1,4 +1,6 @@
-### Question {#question}
+# 397-integer-replacement
+
+## Question {#question}
 
 [https://leetcode.com/problems/integer-replacement/description/](https://leetcode.com/problems/integer-replacement/description/)
 
@@ -11,7 +13,7 @@ What is the minimum number of replacements needed for n to become 1?
 
 **Example:**
 
-```
+```text
 Input:
 8
 
@@ -22,7 +24,7 @@ Explanation:
 8 -> 4 -> 2 -> 1
 ```
 
-```
+```text
 Input:
 7
 
@@ -35,7 +37,7 @@ or
 7 -> 6 -> 3 -> 2 -> 1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Pattern Finding
    1. Three cases
@@ -45,7 +47,7 @@ or
    2. Time complexity O\(log n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -62,7 +64,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

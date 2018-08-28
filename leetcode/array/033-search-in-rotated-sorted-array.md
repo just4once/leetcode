@@ -1,4 +1,6 @@
-### Question {#question}
+# 033-search-in-rotated-sorted-array
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-in-rotated-sorted-array/description/](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 
@@ -12,11 +14,11 @@ You may assume no duplicate exists in the array.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Compare value one by one
@@ -36,7 +38,7 @@ You may assume no duplicate exists in the array.
          1. The left part is sorted, we compare with the left's boundary and decide which part to search
          2. The right part is sorted, we compare with the right's boundary and decide which part to search
 
-### Solution
+## Solution
 
 Pivot + Binary Search
 
@@ -93,7 +95,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

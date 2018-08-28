@@ -1,10 +1,12 @@
-### Question {#question}
+# 038-count-and-say
+
+## Question {#question}
 
 [https://leetcode.com/problems/count-and-say/description/](https://leetcode.com/problems/count-and-say/description/)
 
 The count-and-say sequence is the sequence of integers with the first five terms as following:
 
-```
+```text
 1.     1
 2.     11
 3.     21
@@ -20,7 +22,7 @@ The count-and-say sequence is the sequence of integers with the first five terms
 
 **Example:**
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. Get the previous string and then start count and append
@@ -29,7 +31,7 @@ The count-and-say sequence is the sequence of integers with the first five terms
 2. Iterative
    1. We can also write iterative approach
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -55,7 +57,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

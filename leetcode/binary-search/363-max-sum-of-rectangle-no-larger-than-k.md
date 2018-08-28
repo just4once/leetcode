@@ -1,4 +1,6 @@
-### Question {#question}
+# 363-max-sum-of-rectangle-no-larger-than-k
+
+## Question {#question}
 
 [https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/)
 
@@ -6,7 +8,7 @@ Given a non-empty 2D matrix matrix and an integer k, find the max sum of a recta
 
 **Example:**
 
-```
+```text
 Given matrix = [
   [1,  0, 1],
   [0, -2, 3]
@@ -16,12 +18,12 @@ k = 2
 
 The answer is 2. Because the sum of rectangle \[\[0, 1\], \[-2, 3\]\] is 2 and 2 is the max number no larger than k \(k = 2\).
 
-**Note:**
+**Note:** 
 
 1. The rectangle inside the matrix must have an area &gt; 0.
 2. What if the number of rows is much larger than the number of columns?
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Presum and Binary Search
    1. We need a way to get all the rectangles, which can be define by 4 variables r1, r2, c1 c2 that means the top row, bottom row, left column and right column
@@ -30,7 +32,7 @@ The answer is 2. Because the sum of rectangle \[\[0, 1\], \[-2, 3\]\] is 2 and 2
    4. Time complexity O\(m^2nlogn\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -86,7 +88,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

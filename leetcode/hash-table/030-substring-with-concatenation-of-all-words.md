@@ -1,4 +1,6 @@
-### Question {#question}
+# 030-substring-with-concatenation-of-all-words
+
+## Question {#question}
 
 [https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/)
 
@@ -6,14 +8,14 @@ You are given a string, **s**, and a list of words, **words**, that are all of t
 
 **Example:**
 
-```
+```text
 s: "barfoothefoobarman"
 words: ["foo", "bar"]
 
 You should return the indices: [0,9].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. We simply break the string at different point to make the substring the length of total length of words
@@ -25,7 +27,7 @@ You should return the indices: [0,9].
    3. Time complexity O\(n\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -121,7 +123,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

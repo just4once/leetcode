@@ -1,4 +1,6 @@
-### Question {#question}
+# 350-intersection-of-two-arrays-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/intersection-of-two-arrays-ii/description/](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 
@@ -6,11 +8,11 @@ Given two arrays, write a function to compute their intersection.
 
 **Example:**
 
-```
+```text
 Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Save the count of number into the map
@@ -22,7 +24,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
    2. Time complexity O\(mlogm + nlogn\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -74,12 +76,10 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
+## Additional {#additional}
 
-What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
 * If only nums2 cannot fit in memory, put all elements of nums1 into a HashMap, read chunks of array that fit into the memory, and record the intersections.
 * If both nums1 and nums2 are so huge that neither fit into the memory, sort them individually \(external sort\), then read 2 elements from each array at a time in memory, record intersections.
-
-
 

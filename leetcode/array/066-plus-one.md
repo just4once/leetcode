@@ -1,8 +1,10 @@
-### Question {#question}
+# 066-plus-one
+
+## Question {#question}
 
 [https://leetcode.com/problems/plus-one/description/](https://leetcode.com/problems/plus-one/description/)
 
-Given a non-negative integer represented as a **non-empty **array of digits, plus one to the integer.
+Given a non-negative integer represented as a **non-empty** array of digits, plus one to the integer.
 
 You may assume the integer do not contain any leading zero, except the number 0 itself.
 
@@ -10,11 +12,11 @@ The digits are stored such that the most significant digit is at the head of the
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Since the most significant digit is at the head, we need to go from back of the array
 2. We can break fast if the current digit is smaller than 9, since adding one won't impact the rest front digit
@@ -23,7 +25,7 @@ The digits are stored such that the most significant digit is at the head of the
 5. Time complexity O\(n\)
 6. Space complexity O\(1\) or O\(n\) when all digits are 9
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -39,7 +41,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

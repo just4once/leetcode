@@ -1,4 +1,6 @@
-### Question {#question}
+# 093-restore-ip-addresses
+
+## Question {#question}
 
 [https://leetcode.com/problems/restore-ip-addresses/description/](https://leetcode.com/problems/restore-ip-addresses/description/)
 
@@ -6,13 +8,13 @@ Given a string containing only digits, restore it by returning all possible vali
 
 **Example:**
 
-```
+```text
 Given "25525511135",
 
 return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Backtrack DFS
    1. Using backtrack to track the progress of parsing the string
@@ -25,7 +27,7 @@ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
    2. Time complexity O\(3^4\)
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -70,14 +72,14 @@ class Solution {
         }
         return list;
     }
-    
+
     public void backtrack(List<String> list, char[] path, char[] s, int start, int group){
         if (group == 4) {
             if (start == s.length) list.add(String.valueOf(path));
             return;
         } else {
             int num = 0;
-			for (int i = start; i < s.length && i < start + 3; i++) {
+            for (int i = start; i < s.length && i < start + 3; i++) {
                 if (s[start] == '0' && i != start) break;
                 num = num * 10 + s[i] - '0';
                 if (num > 255) break;
@@ -85,12 +87,10 @@ class Solution {
                 if (group != 3) path[group + i + 1] = '.';
                 backtrack(list, path, s, i + 1, group + 1);
             }
-		}
+        }
     }
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

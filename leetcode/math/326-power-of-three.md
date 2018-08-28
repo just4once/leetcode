@@ -1,4 +1,6 @@
-### Question {#question}
+# 326-power-of-three
+
+## Question {#question}
 
 [https://leetcode.com/problems/power-of-three/description/](https://leetcode.com/problems/power-of-three/description/)
 
@@ -6,11 +8,11 @@ Given an integer, write a function to determine if it is a power of three.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. While Loop
    1. Time complexity O\(log n\)
@@ -31,7 +33,7 @@ Given an integer, write a function to determine if it is a power of three.
    5. Time complexity O\(1\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -71,7 +73,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 719-find-k-th-smallest-pair-distance
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/)
 
@@ -6,7 +8,7 @@ Given an integer array, return the k-th smallest distance among all the pairs. T
 
 **Example:**
 
-```
+```text
 Input:
 nums = [1,3,1]
 k = 1
@@ -19,14 +21,14 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:        
-**
+**Note:**    
+
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
 2. 0 &lt;= nums\[i\] &lt; 1000000.
 3. 1 &lt;= k &lt;= len\(nums\) \* \(len\(nums\) - 1\) / 2.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force \(TLE\)
    1. Generate all the distance pairs through n^2 process
@@ -48,7 +50,7 @@ Then the 1st smallest distance pair is (1,1), and its distance is 0.
    6. Time complexity O\(nlogn + n^2logw\), where w = max - min
    7. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -120,7 +122,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

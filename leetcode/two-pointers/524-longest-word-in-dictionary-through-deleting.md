@@ -1,4 +1,6 @@
-### Question {#question}
+# 524-longest-word-in-dictionary-through-deleting
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/)
 
@@ -6,7 +8,7 @@ Given a string and a string dictionary, find the longest string in the dictionar
 
 **Example 1:**
 
-```
+```text
 Input:
 s = "abpcplea", d = ["ale","apple","monkey","plea"]
 
@@ -16,7 +18,7 @@ Output:
 
 **Example 2:**
 
-```
+```text
 Input:
 s = "abpcplea", d = ["a","b","c"]
 
@@ -30,14 +32,14 @@ Output:
 2. The size of the dictionary won't exceed 1,000.
 3. The length of all the strings in the input won't exceed 1,000.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. String IndexOf function
    1. Use separate function to see if the letter can be found after its previous character
    2. Time complexity O\(nw\), where n is number of words, and w is width of the string
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -51,7 +53,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private boolean isSubsequence(String word, String longer) {
         if (word.length() > longer.length()) return false;
         int pos = 0;
@@ -65,7 +67,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

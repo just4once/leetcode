@@ -1,4 +1,6 @@
-### Question {#question}
+# 532-k-diff-pairs-in-an-array
+
+## Question {#question}
 
 [https://leetcode.com/problems/k-diff-pairs-in-an-array/description/](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/)
 
@@ -6,7 +8,7 @@ Given an array of integers and an integer k, you need to find the number of uniq
 
 **Example 1:**
 
-```
+```text
 Input: [3, 1, 4, 1, 5], k = 2
 Output: 2
 Explanation: There are two 2-diff pairs in the array, (1, 3) and (3, 5).
@@ -15,7 +17,7 @@ Although we have two 1s in the input, we should only return the number of unique
 
 **Example 2:**
 
-```
+```text
 Input:[1, 2, 3, 4, 5], k = 1
 Output: 4
 Explanation: There are four 1-diff pairs in the array, (1, 2), (2, 3), (3, 4) and (4, 5).
@@ -23,7 +25,7 @@ Explanation: There are four 1-diff pairs in the array, (1, 2), (2, 3), (3, 4) an
 
 **Example 3:**
 
-```
+```text
 Input: [1, 3, 1, 5, 4], k = 0
 Output: 1
 Explanation: There is one 0-diff pair in the array, (1, 1).
@@ -35,7 +37,7 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
 2. The length of the array won't exceed 10,000.
 3. All the integers in the given input belong to the range: \[-1e7, 1e7\].
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Store the number and its count in the hash table
@@ -46,7 +48,7 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
 2. Sort and Two Pointers
    1. 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

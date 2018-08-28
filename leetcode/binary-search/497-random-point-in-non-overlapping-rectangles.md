@@ -1,11 +1,13 @@
-### Question {#question}
+# 497-random-point-in-non-overlapping-rectangles
+
+## Question {#question}
 
 [https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/description/](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/description/)
 
 Given a list of non-overlapping axis-aligned rectangles rects, write a function pick which randomly and uniformily picks an integer point in the space covered by the rectangles.
 
-**Note:          
-**
+**Note:**    
+
 
 1. An integer point is a point that has integer coordinates. 
 2. A point on the perimeter of a rectangle is included in the space covered by the rectangles. 
@@ -17,7 +19,7 @@ Given a list of non-overlapping axis-aligned rectangles rects, write a function 
 
 **Example 1:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick"]
 [[[[1,1,5,5]]],[],[],[]]
@@ -27,7 +29,7 @@ Output:
 
 **Example 2:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick","pick","pick"]
 [[[[-2,-2,-1,-1],[1,0,3,0]]],[],[],[],[],[]]
@@ -35,11 +37,11 @@ Output:
 [null,[-1,-2],[2,0],[-2,-1],[3,0],[-2,-2]]
 ```
 
-**Explanation of Input Syntax:  **
+**Explanation of Input Syntax:** 
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array of rectangles rects. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. To get a random point, we have to locate one rectangle then pick from it
@@ -51,7 +53,7 @@ The input is two lists: the subroutines called and their arguments. Solution's c
    7. Time complexity O\(n\)
    8. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -70,7 +72,7 @@ class Solution {
             presum[i] = total;
         }
     }
-    
+
     public int[] pick() {
         int r = rand.nextInt(total) + 1;
         int i = binarySearch(presum, r);
@@ -99,7 +101,5 @@ class Solution {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 044-wildcard-matching
+
+## Question {#question}
 
 [https://leetcode.com/problems/wildcard-matching/description/](https://leetcode.com/problems/wildcard-matching/description/)
 
@@ -6,7 +8,7 @@ Implement wildcard pattern matching with support for '?' and '\*'.
 
 **Example:**
 
-```
+```text
 '?' Matches any single character.
 '*' Matches any sequence of characters (including the empty sequence).
 
@@ -25,10 +27,10 @@ isMatch("ab", "?*") → true
 isMatch("aab", "c*a*b") → false
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
-   1. Similar to [010-Regular Expression Matching](/leetcode/string/010-regular-expression-matching.md), we create two dimensional array to store the match result
+   1. Similar to [010-Regular Expression Matching](010-regular-expression-matching.md), we create two dimensional array to store the match result
    2. dp\[i\]\[j\] store the match result for 0th to ith character from s and 0th to jth character from p
    3. Time complexity O\(sp\)
    4. Space complexity O\(sp\)
@@ -38,7 +40,7 @@ isMatch("aab", "c*a*b") → false
    3. Anytime we have mismatch, we go back and check if we have seen \* before and soak up as many bad character as possible
    4. At the end, we just check if the remaining p character is \*
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -91,7 +93,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 147-insertion-sort-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/insertion-sort-list/description/](https://leetcode.com/problems/insertion-sort-list/description/)
 
@@ -6,11 +8,11 @@ Sort a linked list using insertion sort.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Pointer
    1. Use dummy variable to point to head and a another variable track the progress the variable
@@ -18,7 +20,7 @@ Sort a linked list using insertion sort.
    3. Time complexity O\(n^2\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -38,7 +40,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

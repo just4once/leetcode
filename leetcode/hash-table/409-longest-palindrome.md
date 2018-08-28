@@ -1,18 +1,20 @@
-### Question {#question}
+# 409-longest-palindrome
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-palindrome/description/](https://leetcode.com/problems/longest-palindrome/description/)
 
 Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
 
-This is case sensitive, for example "Aa" is not considered a palindrome here.
+This is case sensitive, for example "Aa" is not considered a palindrome here.
 
-**Note:**
+ **Note:** 
 
 Assume the length of given string will not exceed 1,010.
 
 **Example:**
 
-```
+```text
 Input:
 "abccccdd"
 
@@ -23,14 +25,14 @@ Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Use hash table to record the count for all characters, we will want to use all the even count for character and plus 1 if any one of them has odd count
    2. Time complexity O\(n\)
    3. Space complexity O\(n\) or O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -81,7 +83,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

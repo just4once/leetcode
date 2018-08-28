@@ -1,14 +1,16 @@
-### Question {#question}
+# 161-one-edit-distance
+
+## Question {#question}
 
 Given two strings S and T, determine if they are both one edit distance apart.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP \(TLE\)
    1. Typical DP where we store the edit distance in dp, where dp\[i\]\[j\] means the edit distance up to ith character of s and jth character of t
@@ -21,7 +23,7 @@ Given two strings S and T, determine if they are both one edit distance apart.
    4. Time complexity O\(m\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -42,7 +44,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,16 +1,18 @@
-### Question {#question}
+# 438-find-all-anagrams-in-a-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-all-anagrams-in-a-string/description/](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
 
-Given a string **s **and a **non-empty **string **p**, find all the start indices of **p**'s anagrams in **s**.
+Given a string **s** and a **non-empty** string **p**, find all the start indices of **p**'s anagrams in **s**.
 
-Strings consists of lowercase English letters only and the length of both strings **s **and **p**will not be larger than 20,100.
+Strings consists of lowercase English letters only and the length of both strings **s** and **p**will not be larger than 20,100.
 
 The order of output does not matter.
 
 **Example 1:**
 
-```
+```text
 Input:
 s: "cbaebabacd" p: "abc"
 
@@ -24,7 +26,7 @@ The substring with start index = 6 is "bac", which is an anagram of "abc".
 
 **Example 2:**
 
-```
+```text
 Input:
 s: "abab" p: "ab"
 
@@ -37,14 +39,14 @@ The substring with start index = 1 is "ba", which is an anagram of "ab".
 The substring with start index = 2 is "ab", which is an anagram of "ab".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Map - Sliding Window
    1. Use map to record the count and left and right pointers to track the windows
    2. Time complexity O\(n\)
    3. Space complexity O\(n\) or O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -69,7 +71,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

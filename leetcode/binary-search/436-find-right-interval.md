@@ -1,4 +1,6 @@
-### Question {#question}
+# 436-find-right-interval
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-right-interval/description/](https://leetcode.com/problems/find-right-interval/description/)
 
@@ -13,7 +15,7 @@ For any interval i, you need to store the minimum interval j's index, which mean
 
 **Example 1:**
 
-```
+```text
 Input: [ [1,2] ]
 
 Output: [-1]
@@ -23,7 +25,7 @@ Explanation: There is only one interval in the collection, so it outputs -1.
 
 **Example 2:**
 
-```
+```text
 Input: [ [3,4], [2,3], [1,2] ]
 
 Output: [-1, 0, 1]
@@ -35,7 +37,7 @@ For [1,2], the interval [2,3] has minimum-"right" start point.
 
 **Example 3:**
 
-```
+```text
 Input: [ [1,4], [2,3], [3,4] ]
 
 Output: [-1, 2, -1]
@@ -44,7 +46,7 @@ Explanation: There is no satisfied "right" interval for [1,4] and [3,4].
 For [2,3], the interval [3,4] has minimum-"right" start point.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Simply find the minimum index that has start greater than current end
@@ -67,7 +69,7 @@ For [2,3], the interval [3,4] has minimum-"right" start point.
    1. Time complexity O\(nlogn\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 public class Solution {
@@ -163,7 +165,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

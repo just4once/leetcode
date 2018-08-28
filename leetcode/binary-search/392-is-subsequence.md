@@ -1,4 +1,6 @@
-### Question {#question}
+# 392-is-subsequence
+
+## Question {#question}
 
 [https://leetcode.com/problems/is-subsequence/description/](https://leetcode.com/problems/is-subsequence/description/)
 
@@ -10,7 +12,7 @@ A subsequence of a string is a new string which is formed from the original stri
 
 **Example:**
 
-```
+```text
 s = "abc", t = "ahbgdc"
 Return true.
 
@@ -18,7 +20,7 @@ s = "axc", t = "ahbgdc"
 Return false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Bucket and Binary Search
    1. Using character buckets to store all the indices for its occurence
@@ -37,7 +39,7 @@ Return false.
    1. Time complexity O\(m\)
    2. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -89,7 +91,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

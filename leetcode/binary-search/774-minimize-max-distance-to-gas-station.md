@@ -1,4 +1,6 @@
-### Question {#question}
+# 774-minimize-max-distance-to-gas-station
+
+## Question {#question}
 
 [https://leetcode.com/problems/minimize-max-distance-to-gas-station/description/](https://leetcode.com/problems/minimize-max-distance-to-gas-station/description/)
 
@@ -10,12 +12,12 @@ Return the smallest possible value of D.
 
 **Example:**
 
-```
+```text
 Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9
 Output: 0.500000
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing \(TLE\)
    1. Create a dp array to store the best answer, where dp\[s\]\[k\] defines to be the answer for inserting k ending at jth station
@@ -41,7 +43,7 @@ Output: 0.500000
    6. Time complexity O\(nlogW\), where w = 1e8/1e-6 = 1e14
    7. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -100,7 +102,7 @@ class Solution {
         }
         return lo;
     }
-    
+
     private boolean possible(double x, int[] stations, int K) {
         int count = 0;
         for (int i = 1; i < stations.length; i++) {
@@ -111,7 +113,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

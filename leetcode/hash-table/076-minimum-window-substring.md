@@ -1,4 +1,6 @@
-### Question {#question}
+# 076-minimum-window-substring
+
+## Question {#question}
 
 [https://leetcode.com/problems/minimum-window-substring/description/](https://leetcode.com/problems/minimum-window-substring/description/)
 
@@ -6,13 +8,13 @@ Given a string S and a string T, find the minimum window in S which will contain
 
 **Example:**
 
-```
+```text
 S = "ADOBECODEBANC"
 T = "ABC"
 Minimum window is "BANC".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Try every possible subsequence
@@ -24,7 +26,7 @@ Minimum window is "BANC".
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -52,7 +54,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

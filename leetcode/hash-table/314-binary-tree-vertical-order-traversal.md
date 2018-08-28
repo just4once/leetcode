@@ -1,4 +1,6 @@
-### Question {#question}
+# 314-binary-tree-vertical-order-traversal
+
+## Question {#question}
 
 [https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/)
 
@@ -8,7 +10,7 @@ If two nodes are in the same row and column, the order should be from **left to 
 
 **Example:**
 
-```
+```text
 Given binary tree [3,9,8,4,0,1,7],
      3
     /\
@@ -27,7 +29,7 @@ Given binary tree [3,9,8,4,0,1,7],
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. BFS
    1. Use queue to store the col index and treenode
@@ -39,7 +41,7 @@ Given binary tree [3,9,8,4,0,1,7],
    1. Time complexity O\(n logn\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -127,7 +129,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

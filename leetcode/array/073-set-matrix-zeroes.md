@@ -1,4 +1,6 @@
-### Question {#question}
+# 073-set-matrix-zeroes
+
+## Question {#question}
 
 [https://leetcode.com/problems/set-matrix-zeroes/description/](https://leetcode.com/problems/set-matrix-zeroes/description/)
 
@@ -6,11 +8,11 @@ Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. We can use an extra array in a separate array
    1. Time complexity O\(mn\)
@@ -19,7 +21,7 @@ Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do
    1. The first record decide whether this column should be zero or not and first column decide whether current row should be zero or not
    2. One thing that we need to keep in mind that, we need to keep one of indicator either the first row and first column in tact to preserve the information
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

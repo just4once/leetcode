@@ -1,4 +1,6 @@
-### Question {#question}
+# 299-bulls-and-cows
+
+## Question {#question}
 
 [https://leetcode.com/problems/bulls-and-cows/description/](https://leetcode.com/problems/bulls-and-cows/description/)
 
@@ -6,7 +8,7 @@ You are playing the following [Bulls and Cows](https://en.wikipedia.org/wiki/Bul
 
 **Example:**
 
-```
+```text
 Secret number:  "1807"
 Friend's guess: "7810"
 
@@ -17,7 +19,7 @@ Write a function to return a hint according to the secret number and friend's gu
 
 Please note that both secret number and friend's guess may contain duplicate digits, for example:
 
-```
+```text
 Secret number:  "1123"
 Friend's guess: "0111"
 ```
@@ -26,7 +28,7 @@ In this case, the 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow, 
 
 You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table - Two pass
    1. Use two hash table to record the character count from 0 - 9, and another variable to track the number of match
@@ -40,7 +42,7 @@ You may assume that the secret number and your friend's guess only contain digit
    4. Time complexity O\(n\)
    5. Space complexity O\(n\) or O\(1\), depends on if we use extra array to store character
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

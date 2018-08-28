@@ -1,4 +1,6 @@
-### Question {#question}
+# 340-longest-substring-with-at-most-k-distinct-characters
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/)
 
@@ -6,12 +8,12 @@ Given a string, find the length of the longest substring T that contains at most
 
 **Example:**
 
-```
+```text
 Given s = “eceba” and k = 2,
 T is "ece" which its length is 3.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sliding Window
    1. The map track the count of each character, if this character is seen the first time, we increase the counter for unique character
@@ -23,7 +25,7 @@ T is "ece" which its length is 3.
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -74,7 +76,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

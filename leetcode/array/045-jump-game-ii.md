@@ -1,4 +1,6 @@
-### Question {#question}
+# 045-jump-game-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
@@ -10,13 +12,13 @@ Your goal is to reach the last index in the minimum number of jumps.
 
 **Example:**
 
-```
+```text
 Given array A = [2,3,1,1,4]
 
 The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Top down recursion
    1. Recursion to find the minimum step for each of step we took
@@ -37,7 +39,7 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from inde
    4. Time complexity O\(n^2\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 Top down \(Stack Overflow\)
 
@@ -133,7 +135,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

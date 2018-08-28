@@ -1,4 +1,6 @@
-### Question {#question}
+# 105-construct-binary-tree-from-preorder-and-inorder-traversal
+
+## Question {#question}
 
 [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
 
@@ -10,7 +12,7 @@ You may assume that duplicates do not exist in the tree.
 
 **Example:**
 
-```
+```text
 preorder = [3,9,20,15,7]
 inorder = [9,3,15,20,7]
 
@@ -21,7 +23,7 @@ inorder = [9,3,15,20,7]
    15   7
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Divide Array to Left and Right part
    1. Preorder reaches the root first, then its left subtree
@@ -39,7 +41,7 @@ inorder = [9,3,15,20,7]
    4. Time complexity O\(n\)
    5. Space complexity O\(n\), O\(1\) extra
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -145,7 +147,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

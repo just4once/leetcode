@@ -1,4 +1,6 @@
-### Question {#question}
+# 632-smallest-range
+
+## Question {#question}
 
 [https://leetcode.com/problems/smallest-range/description/](https://leetcode.com/problems/smallest-range/description/)
 
@@ -8,7 +10,7 @@ We define the range \[a,b\] is smaller than range \[c,d\] if **b-a &lt; d-c** or
 
 **Example:**
 
-```
+```text
 Input:[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]
 Output: [20,24]
 Explanation: 
@@ -21,7 +23,7 @@ List 3: [5, 18, 22, 30], 22 is in range [20,24].
 2. 1 &lt;= k &lt;= 3500
 3. -105 &lt;= value of elements &lt;= 105.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Time complexity O\(n^3\)
@@ -38,7 +40,7 @@ List 3: [5, 18, 22, 30], 22 is in range [20,24].
    2. Time complexity O\(n logm\)
    3. Space complexity O\(m\)
 
-### Solution
+## Solution
 
 Pointers \(TLE\)
 
@@ -94,7 +96,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

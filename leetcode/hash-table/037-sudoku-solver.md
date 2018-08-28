@@ -1,4 +1,6 @@
-### Question {#question}
+# 037-sudoku-solver
+
+## Question {#question}
 
 [https://leetcode.com/problems/sudoku-solver/description/](https://leetcode.com/problems/sudoku-solver/description/)
 
@@ -10,17 +12,17 @@ You may assume that there will be only one unique solution.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Trial by Error and Backtrack
    1. Time complexity O\(9^m\), where m is number of blank cells
    2. Space complexity O\(m\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -58,7 +60,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

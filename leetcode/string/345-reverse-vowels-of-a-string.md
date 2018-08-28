@@ -1,4 +1,6 @@
-### Question {#question}
+# 345-reverse-vowels-of-a-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-vowels-of-a-string/description/](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
 
@@ -6,13 +8,13 @@ Write a function that takes a string as input and reverse only the vowels of a s
 
 **Example:**
 
-```
+```text
 Given s = "hello", return "holle".
 
 Given s = "leetcode", return "leotcede".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Start again with two pointers from left and right
@@ -20,7 +22,7 @@ Given s = "leetcode", return "leotcede".
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -54,7 +56,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

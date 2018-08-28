@@ -1,4 +1,6 @@
-### Question {#question}
+# 159-longest-substring-with-at-most-two-distinct-characters
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/)
 
@@ -6,13 +8,13 @@ Given a string, find the length of the longest substring T that contains at most
 
 **Example:**
 
-```
+```text
 Given s = “eceba”,
 
 T is "ece" which its length is 3.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table - extensible to K characters
    1. Use map to store the position
@@ -26,7 +28,7 @@ T is "ece" which its length is 3.
    4. Space complexity O\(n\)
 3. Typical Template
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -106,7 +108,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

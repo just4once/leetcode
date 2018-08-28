@@ -1,4 +1,6 @@
-### Question {#question}
+# 350-intersection-of-two-arrays-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/intersection-of-two-arrays-ii/description/](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 
@@ -6,7 +8,7 @@ Given two arrays, write a function to compute their intersection.
 
 **Example:**
 
-```
+```text
 Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
 ```
 
@@ -21,7 +23,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
 * What if nums1's size is small compared to nums2's size? Which algorithm is better?
 * What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hashtable
    1. Using hashtable, we can record the frequency of numbers
@@ -38,7 +40,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
    3. Time complexity O\(logn\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -108,7 +110,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int binarySearch(int[] nums, int lo, int hi, int target) {
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
@@ -120,7 +122,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

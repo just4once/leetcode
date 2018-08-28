@@ -1,4 +1,6 @@
-### Question {#question}
+# 020-valid-parentheses
+
+## Question {#question}
 
 [https://leetcode.com/problems/valid-parentheses/description/](https://leetcode.com/problems/valid-parentheses/description/)
 
@@ -8,21 +10,19 @@ The brackets must close in the correct order, "\(\)" and "\(\)\[\]{}" are all va
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. AAAAAA
 
-### Solution
+## Solution
 
 ```java
 
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

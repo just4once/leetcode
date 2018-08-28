@@ -1,4 +1,6 @@
-### Question {#question}
+# 041-first-missing-positive
+
+## Question {#question}
 
 [https://leetcode.com/problems/first-missing-positive/description/](https://leetcode.com/problems/first-missing-positive/description/)
 
@@ -8,18 +10,18 @@ Your algorithm should run in O\(n\) time and uses constant space.
 
 **Example:**
 
-```
+```text
 Given [1,2,0] return 3,
 and [3,4,-1,1] return 2.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. The restriction means what we cannot use any kind of cache, therefore we should do thing in place.
 2. As we go through the array, we put the element in the correct spot at \(num - 1\) index
 3. In the second pass, if the ith index is not equal to i + 1, we know this is the first missing positive
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -39,7 +41,7 @@ class Solution {
         }
         return nums.length + 1;
     }
-    
+
     public void swap(int[] nums, int i, int j){
         int tmp = nums[i];
         nums[i] = nums[j];
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

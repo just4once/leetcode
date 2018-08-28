@@ -1,4 +1,6 @@
-### Question {#question}
+# 005-longest-palindromic-substring
+
+## Question {#question}
 
 [https://leetcode.com/problemset/all/?topicSlugs=string](https://leetcode.com/problemset/all/?topicSlugs=string)
 
@@ -6,7 +8,7 @@ Given a string s, find the longest palindromic substring in s. You may assume th
 
 **Example 1:**
 
-```
+```text
 Input: "babad"
 
 Output: "bab"
@@ -16,13 +18,13 @@ Note: "aba" is also a valid answer.
 
 **Example 2:**
 
-```
+```text
 Input: "cbbd"
 
 Output: "bb"
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Expand at Center
    1. At each index, we try to use the character as center or the character and its left character as center
@@ -39,7 +41,7 @@ Output: "bb"
    7. Time complexity O\(n\)
    8. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -57,7 +59,7 @@ class Solution {
         }
         return s.substring(start, start + len);
     }
-    
+
     private int expand(char[] chars, int i, int j) {
         while (i >= 0 && j < chars.length && chars[i] == chars[j]) {
             i--;
@@ -71,7 +73,7 @@ class Solution {
 ```java
 class Solution {
     public String longestPalindrome(String s) {
-		char[] t = pad(s);
+        char[] t = pad(s);
         int[] dp = expand(t);
         int len = 0, C = 0;
         for (int i = 1; i < dp.length - 1; i++) {
@@ -82,7 +84,7 @@ class Solution {
         }
         return s.substring((C - 1 - len) / 2, (C - 1 + len) / 2);
     }
-    
+
     private char[] pad(String s) {
         char[] chars = s.toCharArray();
         int n = chars.length;
@@ -96,7 +98,7 @@ class Solution {
         res[2 * n + 2] = '$';
         return res;
     }
-    
+
     private int[] expand(char[] t) {
         int C = 0, R = 0;
         int[] dp = new int[t.length];
@@ -115,7 +117,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

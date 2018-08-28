@@ -1,4 +1,6 @@
-### Question {#question}
+# 237-delete-node-in-a-linked-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/delete-node-in-a-linked-list/description/](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
 
@@ -8,11 +10,11 @@ Supposed the linked list is`1 -> 2 -> 3 -> 4`and you are given the third node wi
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Copy val
    1. Since we don't have access to the previous node, we have to do something with current node
@@ -20,7 +22,7 @@ Supposed the linked list is`1 -> 2 -> 3 -> 4`and you are given the third node wi
    3. Time complexity O\(1\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -31,7 +33,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

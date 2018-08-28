@@ -1,4 +1,6 @@
-### Question {#question}
+# 152-maximum-product-subarray
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-product-subarray/description/](https://leetcode.com/problems/maximum-product-subarray/description/)
 
@@ -6,12 +8,12 @@ Find the contiguous subarray within an array \(containing at least one number\) 
 
 **Example:**
 
-```
+```text
 For example, given the array [2,3,-2,4],
 the contiguous subarray [2,3] has the largest product = 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Check the max product for every subsequence
@@ -24,7 +26,7 @@ the contiguous subarray [2,3] has the largest product = 6.
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -47,7 +49,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

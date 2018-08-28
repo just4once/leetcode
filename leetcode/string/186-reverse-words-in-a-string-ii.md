@@ -1,4 +1,6 @@
-### Question {#question}
+# 186-reverse-words-in-a-string-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-words-in-a-string-ii/description/](https://leetcode.com/problems/reverse-words-in-a-string-ii/description/)
 
@@ -8,14 +10,14 @@ The input string does not contain leading or trailing spaces and the words are a
 
 **Example:**
 
-```
+```text
 Given s = "the sky is blue",
 return "blue is sky the".
 ```
 
 Could you do it in-place without allocating extra space?
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Reverse and Two Pointers
    1. We first reverse the whole string
@@ -23,7 +25,7 @@ Could you do it in-place without allocating extra space?
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -40,7 +42,7 @@ class Solution {
         }
         reverse(str, start, end - 1);
     }
-    
+
     private void reverse(char[] str, int i, int j) {
         while (i < j) {
             char tmp = str[i];
@@ -53,7 +55,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 157-read-n-characters-given-read4
+
+## Question {#question}
 
 [https://leetcode.com/problems/read-n-characters-given-read4/description/](https://leetcode.com/problems/read-n-characters-given-read4/description/)
 
@@ -10,7 +12,7 @@ By using the read4 API, implement the function int read\(char \*buf, int n\) tha
 
 **Example:**
 
-```
+```text
 
 ```
 
@@ -18,7 +20,7 @@ By using the read4 API, implement the function int read\(char \*buf, int n\) tha
 
 The read function will only be called once for each test case.
 
-### Thought Process
+## Thought Process
 
 1. Extra Buffer Array and Pointer
    1. Read and store the characters in a temporary buffer
@@ -26,7 +28,7 @@ The read function will only be called once for each test case.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /* The read4 API is defined in the parent class Reader4.
@@ -53,6 +55,4 @@ public class Solution extends Reader4 {
     }
 }Additional
 ```
-
-
 

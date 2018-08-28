@@ -1,4 +1,6 @@
-### Question {#question}
+# 718-maximum-length-of-repeated-subarray
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/)
 
@@ -6,7 +8,7 @@ Given two integer arrays A and B, return the maximum length of an subarray that 
 
 **Example:**
 
-```
+```text
 Input:
 A: [1,2,3,2,1]
 B: [3,2,1,4,7]
@@ -15,13 +17,13 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:                      
-**
+**Note:**    
+
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
 2. 0 &lt;= A\[i\], B\[i\] &lt; 100
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force \(TLE\)
    1. Loop through all the elements in A and B, and check the corresponding matchness
@@ -53,7 +55,7 @@ The repeated subarray with maximum length is [3, 2, 1].
    6. Time complexity O\(log\(l\)\(m + n\)\), where l = min\(m, n\)
    7. Space complexity O\(m + n\)
 
-### Solution
+## Solution
 
 Brute Force
 
@@ -138,7 +140,7 @@ class Solution {
     private int p = 113;
     private int M = 1000000007;
     private int pInv = BigInteger.valueOf(p).modInverse(BigInteger.valueOf(M)).intValue();
-    
+
     public int findLength(int[] A, int[] B) {
         int lo = 0, hi = Math.min(A.length, B.length);
         while (lo < hi) {
@@ -148,7 +150,7 @@ class Solution {
         }
         return lo;
     }
-    
+
     private boolean checkLength(int x, int[] A, int[] B) {
         Map<Integer, List<Integer>> map = new HashMap<>();
         int k = 0;
@@ -164,7 +166,7 @@ class Solution {
         }
         return false;
     }
-    
+
     private int[] getHashes(int[] a, int L) {
         int[] res = new int[a.length - L + 1];
         long h = 0, power = 1;
@@ -179,7 +181,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int[] getHashes2(int[] a, int L) {
         int[] res = new int[a.length - L + 1];
         long h = 0, power = 1;
@@ -198,7 +200,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

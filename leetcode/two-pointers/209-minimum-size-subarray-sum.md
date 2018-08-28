@@ -1,4 +1,6 @@
-### Question {#question}
+# 209-minimum-size-subarray-sum
+
+## Question {#question}
 
 [https://leetcode.com/problems/minimum-size-subarray-sum/description/](https://leetcode.com/problems/minimum-size-subarray-sum/description/)
 
@@ -6,12 +8,12 @@ Given an array of n positive integers and a positive integer s, find the minimal
 
 **Example:**
 
-```
+```text
 Given the array [2,3,1,2,4,3] and s = 7,
 the subarray [4,3] has the minimal length under the problem constraint.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Presum and Binary Search
    1. We do partial sum on the array ending at that element
@@ -24,7 +26,7 @@ the subarray [4,3] has the minimal length under the problem constraint.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -46,15 +48,15 @@ class Solution {
         }
         return min;
     }
-    
+
     public int lowerBound(int[] a, int lo, int hi, int target) {
         while (lo <= hi) {
-			int mid = lo + (hi - lo) / 2;
-			if (a[mid] == target) return mid;
-			else if (a[mid] < target) lo = mid + 1;
-			else hi = mid - 1;
-		}
-		return hi;
+            int mid = lo + (hi - lo) / 2;
+            if (a[mid] == target) return mid;
+            else if (a[mid] < target) lo = mid + 1;
+            else hi = mid - 1;
+        }
+        return hi;
     }
 }
 ```
@@ -77,7 +79,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 126-word-ladder-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/word-ladder-ii/description/](https://leetcode.com/problems/word-ladder-ii/description/)
 
@@ -9,7 +11,7 @@ Given two words \(beginWordandendWord\), and a dictionary's word list, find all 
 
 **Example:**
 
-```
+```text
 Given:
 beginWord = "hit"
 endWord = "cog"
@@ -30,7 +32,7 @@ Return
 * You may assume no duplicates in the word list.
 * You may assume beginWord and endWord are non-empty and are not the same.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dijkstra's search
    1. We need to track the distance of each node from the source and their parent\(s\)
@@ -49,7 +51,7 @@ Return
    2. One thing, we need to be careful is that when we reverse the begin set and end set, we need to reverse the key we insert into the map for storing the parents
    3. Space complexity O\(n\)????
 
-### Solution
+## Solution
 
 Dijkstra's search
 
@@ -280,7 +282,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

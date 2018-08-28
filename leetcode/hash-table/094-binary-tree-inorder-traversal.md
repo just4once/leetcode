@@ -1,4 +1,6 @@
-### Question {#question}
+# 094-binary-tree-inorder-traversal
+
+## Question {#question}
 
 [https://leetcode.com/problems/binary-tree-inorder-traversal/description/](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
 
@@ -6,7 +8,7 @@ Given a binary tree, return the inorder traversal of its nodes' values.
 
 **Example:**
 
-```
+```text
 Given binary tree [1,null,2,3],
    1
     \
@@ -16,7 +18,7 @@ Given binary tree [1,null,2,3],
 return [1,3,2].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion
    1. Time complexity O\(n\)
@@ -33,7 +35,7 @@ return [1,3,2].
    4. Time complexity O\(n\)
    5. Space complexity O\(n\), and O\(1\) extra
 
-### Solution
+## Solution
 
 Recursion
 
@@ -103,7 +105,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

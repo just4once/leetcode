@@ -1,4 +1,6 @@
-### Question {#question}
+# 234-palindrome-linked-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/palindrome-linked-list/description/](https://leetcode.com/problems/palindrome-linked-list/description/)
 
@@ -9,18 +11,18 @@ Could you do it in O\(n\) time and O\(1\) space?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Reversed
    1. By reversing the second half of the list, we can compare the list node by node
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,7 @@ class Solution {
         }
         return cur.val == 0 ? cur.next : cur;
     }
-    
+
     private ListNode reverse(ListNode node) {
         ListNode dummy = new ListNode(-1), next;
         while (node != null) {
@@ -89,7 +91,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

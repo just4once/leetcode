@@ -1,4 +1,6 @@
-### Question {#question}
+# 023-merge-k-sorted-lists
+
+## Question {#question}
 
 [https://leetcode.com/problems/merge-k-sorted-lists/description/](https://leetcode.com/problems/merge-k-sorted-lists/description/)
 
@@ -6,11 +8,11 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Append all the values to the array list and sort
@@ -30,7 +32,7 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
    3. Time complexity O\(n logk\)
    4. Space complexity O\(log k\) for recursion stack
 
-### Solution
+## Solution
 
 Brute Force
 
@@ -126,7 +128,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

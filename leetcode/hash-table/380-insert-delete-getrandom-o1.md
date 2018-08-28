@@ -1,8 +1,10 @@
-### Question {#question}
+# 380-insert-delete-getrandom-o1
+
+## Question {#question}
 
 [https://leetcode.com/problems/insert-delete-getrandom-o1/description/](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
 
-Design a data structure that supports all following operations in average **O\(1\) **time.
+Design a data structure that supports all following operations in average **O\(1\)** time.
 
 1. insert\(val\): Inserts an item val to the set if not already present.
 2. remove\(val\): Removes an item val from the set if present.
@@ -10,7 +12,7 @@ Design a data structure that supports all following operations in average **O\(1
 
 **Example:**
 
-```
+```text
 // Init an empty set.
 RandomizedSet randomSet = new RandomizedSet();
 
@@ -36,7 +38,7 @@ randomSet.insert(2);
 randomSet.getRandom();
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Map and List
    1. Use hash table to record the number and its index as we grow our list
@@ -44,7 +46,7 @@ randomSet.getRandom();
    3. Time complexity O\(1\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class RandomizedSet {
@@ -96,7 +98,5 @@ class RandomizedSet {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

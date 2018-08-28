@@ -1,12 +1,14 @@
-### Question {#question}
+# 008-string-to-integer-atoi
+
+## Question {#question}
 
 [https://leetcode.com/problems/string-to-integer-atoi/description/](https://leetcode.com/problems/string-to-integer-atoi/description/)
 
 Implement`atoi`to convert a string to an integer.
 
-**Hint: **Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
+**Hint:** Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
 
-**Notes: **It is intended for this problem to be specified vaguely \(ie, no given input specs\). You are responsible to gather all the input requirements up front.
+**Notes:** It is intended for this problem to be specified vaguely \(ie, no given input specs\). You are responsible to gather all the input requirements up front.
 
 **Requirements for atoi:**
 
@@ -20,11 +22,11 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Check Character
    1. Move the pointer to the first non-space character
@@ -34,7 +36,7 @@ If no valid conversion could be performed, a zero value is returned. If the corr
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -73,7 +75,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

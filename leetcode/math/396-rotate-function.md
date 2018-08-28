@@ -1,4 +1,6 @@
-### Question {#question}
+# 396-rotate-function
+
+## Question {#question}
 
 [https://leetcode.com/problems/rotate-function/description/](https://leetcode.com/problems/rotate-function/description/)
 
@@ -12,7 +14,7 @@ Calculate the maximum value of F\(0\), F\(1\), ..., F\(n-1\).
 
 **Example:**
 
-```
+```text
 A = [4, 3, 2, 6]
 
 F(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25
@@ -23,7 +25,7 @@ F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Math
    1. As we rotate the number clockwise, the value is increased by sum - the length \* preLastNum
@@ -31,7 +33,7 @@ So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

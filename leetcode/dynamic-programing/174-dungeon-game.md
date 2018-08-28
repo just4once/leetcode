@@ -1,4 +1,6 @@
-### Question {#question}
+# 174-dungeon-game
+
+## Question {#question}
 
 The demons had captured the princess \(P\) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight \(K\) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess.
 
@@ -14,14 +16,14 @@ For example, given the dungeon below, the initial health of the knight must be a
 
 **Example:**
 
-![](/assets/174.PNG)
+![](../../.gitbook/assets/174.PNG)
 
 **Notes:**
 
 * The knight's health has no upper bound.
 * Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing
    1. To find the minimum hp require to rescue the princess, we need to find the hp required before entering the room
@@ -37,7 +39,7 @@ For example, given the dungeon below, the initial health of the knight must be a
    5. Time complexity O\(mn\)
    6. Space complexity O\(mn\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -73,7 +75,7 @@ class Solution {
         memo[m - 1][n - 1] = 1 - Math.min(dungeon[m - 1][n - 1], 0);
         return search(dungeon, 0, 0, memo);
     }
-    
+
     private int search(int[][] dungeon, int i, int j, int[][] memo) {
         if (i >= dungeon.length || j >= dungeon[i].length) return Integer.MAX_VALUE;
         if (memo[i][j] != 0) return memo[i][j];
@@ -86,7 +88,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

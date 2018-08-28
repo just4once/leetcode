@@ -1,4 +1,6 @@
-### Question {#question}
+# 011-container-with-most-water
+
+## Question {#question}
 
 [https://leetcode.com/problems/container-with-most-water/description/](https://leetcode.com/problems/container-with-most-water/description/)
 
@@ -8,9 +10,9 @@ Note: You may not slant the container and n is at least 2.
 
 **Example:**
 
-![](/assets/011.png)
+![](../../.gitbook/assets/011.png)
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Start with each vertical line as the container's left boundary
@@ -25,7 +27,7 @@ Note: You may not slant the container and n is at least 2.
    4. Time complexity is O\(n\)
    5. Space complexity is O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -41,7 +43,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

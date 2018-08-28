@@ -1,4 +1,6 @@
-### Question {#question}
+# 259-3sum-smaller
+
+## Question {#question}
 
 [https://leetcode.com/problems/3sum-smaller/description/](https://leetcode.com/problems/3sum-smaller/description/)
 
@@ -6,7 +8,7 @@ Given an array of n integers nums and a target, find the number of index triplet
 
 **Example:**
 
-```
+```text
 Given nums = [-2, 0, 1, 3], and target = 2.
 Return 2. Because there are two triplets which sums are less than 2:
 
@@ -14,7 +16,7 @@ Return 2. Because there are two triplets which sums are less than 2:
 [-2, 0, 3]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Triple loop for traversal through all elements
@@ -31,7 +33,7 @@ Return 2. Because there are two triplets which sums are less than 2:
    3. Time complexity O\(n^2\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -62,7 +64,7 @@ class Solution {
         }
         return count;
     }
-    
+
     private int search(int[] nums, int low, int hi, int target) {
         while (low <= hi) {
             int mid = low + (hi - low) / 2;
@@ -95,7 +97,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 128-longest-consecutive-sequence
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-consecutive-sequence/description/](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 
@@ -6,12 +8,12 @@ Given an unsorted array of integers, find the length of the longest consecutive 
 
 **Example:**
 
-```
+```text
 Given [100, 4, 200, 1, 3, 2],
 The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sorting
    1. We can compare the element to the previous element. If they are consecutive, we can just increment the counter, otherwise we reset it
@@ -23,7 +25,7 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
    3. Now when the set has num - 1, that means we either explored it before or will explore it at the future, we should skip it
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -66,7 +68,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

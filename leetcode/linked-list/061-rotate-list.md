@@ -1,4 +1,6 @@
-### Question {#question}
+# 061-rotate-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/rotate-list/description/](https://leetcode.com/problems/rotate-list/description/)
 
@@ -6,13 +8,13 @@ Given a list, rotate the list to the right by k places, where k is non-negative.
 
 **Example:**
 
-```
+```text
 Given 1->2->3->4->5->NULL and k = 2,
 
 return 4->5->1->2->3->NULL.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Circular Linked List
    1. Count the size of linked list, create the link between the tail and the first node
@@ -22,7 +24,7 @@ return 4->5->1->2->3->NULL.
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

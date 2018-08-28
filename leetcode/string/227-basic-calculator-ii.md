@@ -1,4 +1,6 @@
-### Question {#question}
+# 227-basic-calculator-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/basic-calculator-ii/description/](https://leetcode.com/problems/basic-calculator-ii/description/)
 
@@ -10,13 +12,13 @@ You may assume that the given expression is always valid.
 
 **Example:**
 
-```
+```text
 "3+2*2" = 7
 " 3/2 " = 1
 " 3+5 / 2 " = 5
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Switch at Different Character
    1. When the character is ' ', we skip
@@ -60,7 +62,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

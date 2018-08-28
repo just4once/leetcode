@@ -1,22 +1,24 @@
-### Question {#question}
+# 224-basic-calculator
+
+## Question {#question}
 
 [https://leetcode.com/problems/basic-calculator/description/](https://leetcode.com/problems/basic-calculator/description/)
 
 Implement a basic calculator to evaluate a simple expression string.
 
-The expression string may contain open \( and closing parentheses \), the plus + or minus sign -, non-negative integers and empty spaces .
+The expression string may contain open \( and closing parentheses \), the plus + or minus sign -, non-negative integers and empty spaces .
 
-You may assume that the given expression is always valid.
+You may assume that the given expression is always valid.
 
 **Example:**
 
-```
+```text
 "1 + 1" = 2
 " 2-1 + 2 " = 3
 "(1+(4+5+2)-3)+(6+8)" = 23
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Stack
    1. Use variable to keep track of the number, using num = num \* 10 + curVal
@@ -25,7 +27,7 @@ Implement a basic calculator to evaluate a simple expression string.
    4. Time complexity O\(n\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -53,7 +55,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 029-divide-two-integers
+
+## Question {#question}
 
 [https://leetcode.com/problems/divide-two-integers/description/](https://leetcode.com/problems/divide-two-integers/description/)
 
@@ -8,11 +10,11 @@ If it is overflow, return MAX\_INT.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Convert to Long
    1. Use two variables to check the accumulative sum and multiplier
@@ -21,7 +23,7 @@ If it is overflow, return MAX\_INT.
    4. Time complexity O\(log n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

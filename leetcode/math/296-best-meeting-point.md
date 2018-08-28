@@ -1,4 +1,6 @@
-### Question {#question}
+# 296-best-meeting-point
+
+## Question {#question}
 
 [https://leetcode.com/problems/best-meeting-point/description/](https://leetcode.com/problems/best-meeting-point/description/)
 
@@ -6,7 +8,7 @@ A group of two or more people wants to meet and minimize the total travel distan
 
 **Example:**
 
-```
+```text
 given three people living at (0,0), (0,4), and (2,2):
 
 1 - 0 - 0 - 0 - 1
@@ -18,7 +20,7 @@ given three people living at (0,0), (0,4), and (2,2):
 The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2=6 is minimal. So return 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Try every point and calculate the 1's distance to this point
@@ -45,7 +47,7 @@ The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2
    2. Time complexity O\(mn\)
    3. Space complexity O\(mn\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -225,7 +227,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

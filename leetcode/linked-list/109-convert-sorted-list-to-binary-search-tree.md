@@ -1,4 +1,6 @@
-### Question {#question}
+# 109-convert-sorted-list-to-binary-search-tree
+
+## Question {#question}
 
 [https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/)
 
@@ -8,7 +10,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 **Example:**
 
-```
+```text
 Given the sorted linked list: [-10,-3,0,5,9],
 
 One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:
@@ -20,7 +22,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
  -10  5
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. List
    1. Add the value to the list and create left and right part
@@ -28,7 +30,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
    3. Space complexity O\(n\)
 2. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -74,7 +76,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

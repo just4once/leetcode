@@ -1,4 +1,6 @@
-### Question {#question}
+# 025-reverse-nodes-in-k-group
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-nodes-in-k-group/description/](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
 
@@ -12,7 +14,7 @@ Only constant memory is allowed.
 
 **Example:**
 
-```
+```text
 Given this linked list: 1->2->3->4->5
 
 For k = 2, you should return: 2->1->4->3->5
@@ -20,7 +22,7 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Iterative
    1. Reverse the node in the range
@@ -31,7 +33,7 @@ For k = 3, you should return: 3->2->1->4->5
    1. Time complexity O\(n\)
    2. Space complexity O\(n/k\) due to recursion stack
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -95,7 +97,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

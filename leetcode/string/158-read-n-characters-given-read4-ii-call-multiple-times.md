@@ -1,4 +1,6 @@
-### Question {#question}
+# 158-read-n-characters-given-read4-ii-call-multiple-times
+
+## Question {#question}
 
 [https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/description/](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/description/)
 
@@ -8,18 +10,18 @@ The return value is the actual number of characters read. For example, it return
 
 By using the read4 API, implement the function int read\(char \*buf, int n\) that reads n characters from the file.
 
-**Note:    
-**
+**Note:**    
+
 
 The read function may be called multiple times.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Pick Up where We Left
    1. Because we need to run it multiple time, we need to concern about what we have left when we run it last time
@@ -29,7 +31,7 @@ The read function may be called multiple times.
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /* The read4 API is defined in the parent class Reader4.
@@ -87,7 +89,5 @@ public class Solution extends Reader4 {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

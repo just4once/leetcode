@@ -1,4 +1,6 @@
-### Question {#question}
+# 121-best-time-to-buy-and-sell-stock
+
+## Question {#question}
 
 [https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
@@ -8,7 +10,7 @@ If you were only permitted to complete at most one transaction \(ie, buy one and
 
 **Example 1:**
 
-```
+```text
 Input: [7, 1, 5, 3, 6, 4]
 Output: 5
 
@@ -17,14 +19,14 @@ max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than
 
 **Example 2:**
 
-```
+```text
 Input: [7, 6, 4, 3, 1]
 Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. As we loop through all the elements, we need to compare each element to the previous known min
    1. If we find a smaller element, we need to set it to min, because we will have larger profit buying this stock
@@ -37,7 +39,7 @@ In this case, no transaction is done, i.e. max profit = 0.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -67,7 +69,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

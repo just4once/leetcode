@@ -1,4 +1,6 @@
-### Question {#question}
+# 167-two-sum-ii-input-array-is-sorted
+
+## Question {#question}
 
 [https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
 
@@ -10,12 +12,12 @@ You may assume that each input would have exactly one solution and you may not u
 
 **Example:**
 
-```
+```text
 Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. Using two pointers to track the start and end of array
@@ -23,7 +25,7 @@ Output: index1=1, index2=2
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -47,7 +49,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

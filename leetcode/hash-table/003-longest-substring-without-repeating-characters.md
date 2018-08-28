@@ -1,12 +1,14 @@
-### Question {#question}
+# 003-longest-substring-without-repeating-characters
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-substring-without-repeating-characters/description/](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 
-Given a string, find the length of the **longest substring **without repeating characters.
+Given a string, find the length of the **longest substring** without repeating characters.
 
 **Example:**
 
-```
+```text
 Given "abcabcbb", the answer is "abc", which the length is 3.
 
 Given "bbbbb", the answer is "b", with the length of 1.
@@ -14,7 +16,7 @@ Given "bbbbb", the answer is "b", with the length of 1.
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. We can try each find the longest substring starting with every element
@@ -30,7 +32,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
    2. Time complexity O\(n\)
    3. Space complexity O\(n\) or O\(1\) if use int array
 
-### Solution
+## Solution
 
 1. Hash Table
 
@@ -107,7 +109,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

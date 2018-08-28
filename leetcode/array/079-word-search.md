@@ -1,4 +1,6 @@
-### Question {#question}
+# 079-word-search
+
+## Question {#question}
 
 [https://leetcode.com/problems/word-search/description/](https://leetcode.com/problems/word-search/description/)
 
@@ -8,7 +10,7 @@ The word can be constructed from letters of sequentially adjacent cell, where "a
 
 **Example:**
 
-```
+```text
 Given board =
 [
   ['A','B','C','E'],
@@ -20,13 +22,13 @@ word = "SEE", -> returns true,
 word = "ABCB", -> returns false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Typical DFS, we can either use an array of boolean to indicate whether we have visited this cell or marked directly on the input
 2. Time complexity O\(mnw\), where m is number of rows, n is number of columns, and w is length of word
 3. Space complexity O\(mn\) or O\(1\) depends on separate array is used to track whether a cell is visited
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -59,7 +61,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

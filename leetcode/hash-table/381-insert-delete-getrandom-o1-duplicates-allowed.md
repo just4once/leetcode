@@ -1,8 +1,10 @@
-### Question {#question}
+# 381-insert-delete-getrandom-o1-duplicates-allowed
+
+## Question {#question}
 
 [https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)
 
-Design a data structure that supports all following operations inaverage **O\(1\) **time.
+Design a data structure that supports all following operations inaverage **O\(1\)** time.
 
 **Note: Duplicate elements are allowed.**
 
@@ -12,7 +14,7 @@ Design a data structure that supports all following operations inaverage **O\(1\
 
 **Example:**
 
-```
+```text
 // Init an empty collection.
 RandomizedCollection collection = new RandomizedCollection();
 
@@ -35,16 +37,16 @@ collection.remove(1);
 collection.getRandom();
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table and List
-   1. Similar to [380-Insert Delete GetRandom O\(1\)](/leetcode/hash-table/380-insert-delete-getrandom-o1.md), we need a hash map to store the mapping between number and its index, but since duplicates are allowed, we need to use a set or a list to store all its indices
+   1. Similar to [380-Insert Delete GetRandom O\(1\)](380-insert-delete-getrandom-o1.md), we need a hash map to store the mapping between number and its index, but since duplicates are allowed, we need to use a set or a list to store all its indices
    2. We also need list to store number just like last one
    3. To make the adding and removing index for val to achieve O\(1\) time, we use LinkedHashSet
    4. Time complexity O\(1\) insert, O\(1\) remove, and O\(1\) random
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class RandomizedCollection {
@@ -58,7 +60,7 @@ class RandomizedCollection {
         numbers = new ArrayList<>();
         random = new Random();
     }
-    
+
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     public boolean insert(int val) {
         boolean contain = indices.containsKey(val);
@@ -67,7 +69,7 @@ class RandomizedCollection {
         numbers.add(val);
         return !contain;
     }
-    
+
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
     public boolean remove(int val) {
         if (!indices.containsKey(val)) return false;
@@ -85,7 +87,7 @@ class RandomizedCollection {
         numbers.remove(lastId);
         return true;
     }
-    
+
     /** Get a random element from the collection. */
     public int getRandom() {
         return numbers.get(random.nextInt(numbers.size()));
@@ -101,7 +103,5 @@ class RandomizedCollection {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

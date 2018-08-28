@@ -1,4 +1,6 @@
-### Question {#question}
+# 083-remove-duplicates-from-sorted-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
 
@@ -6,19 +8,19 @@ Given a sorted linked list, delete all duplicates such that each element appear 
 
 **Example:**
 
-```
+```text
 Given 1->1->2, return 1->2.
 Given 1->1->2->3->3, return 1->2->3.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Compare next node
    1. Link the cur node to next.next if same as current
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -33,7 +35,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 249-group-shifted-strings
+
+## Question {#question}
 
 [https://leetcode.com/problems/group-shifted-strings/description/](https://leetcode.com/problems/group-shifted-strings/description/)
 
@@ -10,7 +12,7 @@ Given a list of strings which contains only lowercase alphabets, group all strin
 
 **Example:**
 
-```
+```text
 For example, given: ["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"], 
 A solution is:
 [
@@ -21,14 +23,14 @@ A solution is:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table - Normalized Key
    1. Using the first character as gauge and make the first character 'a', and normalize the rest of characters accordingly
    2. Time complexity O\(nw\), where n is number of word, w is the average width of the word
    3. Space complexity O\(nw\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -58,7 +60,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

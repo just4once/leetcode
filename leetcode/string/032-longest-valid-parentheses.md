@@ -1,4 +1,6 @@
-### Question {#question}
+# 032-longest-valid-parentheses
+
+## Question {#question}
 
 [https://leetcode.com/problems/longest-valid-parentheses/description/](https://leetcode.com/problems/longest-valid-parentheses/description/)
 
@@ -6,12 +8,12 @@ Given a string containing just the characters '\(' and '\)', find the length of 
 
 **Example:**
 
-```
+```text
 For "(()", the longest valid parentheses substring is "()", which has length = 2.
 Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing
    1. A valid string always ends with \), so we check when we encounter \)
@@ -23,7 +25,7 @@ Another example is ")()())", where the longest valid parentheses substring is "(
    1. Use stack to save the index 
 3. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -91,7 +93,5 @@ public class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,33 +1,35 @@
-### Question {#question}
+# 244-shortest-word-distance-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/shortest-word-distance-ii/description/](https://leetcode.com/problems/shortest-word-distance-ii/description/)
 
-This is a **follow up **of [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance). The only difference is now you are given the list of words and your method will be called \_repeatedly \_many times with different parameters. How would you optimize it?
+This is a **follow up** of [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance). The only difference is now you are given the list of words and your method will be called \_repeatedly \_many times with different parameters. How would you optimize it?
 
 Design a class which receives a list of words in the constructor, and implements a method that takes two words \_word1 \_and \_word2 \_and return the shortest distance between these two words in the list.
 
 **Example:**
 
-```
+```text
 Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
 
 Given word1 = “coding”, word2 = “practice”, return 3.
 Given word1 = "makes", word2 = "coding", return 1.
 ```
 
-**Note:  
-**
+**Note:**    
+
 
 You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Save the index to the array list and loop through both arrays to find the shortest distance
    2. Time complexity O\(m + n\) for shortest function
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class WordDistance {
@@ -63,7 +65,5 @@ class WordDistance {
  */
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

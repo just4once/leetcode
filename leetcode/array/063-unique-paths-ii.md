@@ -1,4 +1,6 @@
-### Question {#question}
+# 063-unique-paths-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/unique-paths-ii/description/](https://leetcode.com/problems/unique-paths-ii/description/)
 
@@ -10,7 +12,7 @@ An obstacle and empty space is marked as 1 and 0 respectively in the grid.
 
 **Example:**
 
-```
+```text
 There is one obstacle in the middle of a 3x3 grid as illustrated below.
 [
   [0,0,0],
@@ -19,11 +21,11 @@ There is one obstacle in the middle of a 3x3 grid as illustrated below.
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Similar to [062-Unique Paths](/leetcode/array/062-unique-paths.md), we can create two dimensional array and reduce the space
+1. Similar to [062-Unique Paths](062-unique-paths.md), we can create two dimensional array and reduce the space
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -66,7 +68,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

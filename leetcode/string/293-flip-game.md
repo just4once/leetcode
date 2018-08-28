@@ -1,4 +1,6 @@
-### Question {#question}
+# 293-flip-game
+
+## Question {#question}
 
 [https://leetcode.com/problems/flip-game/description/](https://leetcode.com/problems/flip-game/description/)
 
@@ -8,7 +10,7 @@ Write a function to compute all possible states of the string after one valid mo
 
 **Example:**
 
-```
+```text
 given s = "++++", after one move, it may become one of the following states:
 
 [
@@ -20,7 +22,7 @@ given s = "++++", after one move, it may become one of the following states:
 If there is no valid move, return an empty list [].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Check Character Pair
    1. Starting from index 1, we need to make sure the current character and previous character are both '+'
@@ -28,7 +30,7 @@ If there is no valid move, return an empty list [].
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -47,7 +49,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

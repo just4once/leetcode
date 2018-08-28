@@ -1,4 +1,6 @@
-### Question {#question}
+# 007-reverse-integer
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-integer/description/](https://leetcode.com/problems/reverse-integer/description/)
 
@@ -6,7 +8,7 @@ Given a 32-bit signed integer, reverse digits of an integer.
 
 **Example:**
 
-```
+```text
 Input: 123
 Output:  321
 
@@ -17,14 +19,14 @@ Input: 120
 Output: 21
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Reverse digit by digit
    1. Check for potential overflow as we obtain the result
    2. Time complexity O\(d\), where d is number of digits
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -55,7 +57,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

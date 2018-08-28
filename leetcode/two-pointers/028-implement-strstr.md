@@ -1,14 +1,16 @@
-### Question {#question}
+# 028-implement-strstr
+
+## Question {#question}
 
 [https://leetcode.com/problems/implement-strstr/description/](https://leetcode.com/problems/implement-strstr/description/)
 
 Implement [strStr\(\)](http://www.cplusplus.com/reference/cstring/strstr/).
 
-Return the index of the first occurrence of needle in haystack, or **-1 **if needle is not part of haystack.
+Return the index of the first occurrence of needle in haystack, or **-1** if needle is not part of haystack.
 
 **Example:**
 
-```
+```text
 Input: haystack = "hello", needle = "ll"
 Output: 2
 
@@ -16,14 +18,14 @@ Input: haystack = "aaaaa", needle = "bba"
 Output: -1
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers
    1. At each position, we simply compare the letter matches
    2. Time complexity O\(hn\), where h is the length of haystack and n is length of needle
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -40,7 +42,7 @@ class Solution {
         }
         return id;
     }
-    
+
     public boolean match(char[] hc, int start, char[] nc){
         for(int i = 0; i < nc.length; i++){
             if(hc[start++] != nc[i]) return false;
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

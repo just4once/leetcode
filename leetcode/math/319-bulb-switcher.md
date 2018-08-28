@@ -1,4 +1,6 @@
-### Question {#question}
+# 319-bulb-switcher
+
+## Question {#question}
 
 [https://leetcode.com/problems/bulb-switcher/description/](https://leetcode.com/problems/bulb-switcher/description/)
 
@@ -6,11 +8,11 @@ There are n bulbs that are initially off. You first turn on all the bulbs. Then,
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Perfect Square
    1. Observe that only perfect square will be switched odd number of times, resulting "on" status
@@ -18,7 +20,7 @@ There are n bulbs that are initially off. You first turn on all the bulbs. Then,
    3. Time complexity O\(1\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -28,7 +30,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

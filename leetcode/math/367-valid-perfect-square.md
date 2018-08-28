@@ -1,4 +1,6 @@
-### Question {#question}
+# 367-valid-perfect-square
+
+## Question {#question}
 
 [https://leetcode.com/problems/valid-perfect-square/description/](https://leetcode.com/problems/valid-perfect-square/description/)
 
@@ -6,7 +8,7 @@ Given a positive integer num, write a function which returns True if num is a pe
 
 **Example:**
 
-```
+```text
 Input: 16
 Returns: True
 
@@ -14,7 +16,7 @@ Input: 14
 Returns: False
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. We choose the mid and adjust low and high accordingly
@@ -27,7 +29,7 @@ Returns: False
    4. Time complexity O\(log n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

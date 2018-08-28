@@ -1,4 +1,6 @@
-### Question {#question}
+# 048-rotate-image
+
+## Question {#question}
 
 [https://leetcode.com/problems/rotate-image/description/](https://leetcode.com/problems/rotate-image/description/)
 
@@ -7,11 +9,11 @@ You are given annxn2D matrix representing an image.
 Rotate the image by 90 degrees \(clockwise\).
 
 **Note:**  
-You have to rotate the image **in-place**, which means you have to modify the input 2D matrix directly.**DO NOT **allocate another 2D matrix and do the rotation.
+You have to rotate the image **in-place**, which means you have to modify the input 2D matrix directly.**DO NOT** allocate another 2D matrix and do the rotation.
 
 **Example 1:**
 
-```
+```text
 Given input matrix = 
 [
   [1,2,3],
@@ -29,7 +31,7 @@ rotate the input matrix in-place such that it becomes:
 
 **Example 2:**
 
-```
+```text
 Given input matrix =
 [
   [ 5, 1, 9,11],
@@ -47,7 +49,7 @@ rotate the input matrix in-place such that it becomes:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Follow the requirement, and swap one element at the time
    1. Take the top left corner element put it in right top, then right top to bottom right, then bottom left
@@ -57,7 +59,7 @@ rotate the input matrix in-place such that it becomes:
    1. Flip upside down \(flip across the middle\)
    2. Flip diagonally from top left to bottom right
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -101,7 +103,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

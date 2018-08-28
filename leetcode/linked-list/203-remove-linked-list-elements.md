@@ -1,4 +1,6 @@
-### Question {#question}
+# 203-remove-linked-list-elements
+
+## Question {#question}
 
 [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/)
 
@@ -6,12 +8,12 @@ Remove all elements from a linked list of integers that have value **val**.
 
 **Example:**
 
-```
+```text
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Iterative
    1. Time complexity O\(n\)
@@ -20,7 +22,7 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
    1. Time complexity O\(n\)
    2. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 012-integer-to-roman
+
+## Question {#question}
 
 [https://leetcode.com/problems/integer-to-roman/description/](https://leetcode.com/problems/integer-to-roman/description/)
 
@@ -8,11 +10,11 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Char Table and Int Table
    1. For every divisor, from 1000 to 1, we check the quotient and decide appropriate character to append
@@ -22,7 +24,7 @@ Input is guaranteed to be within the range from 1 to 3999.
    1. Time complexity O\(d\), where d is number of digits
    2. Space complexity O\(d\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -75,7 +77,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

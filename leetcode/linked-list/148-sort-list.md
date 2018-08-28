@@ -1,4 +1,6 @@
-### Question {#question}
+# 148-sort-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/sort-list/description/](https://leetcode.com/problems/sort-list/description/)
 
@@ -6,11 +8,11 @@ Sort a linked list in O\(n log n\) time using constant space complexity.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. ArrayList
    1. Save the value to the array list and sort
@@ -21,7 +23,7 @@ Sort a linked list in O\(n log n\) time using constant space complexity.
    1. Time complexity O\(n logn\)
    2. Space complexity O\(1\) or O\(log n\) due recursion stack
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -47,7 +49,7 @@ class Solution {
 class Solution {
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head;
-        
+
         ListNode slow = head, fast = head.next.next;
         while (fast!= null && fast.next!= null){
             slow = slow.next;
@@ -58,7 +60,7 @@ class Solution {
         ListNode l2 = sortList(head);
         return merge(l1, l2);
     }
-    
+
     private ListNode merge(ListNode l1, ListNode l2){
         ListNode dummy = new ListNode(-1);
         ListNode cur = dummy;
@@ -85,7 +87,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

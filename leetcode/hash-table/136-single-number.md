@@ -1,4 +1,6 @@
-### Question {#question}
+# 136-single-number
+
+## Question {#question}
 
 [https://leetcode.com/problems/single-number/description/](https://leetcode.com/problems/single-number/description/)
 
@@ -6,11 +8,11 @@ Given an array of integers, every element appears twice except for one. Find tha
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Use set to record the number, if we encounter the number again, we remove them, in the end there will be only 1 number left
@@ -21,7 +23,7 @@ Given an array of integers, every element appears twice except for one. Find tha
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

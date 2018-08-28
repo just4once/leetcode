@@ -1,11 +1,13 @@
-### Question {#question}
+# 710-random-pick-with-blacklist
+
+## Question {#question}
 
 Given a blacklist B containing unique integers from \[0, N\), write a function to return a uniform random integer from \[0, N\) which is NOT in B.
 
 Optimize it such that it minimizes the call to system’s Math.random\(\).
 
-**Note:            
-**
+**Note:**    
+
 
 1. 1 &lt;= N &lt;= 1000000000
 2. 0 &lt;= B.length &lt; min\(100000, N\)
@@ -13,7 +15,7 @@ Optimize it such that it minimizes the call to system’s Math.random\(\).
 
 **Example 1:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick"]
 [[1,[]],[],[],[]]
@@ -22,7 +24,7 @@ Output: [null,0,0,0]
 
 **Example 2:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick"]
 [[2,[]],[],[],[]]
@@ -31,7 +33,7 @@ Output: [null,1,1,1]
 
 **Example 3:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick"]
 [[3,[1]],[],[],[]]
@@ -40,19 +42,19 @@ Output: [null,0,0,2]
 
 **Example 4:**
 
-```
+```text
 Input: 
 ["Solution","pick","pick","pick"]
 [[4,[2]],[],[],[]]
 Output: [null,1,3,1]
 ```
 
-**Explanation of Input Syntax:            
-**
+**Explanation of Input Syntax:**    
+
 
 The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Set \(TLE\)
    1. Use set to save the blacklist and ignore the generated number r if it is inside the set
@@ -84,7 +86,7 @@ The input is two lists: the subroutines called and their arguments. Solution's c
    4. Time complexity O\(B\)
    5. Space complexity O\(B\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -169,7 +171,7 @@ class Solution {
             }
         }
     }
-    
+
     public int pick() {
         int k = random.nextInt(L);
         return map.getOrDefault(k, k);
@@ -177,7 +179,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

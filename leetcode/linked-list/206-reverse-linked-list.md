@@ -1,4 +1,6 @@
-### Question {#question}
+# 206-reverse-linked-list
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/)
 
@@ -8,11 +10,11 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Iterative
    1. Time complexity O\(n\)
@@ -21,7 +23,7 @@ A linked list can be reversed either iteratively or recursively. Could you imple
    1. Time complexity O\(n\)
    2. Space complexity O\(1\) or O\(n\) due to recursion stack
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -41,7 +43,7 @@ class Solution {
 }
 ```
 
-```
+```text
 class Solution {
     public ListNode reverseList(ListNode head) {
         return revert(head, null);
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

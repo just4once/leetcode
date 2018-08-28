@@ -1,4 +1,6 @@
-### Question {#question}
+# 092-reverse-linked-list-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-linked-list-ii/description/](https://leetcode.com/problems/reverse-linked-list-ii/description/)
 
@@ -6,20 +8,20 @@ Reverse a linked list from position m to n. Do it in-place and in one-pass.
 
 **Example:**
 
-```
+```text
 Given 1->2->3->4->5->NULL, m = 2 and n = 4,
 
 return 1->4->3->2->5->NULL.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Move Pointer
    1. Move pointer to the mth position, then reverse
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,4 +1,6 @@
-### Question {#question}
+# 118-pascals-triangle
+
+## Question {#question}
 
 [https://leetcode.com/problems/pascals-triangle/description/](https://leetcode.com/problems/pascals-triangle/description/)
 
@@ -6,7 +8,7 @@ Given numRows, generate the first numRows of Pascal's triangle.
 
 **Example:**
 
-```
+```text
 For example, given numRows = 5,
 Return
 
@@ -19,14 +21,14 @@ Return
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Each row in Pascal's triangle can be determined from previous row
 2. For each column in the row, we can obtain the value by adding  pascal\[i - 1\]\[j - 1\] and pascal\[i -1\]\[j\], where i denotes the ith row, and j denotes the jth column
 3. Time complexity O\(n^2\) because summing from 1 to n -&gt; n\(n +1\)/2
 4. Space complexity O\(n^2\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -46,7 +48,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

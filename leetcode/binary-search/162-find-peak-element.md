@@ -1,4 +1,6 @@
-### Question {#question}
+# 162-find-peak-element
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-peak-element/description/](https://leetcode.com/problems/find-peak-element/description/)
 
@@ -12,7 +14,7 @@ You may imagine that num\[-1\] = num\[n\] = -∞.
 
 **Example 1:**
 
-```
+```text
 Input: nums = [1, 2, 3, 1]
 Output: 2
 Explanation: 3 is a peak element and your function should return the index number 2.
@@ -20,14 +22,14 @@ Explanation: 3 is a peak element and your function should return the index numbe
 
 **Example 2:**
 
-```
+```text
 Input: nums = [1, 2, 1, 3, 5, 6, 4]
 Output: 1 or 5 
 Explanation: Your function can return either index number 1 where the peak element is 2, 
              or index number 5 where the peak element is 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. One Pointer
    1. Starting from second element, or nums\[1\], if the current number is smaller than the previous number, the previous number has to be a peak
@@ -44,7 +46,7 @@ Explanation: Your function can return either index number 1 where the peak eleme
    1. Time complexity O\(log n\)
    2. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -62,7 +64,7 @@ class Solution {
     public int findPeakElement(int[] nums) {
         return find(nums, 0, nums.length - 1);
     }
-    
+
     private int find(int[] nums, int i, int j) {
         if (i == j) return i;
         int m = i + (j - i) / 2;
@@ -86,7 +88,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,14 +1,16 @@
-### Question {#question}
+# 078-subsets
+
+## Question {#question}
 
 [https://leetcode.com/problems/subsets/description/](https://leetcode.com/problems/subsets/description/)
 
-Given a set of **distinct **integers, nums, return all possible subsets \(the power set\).
+Given a set of **distinct** integers, nums, return all possible subsets \(the power set\).
 
 **Note:**The solution set must not contain duplicate subsets.
 
 **Example:**
 
-```
+```text
 If nums = [1,2,3], a solution is:
 [
   [3],
@@ -22,12 +24,12 @@ If nums = [1,2,3], a solution is:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. For creating power set, there are 2^n possibilities, where n is number of elements, due to each element can be either in or out of particular set
 2. To help create the set, we can have an additional array
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -67,7 +69,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

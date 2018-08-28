@@ -1,4 +1,6 @@
-### Question {#question}
+# 302-smallest-rectangle-enclosing-black-pixels
+
+## Question {#question}
 
 [https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/)
 
@@ -6,7 +8,7 @@ An image is represented by a binary matrix with 0 as a white pixel and 1 as a bl
 
 **Example:**
 
-```
+```text
 [
   "0010",
   "0110",
@@ -17,7 +19,7 @@ and x = 0, y = 2,
 Return 6.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Linear Scan
    1. Doing linear scan over the whole map, we can find the minimum top and left and maximum bottom and right
@@ -35,7 +37,7 @@ Return 6.
    4. Time complexity O\(mlogn + nlogm\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -96,7 +98,7 @@ class Solution {
         int bottom = searchRows(image, x + 1, m, left, right, false);
         return (right - left) * (bottom - top);
     }
-    
+
     private int searchColumns(char[][] image, int i, int j, int top, int bottom, boolean goLower) {
         while (i < j) {
             int k = top, mid = (i + j) / 2;
@@ -106,7 +108,7 @@ class Solution {
         }
         return i;
     }
-    
+
     private int searchRows(char[][] image, int i, int j, int left, int right, boolean goLower) {
         while (i < j) {
             int k = left, mid = (i + j) / 2;
@@ -131,7 +133,7 @@ class Solution {
         int bottom = search(image, x + 1, m, left, right, false, false);
         return (right - left) * (bottom - top);
     }
-    
+
     private int search(char[][] image, int i, int j, int low, int hi, boolean horizontal, boolean goLower) {
         while (i < j) {
             boolean found = false;
@@ -149,7 +151,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

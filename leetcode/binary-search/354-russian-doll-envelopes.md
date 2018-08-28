@@ -1,4 +1,6 @@
-### Question {#question}
+# 354-russian-doll-envelopes
+
+## Question {#question}
 
 [https://leetcode.com/problems/russian-doll-envelopes/description/](https://leetcode.com/problems/russian-doll-envelopes/description/)
 
@@ -8,12 +10,12 @@ What is the maximum number of envelopes can you Russian doll? \(put one inside o
 
 **Example:**
 
-```
+```text
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]],
 the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
    1. Using dp\[i\] to store the max number ending at envelope i
@@ -28,7 +30,7 @@ the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,
    4. Time complexity O\(nlogn\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -79,7 +81,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

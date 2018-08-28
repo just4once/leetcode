@@ -1,4 +1,6 @@
-### Question {#question}
+# 378-kth-smallest-element-in-a-sorted-matrix
+
+## Question {#question}
 
 [https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
 
@@ -8,7 +10,7 @@ Note that it is the kth smallest element in the sorted order, not the kth distin
 
 **Example:**
 
-```
+```text
 matrix = [
    [ 1,  5,  9],
    [10, 11, 13],
@@ -19,7 +21,7 @@ k = 8,
 return 13.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Heap
    1. Using min heap, we can add all the element into heap
@@ -40,7 +42,7 @@ return 13.
    4. Time complexity O\(nlogm\), where m = max - min
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -119,7 +121,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,16 +1,18 @@
-### Question {#question}
+# 205-isomorphic-strings
+
+## Question {#question}
 
 [https://leetcode.com/problems/isomorphic-strings/description/](https://leetcode.com/problems/isomorphic-strings/description/)
 
-Given two strings **s **and **t**, determine if they are isomorphic.
+Given two strings **s** and **t**, determine if they are isomorphic.
 
-Two strings are isomorphic if the characters in **s **can be replaced to get **t**.
+Two strings are isomorphic if the characters in **s** can be replaced to get **t**.
 
 All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
 
 **Example:**
 
-```
+```text
 Given "egg", "add", return true.
 
 Given "foo", "bar", return false.
@@ -18,14 +20,14 @@ Given "foo", "bar", return false.
 Given "paper", "title", return true.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table and Boolean
    1. Use hashtable to track the mapping of characters and boolean to track whether a character has been used already
    2. Time complexity O\(n\)
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -50,7 +52,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

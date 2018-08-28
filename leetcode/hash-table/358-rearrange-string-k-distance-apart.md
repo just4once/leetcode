@@ -1,4 +1,6 @@
-### Question {#question}
+# 358-rearrange-string-k-distance-apart
+
+## Question {#question}
 
 [https://leetcode.com/problems/rearrange-string-k-distance-apart/description/](https://leetcode.com/problems/rearrange-string-k-distance-apart/description/)
 
@@ -8,7 +10,7 @@ All input strings are given in lowercase letters. If it is not possible to rearr
 
 **Example:**
 
-```
+```text
 s = "aabbcc", k = 3
 
 Result: "abcabc"
@@ -16,7 +18,7 @@ Result: "abcabc"
 The same letters are at least distance 3 from each other.
 ```
 
-```
+```text
 s = "aaabc", k = 3 
 
 Answer: ""
@@ -24,7 +26,7 @@ Answer: ""
 It is not possible to rearrange the string.
 ```
 
-```
+```text
 s = "aaadbbcc", k = 2
 
 Answer: "abacabcd"
@@ -34,7 +36,7 @@ Another possible answer is: "abcabcda"
 The same letters are at least distance 2 from each other.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Map and MaxHeap
    1. Use map to record the count for each character, and use heap to poll the character with most count
@@ -48,7 +50,7 @@ The same letters are at least distance 2 from each other.
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -75,11 +77,9 @@ class Solution {
 }
 ```
 
-```
+```text
 sad
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

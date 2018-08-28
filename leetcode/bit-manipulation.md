@@ -1,6 +1,6 @@
+# bit-manipulation
+
 * asd
-*  Need Review
-  * [137-Single Number II](/leetcode/bit-manipulation/137-single-number-ii.md)
-
-
+* Need Review
+  * [137-Single Number II](bit-manipulation-1/137-single-number-ii.md)
 

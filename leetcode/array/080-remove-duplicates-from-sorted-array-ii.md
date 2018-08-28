@@ -1,4 +1,6 @@
-### Question {#question}
+# 080-remove-duplicates-from-sorted-array-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)
 
@@ -8,21 +10,21 @@ What if duplicates are allowed at most twice?
 
 **Example:**
 
-```
+```text
 Given sorted array nums = [1,1,1,2,2,3],
 Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Unlike [026-Remove Duplicates from Sorted Array ](/leetcode/array/026-remove-duplicates-from-sorted-array.md)where duplicates aren't allowed, this question allow to have 2 duplicates
+1. Unlike [026-Remove Duplicates from Sorted Array ](026-remove-duplicates-from-sorted-array.md)where duplicates aren't allowed, this question allow to have 2 duplicates
 2. We simply compare current ith element with the i - 2 element
    1. We can have two pointers, one going forward and one keep track of last inserted index
    2. We increment the last inserted index when the element is different, so we insert it directly to the array
 3. Time complexity O\(n\)
 4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -41,7 +43,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

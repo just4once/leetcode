@@ -1,4 +1,6 @@
-### Question {#question}
+# 151-reverse-words-in-a-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/reverse-words-in-a-string/description/](https://leetcode.com/problems/reverse-words-in-a-string/description/)
 
@@ -6,12 +8,12 @@ Given an input string, reverse the string word by word.
 
 **Example:**
 
-```
+```text
 Given s = "the sky is blue",
 return "blue is sky the".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Split by Space
    1. We can choose to trim the space or not, then we split by space
@@ -19,7 +21,7 @@ return "blue is sky the".
    3. Time complexity O\(n\)
    4. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 public class Solution {
@@ -50,7 +52,5 @@ public class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

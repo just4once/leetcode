@@ -1,4 +1,6 @@
-### Question {#question}
+# 242-valid-anagram
+
+## Question {#question}
 
 [https://leetcode.com/problems/valid-anagram/description/](https://leetcode.com/problems/valid-anagram/description/)
 
@@ -6,12 +8,12 @@ Given two strings s and t, write a function to determine if t is an anagram of s
 
 **Example:**
 
-```
+```text
 s = "anagram", t = "nagaram", return true.
 s = "rat", t = "car", return false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Store the frequency in the map
@@ -19,7 +21,7 @@ s = "rat", t = "car", return false.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\), at most 256
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -38,7 +40,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

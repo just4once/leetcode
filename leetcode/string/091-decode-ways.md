@@ -1,10 +1,12 @@
-### Question {#question}
+# 091-decode-ways
+
+## Question {#question}
 
 [https://leetcode.com/problems/decode-ways/description/](https://leetcode.com/problems/decode-ways/description/)
 
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 
-```
+```text
 'A' -> 1
 'B' -> 2
 ...
@@ -13,12 +15,12 @@ A message containing letters from A-Z is being encoded to numbers using the foll
 
 Given an encoded message containing digits, determine the total number of ways to decode it.
 
-```
+```text
 Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 The number of ways decoding "12" is 2.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Dynamic Programing
    1. For every character we are exploring, we need to check it along with previous character
@@ -34,16 +36,16 @@ The number of ways decoding "12" is 2.
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
     public int numDecodings(String s) {
         if (s == null || s.length() == 0 || s.charAt(0) == '0') return 0;
-		char[] chars = s.toCharArray();
+        char[] chars = s.toCharArray();
         int n = chars.length;
         // dp[i] store the ith character
-		int[] dp = new int[n + 1];
+        int[] dp = new int[n + 1];
         dp[0] = 1;
         dp[1] = 1;
         for (int i = 2; i < dp.length; i++) {
@@ -57,7 +59,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

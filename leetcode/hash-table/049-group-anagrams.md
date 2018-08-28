@@ -1,4 +1,6 @@
-### Question {#question}
+# 049-group-anagrams
+
+## Question {#question}
 
 [https://leetcode.com/problems/group-anagrams/description/](https://leetcode.com/problems/group-anagrams/description/)
 
@@ -6,7 +8,7 @@ Given an array of strings, group anagrams together.
 
 **Example:**
 
-```
+```text
 For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 
 Return:
 
@@ -17,7 +19,7 @@ Return:
 ]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sort the character in Key
    1. Time complexity O\(n w logw\), where n is number of words, and w is the average length of w
@@ -25,7 +27,7 @@ Return:
 2. Key Hashing using Prime
    1. We
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -63,7 +65,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

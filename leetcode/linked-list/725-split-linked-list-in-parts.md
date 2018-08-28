@@ -1,4 +1,6 @@
-### Question {#question}
+# 725-split-linked-list-in-parts
+
+## Question {#question}
 
 Given a \(singly\) linked list with head node root, write a function to split the linked list into k consecutive linked list "parts".
 
@@ -12,7 +14,7 @@ Examples 1-&gt;2-&gt;3-&gt;4, k = 5 // 5 equal parts \[ \[1\], \[2\], \[3\], \[4
 
 **Example 1:**
 
-```
+```text
 Input: 
 root = [1, 2, 3], k = 5
 Output: [[1],[2],[3],[],[]]
@@ -25,7 +27,7 @@ The last element output[4] is null, but it's string representation as a ListNode
 
 **Example 2:**
 
-```
+```text
 Input: 
 root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3
 Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
@@ -33,14 +35,14 @@ Explanation:
 The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts.
 ```
 
-**Note:  
-**
+**Note:**    
+
 
 * The length of root will be in the range \[0, 1000\].
 * Each value of a node in the input will be an integer in the range \[0, 999\].
 * k will be an integer in the range \[1, 50\].
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Create New List
    1. Each part has n / k elements except first n % k parts will have an extra element
@@ -51,7 +53,7 @@ The input has been split into consecutive parts with size difference at most 1, 
    2. Time complexity O\(n + k\)
    3. Space complexity O\(k\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -75,7 +77,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int getLength(ListNode root) {
         int len = 0;
         while (root != null) {
@@ -87,7 +89,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

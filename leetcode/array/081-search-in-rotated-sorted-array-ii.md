@@ -1,8 +1,10 @@
-### Question {#question}
+# 081-search-in-rotated-sorted-array-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)
 
-Follow up for "[033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md)":  
+Follow up for "[033-Search in Rotated Sorted Array](033-search-in-rotated-sorted-array.md)":  
 What ifduplicatesare allowed?
 
 Would this affect the run-time complexity? How and why?
@@ -17,13 +19,13 @@ The array may contain duplicates.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
-1. Similar to [033-Search in Rotated Sorted Array](/leetcode/array/033-search-in-rotated-sorted-array.md), we need two pointers to search, and we also divide the search into different cases
+1. Similar to [033-Search in Rotated Sorted Array](033-search-in-rotated-sorted-array.md), we need two pointers to search, and we also divide the search into different cases
    1. The mid is the target, we can return immediately
    2. The left part is sorted, we then check whether the target is within the range of left and proceed to the correct side
    3. The right part is sorted, and we perform similar step as above
@@ -31,7 +33,7 @@ The array may contain duplicates.
    5. Time complexity O\(n\) worst, O\(log n\) average
    6. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -59,7 +61,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

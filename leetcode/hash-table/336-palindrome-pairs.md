@@ -1,4 +1,6 @@
-### Question {#question}
+# 336-palindrome-pairs
+
+## Question {#question}
 
 [https://leetcode.com/problems/palindrome-pairs/description/](https://leetcode.com/problems/palindrome-pairs/description/)
 
@@ -6,7 +8,7 @@ Given a list of unique words, find all pairs of distinct indices \(i, j\) in the
 
 **Example:**
 
-```
+```text
 Given words = ["bat", "tab", "cat"]
 Return [[0, 1], [1, 0]]
 The palindromes are ["battab", "tabbat"]
@@ -16,7 +18,7 @@ Return [[0, 1], [1, 0], [3, 2], [2, 4]]
 The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. Simply compare two strings can form a palindrome
@@ -38,7 +40,7 @@ The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
    5. Time complexity O\(nw^2\)
    6. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -156,7 +158,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

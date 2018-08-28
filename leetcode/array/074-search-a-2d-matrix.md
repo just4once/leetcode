@@ -1,4 +1,6 @@
-### Question {#question}
+# 074-search-a-2d-matrix
+
+## Question {#question}
 
 [https://leetcode.com/problems/search-a-2d-matrix/description/](https://leetcode.com/problems/search-a-2d-matrix/description/)
 
@@ -9,7 +11,7 @@ Write an efficient algorithm that searches for a value in anmxnmatrix. This matr
 
 **Example:**
 
-```
+```text
 [
   [1,   3,  5,  7],
   [10, 11, 16, 20],
@@ -18,14 +20,14 @@ Write an efficient algorithm that searches for a value in anmxnmatrix. This matr
 Given target = 3, return true.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. We can treat this as one dimensional array, we can perform binary search as well
 2. The only difference is the way to calculate the index
 3. Time complexity O\(log \(mn\)\)
 4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,19 +1,21 @@
-### Question {#question}
+# 222-count-complete-tree-nodes
+
+## Question {#question}
 
 [https://leetcode.com/problems/count-complete-tree-nodes/description/](https://leetcode.com/problems/count-complete-tree-nodes/description/)
 
-Given a **complete **binary tree, count the number of nodes.
+Given a **complete** binary tree, count the number of nodes.
 
-**Definition of a complete binary tree from **[**Wikipedia**](http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees)**:**  
+**Definition of a complete binary tree from** [**Wikipedia**](http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees)**:**  
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2hnodes inclusive at the last level h.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DFS
    1. We travel the tree to the left and right at the same time
@@ -28,7 +30,7 @@ In a complete binary tree every level, except possibly the last, is completely f
    5. Space complexity O\(logn\) due to recursion
 3. Iterative
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -68,7 +70,7 @@ class Solution {
         // right half is complete
         else return (1 << (h - 2)) + countNodes(root.left);
     }
-    
+
     private int getHeight(TreeNode root) {
         if (root == null) return 0;
         else return 1 + getHeight(root.left);
@@ -94,7 +96,7 @@ class Solution {
         }
         return count;
     }
-    
+
     private int getHeight(TreeNode root) {
         if (root == null) return 0;
         else return 1 + getHeight(root.left);
@@ -102,7 +104,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

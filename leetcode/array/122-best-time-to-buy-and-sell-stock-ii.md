@@ -1,4 +1,6 @@
-### Question {#question}
+# 122-best-time-to-buy-and-sell-stock-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
@@ -8,11 +10,11 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. First we need to find the local min, then the next local max
    1. repeat the local min and max process until we reach the end
@@ -24,7 +26,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
    3. Time complexity O\(n\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -38,7 +40,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

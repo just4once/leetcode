@@ -1,4 +1,6 @@
-### Question {#question}
+# 120-triangle
+
+## Question {#question}
 
 [https://leetcode.com/problems/triangle/description/](https://leetcode.com/problems/triangle/description/)
 
@@ -8,7 +10,7 @@ For example, given the following triangle
 
 **Example:**
 
-```
+```text
 [
      [2],
     [3,4],
@@ -19,7 +21,7 @@ For example, given the following triangle
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. The triangle is very similar to a tree structure, where at each node, we can either travel left or right
 2. However, there is overlap of the subproblem, where the siblings share same leaf node, i.e. the left sibling and right sibling share their right leaf and left leaf respectively
@@ -29,7 +31,7 @@ The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 6. Time complexity O\(n^2\), where n is number of rows
 7. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -46,7 +48,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

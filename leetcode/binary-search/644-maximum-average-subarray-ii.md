@@ -1,4 +1,6 @@
-### Question {#question}
+# 644-maximum-average-subarray-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/maximum-average-subarray-ii/description/](https://leetcode.com/problems/maximum-average-subarray-ii/description/)
 
@@ -6,7 +8,7 @@ Given an array consisting of n integers, find the contiguous subarray whose leng
 
 **Example:**
 
-```
+```text
 Input: [1,12,-5,-6,50,3], k = 4
 Output: 12.75
 Explanation:
@@ -15,14 +17,14 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:                            
-**
+**Note:**    
+
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
 2. Elements of the given array will be in range \[-10,000, 10,000\].
 3. The answer with the calculation error less than 10-5 will be accepted.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Presum and Linear Scan \(TLE\)
    1. Create a presum array and start searching the left pointer from 0th to n - kth element
@@ -53,7 +55,7 @@ Thus return 12.75.
    6. Time complexity O\(n\)
    7. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -117,7 +119,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

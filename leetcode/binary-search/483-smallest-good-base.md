@@ -1,4 +1,6 @@
-### Question {#question}
+# 483-smallest-good-base
+
+## Question {#question}
 
 [https://leetcode.com/problems/smallest-good-base/description/](https://leetcode.com/problems/smallest-good-base/description/)
 
@@ -8,7 +10,7 @@ Now given a string representing n, you should return the smallest good base of n
 
 **Example 1:**
 
-```
+```text
 Input: "13"
 Output: "3"
 Explanation: 13 base 3 is 111.
@@ -16,7 +18,7 @@ Explanation: 13 base 3 is 111.
 
 **Example 2:**
 
-```
+```text
 Input: "4681"
 Output: "8"
 Explanation: 4681 base 8 is 11111.
@@ -24,7 +26,7 @@ Explanation: 4681 base 8 is 11111.
 
 **Example 3:**
 
-```
+```text
 Input: "1000000000000000000"
 Output: "999999999999999999"
 Explanation: 1000000000000000000 base 999999999999999999 is 11.
@@ -35,7 +37,7 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
 1. The range of n is \[3, 10^18\].
 2. The string representing n is always valid and will not have leading zeros.
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search
    1. Define base to be k, and number of digits to be m
@@ -59,7 +61,7 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
    9. Time complexity O\(logn\)
    10. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 import java.math.*;
@@ -117,7 +119,7 @@ class Solution {
         }
         return String.valueOf(res);
     }
-    
+
     private long geometric(long base, int m) {
         long res = 0;
         for (int i = 0; i <= m; i++) {
@@ -128,7 +130,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

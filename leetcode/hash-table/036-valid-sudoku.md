@@ -1,4 +1,6 @@
-### Question {#question}
+# 036-valid-sudoku
+
+## Question {#question}
 
 [https://leetcode.com/problems/valid-sudoku/description/](https://leetcode.com/problems/valid-sudoku/description/)
 
@@ -8,18 +10,18 @@ The Sudoku board could be partially filled, where empty cells are filled with th
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Follow the rule
    1. We simply follow the rule of the Sudoku, where we check all the row, column and boxes
    2. Time complexity O\(n^2\), where n = 9 for common Sudoku
    3. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -48,7 +50,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

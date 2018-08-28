@@ -1,4 +1,6 @@
-### Question {#question}
+# 097-interleaving-string
+
+## Question {#question}
 
 [https://leetcode.com/problems/interleaving-string/description/](https://leetcode.com/problems/interleaving-string/description/)
 
@@ -6,7 +8,7 @@ Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
 
 **Example:**
 
-```
+```text
 Given:
 s1 = "aabcc",
 s2 = "dbbca",
@@ -15,7 +17,7 @@ When s3 = "aadbbcbcac", return true.
 When s3 = "aadbbbaccc", return false.
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Recursion \(TLE\)
    1. From two strings, we can pick either one from s1 and s2
@@ -37,7 +39,7 @@ When s3 = "aadbbbaccc", return false.
    1. Time complexity O\(mn\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -67,7 +69,7 @@ class Solution {
         Boolean[][] memo = new Boolean[s1.length()][s2.length()];
         return isInterleave(s1, 0, s2, 0, s3, 0, memo);
     }
-    
+
     private boolean isInterleave(String s1, int i, String s2, int j, String s3, int k, Boolean[][] memo) {
         if (i == s1.length()) return s2.substring(j).equals(s3.substring(k));
         if (j == s2.length()) return s1.substring(i).equals(s3.substring(k));
@@ -126,7 +128,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

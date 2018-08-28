@@ -1,4 +1,6 @@
-### Question {#question}
+# 349-intersection-of-two-arrays
+
+## Question {#question}
 
 [https://leetcode.com/problems/intersection-of-two-arrays/description/](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 
@@ -6,11 +8,11 @@ Given two arrays, write a function to compute their intersection.
 
 **Example:**
 
-```
+```text
 Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Hash Table
    1. Use hash table to store the number, then visit the nums2
@@ -23,7 +25,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
    3. Time complexity O\(nlogn\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -72,7 +74,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

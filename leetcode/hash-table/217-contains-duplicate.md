@@ -1,4 +1,6 @@
-### Question {#question}
+# 217-contains-duplicate
+
+## Question {#question}
 
 [https://leetcode.com/problems/contains-duplicate/description/](https://leetcode.com/problems/contains-duplicate/description/)
 
@@ -6,11 +8,11 @@ Given an array of integers, find if the array contains any duplicates. Your func
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Sort
    1. Time complexity O\(n logn\)
@@ -19,7 +21,7 @@ Given an array of integers, find if the array contains any duplicates. Your func
    1. Time complexity O\(n\)
    2. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -45,7 +47,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

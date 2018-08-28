@@ -1,4 +1,6 @@
-### Question {#question}
+# 214-shortest-palindrome
+
+## Question {#question}
 
 [https://leetcode.com/problems/shortest-palindrome/description/](https://leetcode.com/problems/shortest-palindrome/description/)
 
@@ -6,13 +8,13 @@ Given a string S, you are allowed to convert it to a palindrome by adding charac
 
 **Example:**
 
-```
+```text
 Given "aacecaaa", return "aaacecaaa".
 
 Given "abcd", return "dcbabcd".
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Expand and Reach the End
    1. The goal is to find the longest palindrome starting from first character
@@ -32,7 +34,7 @@ Given "abcd", return "dcbabcd".
    1. asdasd
    2. 
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -68,12 +70,12 @@ class Solution {
         int len = kmp(s + "#" + rev);
         return rev.substring(0, n - len) + s;
     }
-    
+
     private String reverse(String s) {
         StringBuilder sb = new StringBuilder(s);
         return sb.reverse().toString();
     }
-    
+
     private int kmp(String s) {
         int n = s.length(), i = 0;
         int[] table = new int[n];
@@ -88,7 +90,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

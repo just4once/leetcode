@@ -1,4 +1,6 @@
-### Question {#question}
+# 204-count-primes
+
+## Question {#question}
 
 [https://leetcode.com/problems/count-primes/description/](https://leetcode.com/problems/count-primes/description/)
 
@@ -6,11 +8,11 @@ Count the number of prime numbers less than a non-negative number, **n**.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Typical Sqrt Root \(TLE\)
    1. One way we can test a number, n,  is prime or not is simply try all the number between 2 and n - 1
@@ -22,7 +24,7 @@ Count the number of prime numbers less than a non-negative number, **n**.
    2. Time complexity O\(n\)
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -83,7 +85,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

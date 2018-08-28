@@ -1,16 +1,18 @@
-### Question {#question}
+# 219-contains-duplicate-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/contains-duplicate-ii/description/](https://leetcode.com/problems/contains-duplicate-ii/description/)
 
-Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that **nums\[i\] = nums\[j\]** and the **absolute **difference between i and j is at most k.
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that **nums\[i\] = nums\[j\]** and the **absolute** difference between i and j is at most k.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force - Check the range of K \(TLE\)
    1. Two pointers tracking the start and end points
@@ -27,7 +29,7 @@ Given an array of integers and an integer k, find out whether there are two dist
    4. Time complexity O\(n logn\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 Brute Force
 
@@ -103,7 +105,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

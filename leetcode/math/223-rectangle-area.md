@@ -1,18 +1,20 @@
-### Question {#question}
+# 223-rectangle-area
+
+## Question {#question}
 
 [https://leetcode.com/problems/rectangle-area/description/](https://leetcode.com/problems/rectangle-area/description/)
 
-Find the total area covered by two **rectilinear **rectangles in a **2D **plane.
+Find the total area covered by two **rectilinear** rectangles in a **2D** plane.
 
 Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Check Overlap
    1. If there is no overlap, we know the total area is the sum of areas
@@ -20,7 +22,7 @@ Each rectangle is defined by its bottom left corner and top right corner as show
    3. Time complexity O\(1\)
    4. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -41,7 +43,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

@@ -1,6 +1,8 @@
-### Question {#question}
+# 445-add-two-numbers-ii
 
-You are given two **non-empty **linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+## Question {#question}
+
+You are given two **non-empty** linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
@@ -9,12 +11,12 @@ What if you cannot modify the input lists? In other words, reversing the lists i
 
 **Example:**
 
-```
+```text
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Reverse and Add
    1. Time complexity O\(n\)
@@ -24,7 +26,7 @@ Output: 7 -> 8 -> 0 -> 7
    2. Time complexity O\(n\)
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -44,7 +46,7 @@ class Solution {
         }
         return cur.val == 0 ? cur.next : cur;
     }
-    
+
     private Stack<Integer> getVal(ListNode l) {
         Stack<Integer> stack = new Stack<>();
         while (l != null) {
@@ -56,7 +58,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

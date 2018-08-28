@@ -1,4 +1,6 @@
-### Question {#question}
+# 658-find-k-closest-elements
+
+## Question {#question}
 
 [https://leetcode.com/problems/find-k-closest-elements/description/](https://leetcode.com/problems/find-k-closest-elements/description/)
 
@@ -6,26 +8,26 @@ Given a sorted array, two integers k and x, find the k closest elements to x in 
 
 **Example 1:**
 
-```
+```text
 Input: [1,2,3,4,5], k=4, x=3
 Output: [1,2,3,4]
 ```
 
 **Example 2:**
 
-```
+```text
 Input: [1,2,3,4,5], k=4, x=-1
 Output: [1,2,3,4]
 ```
 
-**Note:        
-**
+**Note:**    
+
 
 1. The value k is positive and will always be smaller than the length of the sorted array.
 2. Length of the given array is positive and will not exceed 104
 3. Absolute value of elements in the array and x will not exceed 104
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Binary Search and Expand Window
    1. Locate the closest element using modified binary search
@@ -39,7 +41,7 @@ Output: [1,2,3,4]
    4. Time complexity O\(logn\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -87,7 +89,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

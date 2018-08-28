@@ -1,4 +1,6 @@
-### Question {#question}
+# 137-single-number-ii
+
+## Question {#question}
 
 [https://leetcode.com/problems/single-number-ii/description/](https://leetcode.com/problems/single-number-ii/description/)
 
@@ -6,7 +8,7 @@ Given an array of integers, every element appears three times except for one, wh
 
 **Example:**
 
-```
+```text
 
 ```
 
@@ -14,7 +16,7 @@ Given an array of integers, every element appears three times except for one, wh
 
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Check Every Bit
    1. We sum all the bit for current bit position, if the sum is divisible by 3, we know current bit is 0, otherwise is 1
@@ -22,7 +24,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
    3. Space complexity O\(1\)
 2. asd
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -57,7 +59,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

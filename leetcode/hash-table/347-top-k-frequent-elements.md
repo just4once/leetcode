@@ -1,16 +1,18 @@
-### Question {#question}
+# 347-top-k-frequent-elements
+
+## Question {#question}
 
 [https://leetcode.com/problems/top-k-frequent-elements/description/](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
-Given a non-empty array of integers, return the **k **most frequent elements.
+Given a non-empty array of integers, return the **k** most frequent elements.
 
 **Example:**
 
-```
+```text
 Given [1,1,1,2,2,3] and k = 2, return [1,2].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Max Heap
    1. Count the frequency of each number
@@ -29,7 +31,7 @@ Given [1,1,1,2,2,3] and k = 2, return [1,2].
    2. Time complexity O\(n\)
    3. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -115,7 +117,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

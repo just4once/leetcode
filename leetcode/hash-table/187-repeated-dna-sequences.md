@@ -1,4 +1,6 @@
-### Question {#question}
+# 187-repeated-dna-sequences
+
+## Question {#question}
 
 [https://leetcode.com/problems/repeated-dna-sequences/description/](https://leetcode.com/problems/repeated-dna-sequences/description/)
 
@@ -8,14 +10,14 @@ Write a function to find all the 10-letter-long sequences \(substrings\) that oc
 
 **Example:**
 
-```
+```text
 Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
 
 Return:
 ["AAAAACCCCC", "CCCCCAAAAA"].
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force - Two Sets
    1. Simply cut the string at different position to create length 10 substring
@@ -29,7 +31,7 @@ Return:
    4. Time complexity O\(n\)
    5. Space complexity O\(n\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -80,7 +82,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

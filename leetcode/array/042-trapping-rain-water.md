@@ -1,4 +1,6 @@
-### Question {#question}
+# 042-trapping-rain-water
+
+## Question {#question}
 
 [https://leetcode.com/problems/trapping-rain-water/description/](https://leetcode.com/problems/trapping-rain-water/description/)
 
@@ -6,13 +8,13 @@ Given n non-negative integers representing an elevation map where the width of e
 
 **Example:**
 
-```
+```text
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6
 ```
 
-### ![](/assets/041.png) {#thought-process}
+## ![](../../.gitbook/assets/041.png) {#thought-process}
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Brute Force
    1. For each element find it's max left boundary and right boundary
@@ -32,7 +34,7 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -83,7 +85,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

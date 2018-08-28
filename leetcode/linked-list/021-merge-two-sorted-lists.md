@@ -1,4 +1,6 @@
-### Question {#question}
+# 021-merge-two-sorted-lists
+
+## Question {#question}
 
 [https://leetcode.com/problems/merge-two-sorted-lists/description/](https://leetcode.com/problems/merge-two-sorted-lists/description/)
 
@@ -6,12 +8,12 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 **Example:**
 
-```
+```text
 Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. Two Pointers - Iterative
    1. Two pointers for each list, we link the node until both pointers reach the end
@@ -21,7 +23,7 @@ Output: 1->1->2->3->4->4
    1. Time complexity O\(m + n\)
    2. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 /**
@@ -85,7 +87,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 

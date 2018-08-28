@@ -1,20 +1,22 @@
-### Question {#question}
+# 062-unique-paths
+
+## Question {#question}
 
 [https://leetcode.com/problems/unique-paths/description/](https://leetcode.com/problems/unique-paths/description/)
 
 A robot is located at the top-left corner of a m x n grid \(marked 'Start' in the diagram below\).
 
-The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid \(marked 'Finish' in the diagram below\).
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid \(marked 'Finish' in the diagram below\).
 
-How many possible unique paths are there?
+How many possible unique paths are there?
 
 **Example:**
 
-```
+```text
 
 ```
 
-### Thought Process {#thought-process}
+## Thought Process {#thought-process}
 
 1. DP
    1. For an one dimensional array, there is only one way to reach there, straight right or straight down
@@ -22,7 +24,10 @@ A robot is located at the top-left corner of a m x n grid \(marked 'Start' in th
    3. Time complexity O\(mn\)
    4. Space complexity O\(mn\)
 2. DP - Optimized Space
-   1. W      e can save the space by using one dimensional array
+   1. W
+
+      e can save the space by using one dimensional array
+
    2. We can choose the smaller one to save the space, for now we just stick with columns n
    3. Time complexity O\(mn\)
    4. Space complexity O\(n\)
@@ -33,7 +38,7 @@ A robot is located at the top-left corner of a m x n grid \(marked 'Start' in th
    4. Time complexity O\(n\)
    5. Space complexity O\(1\)
 
-### Solution
+## Solution
 
 ```java
 class Solution {
@@ -79,7 +84,5 @@ class Solution {
 }
 ```
 
-### Additional {#additional}
-
-
+## Additional {#additional}
 
