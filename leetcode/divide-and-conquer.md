@@ -1,4 +1,0 @@
-# divide-and-conquer
-
-
-

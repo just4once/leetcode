@@ -1,4 +1,0 @@
-# dynamic-programing
-
-
-

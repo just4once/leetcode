@@ -2,5 +2,5 @@
 
 * asd
 * Need Review
-  * [137-Single Number II](bit-manipulation-1/137-single-number-ii.md)
+  * [137-Single Number II]()
 
