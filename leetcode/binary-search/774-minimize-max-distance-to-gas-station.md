@@ -88,6 +88,29 @@ class Solution {
 }
 ```
 
+```java
+class Solution {
+    public double minmaxGasDist(int[] stations, int K) {
+        double delta = 1e-6;
+        double lo = 0, hi = 1e8;
+        while (hi - lo > delta) {
+            double mi = (lo + hi) / 2;
+            if (possible(mi, stations, K)) hi = mi;
+            else lo = mi;
+        }
+        return lo;
+    }
+    
+    private boolean possible(double x, int[] stations, int K) {
+        int count = 0;
+        for (int i = 1; i < stations.length; i++) {
+            count += (int) ((stations[i] - stations[i - 1]) / x);
+        }
+        return count <= K;
+    }
+}
+```
+
 ### Additional {#additional}
 
 
