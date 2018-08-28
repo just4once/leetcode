@@ -32,7 +32,7 @@ Output: False
    1. We can eliminate the z volume that is greater than x + y
    2. We can return true for z = x or y, or z = x + y
    3. The problem can be summarized as ax + by = z, where positive a and b means filling jugs a or b times, negative a and b means emptying
-   4. This can be solved by [Bézout’s identity](https://en.wikipedia.org/wiki/Bézout's_identity), where we check z is multiple of GCD\(x, y\)
+   4. This can be solved by \[Bézout’s identity\]\([https://en.wikipedia.org/wiki/Bézout's\_identity](https://en.wikipedia.org/wiki/Bézout's_identity)\), where we check z is multiple of GCD\(x, y\)
 
 ## Solution
 

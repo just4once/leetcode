@@ -35,8 +35,7 @@ The Multiplication Table:
 The 6-th smallest number is 6 (1, 2, 2, 3, 4, 6).
 ```
 
-**Note:**    
-
+**Note:**
 
 1. The m and n will be in the range \[1, 30000\].
 2. The k will be in the range \[1, m \* n\]

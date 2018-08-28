@@ -6,7 +6,7 @@
 
 Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
 
-**Note:** 
+**Note:**
 
 1. The length of both num1 and num2 is &lt; 110.
 2. Both num1 and num2 contains only digits 0-9.

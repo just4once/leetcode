@@ -22,7 +22,7 @@ Output: -1
 Explanation: 2 does not exist in nums so return -1
 ```
 
-**Note:** 
+**Note:**
 
 1. You may assume that all elements in nums are unique.
 2. n will be in the range \[1, 10000\].

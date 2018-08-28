@@ -21,8 +21,7 @@ Here are all the pairs:
 Then the 1st smallest distance pair is (1,1), and its distance is 0.
 ```
 
-**Note:**    
-
+**Note:**
 
 1. 2 &lt;= len\(nums\) &lt;= 10000.
 2. 0 &lt;= nums\[i\] &lt; 1000000.

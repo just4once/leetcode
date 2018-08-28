@@ -17,8 +17,7 @@ Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 ```
 
-**Note:**    
-
+**Note:**
 
 1. 1 &lt;= len\(A\), len\(B\) &lt;= 1000
 2. 0 &lt;= A\[i\], B\[i\] &lt; 100

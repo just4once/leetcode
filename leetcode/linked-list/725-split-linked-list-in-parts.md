@@ -35,8 +35,7 @@ Explanation:
 The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts.
 ```
 
-**Note:**    
-
+**Note:**
 
 * The length of root will be in the range \[0, 1000\].
 * Each value of a node in the input will be an integer in the range \[0, 999\].

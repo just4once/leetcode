@@ -10,8 +10,7 @@ The return value is the actual number of characters read. For example, it return
 
 By using the read4 API, implement the function int read\(char \*buf, int n\) that reads n characters from the file.
 
-**Note:**    
-
+**Note:**
 
 The read function may be called multiple times.
 

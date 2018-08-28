@@ -17,8 +17,7 @@ when length is 6, maximum average value is 9.16667.
 Thus return 12.75.
 ```
 
-**Note:**    
-
+**Note:**
 
 1. 1 &lt;= k &lt;= n &lt;= 10,000.
 2. Elements of the given array will be in range \[-10,000, 10,000\].

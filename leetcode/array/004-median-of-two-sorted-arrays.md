@@ -32,20 +32,11 @@ The median is (2 + 3)/2 = 2.5
    1. Knowing the length of both array, we can use a counter to count the element until it reach n/2 for odd number or n/2 + 1, and taking average for the second case
    2. Time complexity will be O\(m+ n\)
    3. Space complexity will be O\(1\)
-2. Optimal \(Binary Search\) 1. Because the question warrants O\(log\(m+n\)\), binary search is probably the desired approach 2. Looking back at the definition of median of an array, it's located in the middle 3. If we can cut an array into two puts, and call the element immediately left to the cut L, and right to the cut the R, we can find the median easily by average them 1. \[2 3 / 5 7\] -&gt; median = \(3+5\)/2 2. \[2 3 \(4/4\) 5 7\] -&gt; median = \(4 + 4\) / 2 = 4
-   1. The index can be listed as follow
-      1. ```text
-         N        Index of L / R
-         1               0 / 0
-         2               0 / 1
-         3               1 / 1  
-         4               1 / 2      
-         5               2 / 2
-         6               2 / 3
-         7               3 / 3
-         8               3 / 4
-         ```
+2. Optimal \(Binary Search\) 1. Because the question warrants O\(log\(m+n\)\), binary search is probably the desired approach 2. Looking back at the definition of median of an array, it's located in the middle 3. If we can cut an array into two puts, and call the element immediately left to the cut L, and right to the cut the R, we can find the median easily by average them 1. \[2 3 / 5 7\] -&gt; median = \(3+5\)/2 2. \[2 3 \(4/4\) 5 7\] -&gt; median = \(4 + 4\) / 2 = 4 1. The index can be listed as follow 1. \`\`\`text N Index of L / R 1 0 / 0 2 0 / 1 3 1 / 1  
+   4 1 / 2  
+   5 2 / 2 6 2 / 3 7 3 / 3 8 3 / 4
 
+   ```text
          The formula is derived as \(L + R\)/2 = \(A\[\(N-1\)/2\] + A\[N/2\]\)/2
 
       2. For two arrays, we need to add some padding to make the index more consistent
@@ -55,33 +46,36 @@ The median is (2 + 3)/2 = 2.5
 
       [6 9 11 13 18]->   [# 6 # 9 # 11 # 13 # 18 #]   (N = 5)
       position index      0 1 2 3 4 5  6 7  8 9 10    (N_Position = 11)
+   ```
+
+   There are always 2N + 1 position and the cut is always at N position
+
+   1. Observe that index\(L\) = \(N - 1\) / 2, and index\(R\) = N / 2
+   2. There are 2N1 + 2N2 + 2 position altogether. Because we made two cuts on two arrays, there should be N1 + N2 on each side
+   3. If we made the cut C2 = K in A2, then the C1 = N1 + N2 - K.
+   4. Then we have two L's and two R's 1. \`\`\`text \[\# 1 \# 2 \# 3 \# \(4/4\) \# 5 \#\]
+
+      ```text
+      [# 1 / 1 # 1 # 1 #]
       ```
 
-      There are always 2N + 1 position and the cut is always at N position
-
-   3. Observe that index\(L\) = \(N - 1\) / 2, and index\(R\) = N / 2
-   4. There are 2N1 + 2N2 + 2 position altogether. Because we made two cuts on two arrays, there should be N1 + N2 on each side
-   5. If we made the cut C2 = K in A2, then the C1 = N1 + N2 - K.
-   6. Then we have two L's and two R's
-      1. ```text
-          [# 1 # 2 # 3 # (4/4) # 5 #]    
-
-          [# 1 / 1 # 1 # 1 #]
-         ```
+      ```text
       2. ```text
           L1 = A1[(C1-1)/2]; R1 = A1[C1/2];
           L2 = A2[(C2-1)/2]; R2 = A2[C2/2];
-         ```
-      3. ```text
+      ```
+
+      1. ```text
              L1 = A1[(7-1)/2] = A1[3] = 4; R1 = A1[7/2] = A1[3] = 4;
              L2 = A2[(2-1)/2] = A2[0] = 1; R2 = A1[2/2] = A1[1] = 1;
          ```
-      4. We need to make sure L1 &lt;= R1 && L1 &lt;= R2 && L2 &lt;= R1 && L2 &lt;= R2
+      2. We need to make sure L1 &lt;= R1 && L1 &lt;= R2 && L2 &lt;= R1 && L2 &lt;= R2
          1. Since arrays are sorted, we can drop L1 &lt;= R1 and L2 &lt;= R2 conditions, just focus on L1 &lt;= R2 and L2 &lt;= R1
          2. If L1 &gt; R2, we have too many large elements on left of A1, we need to move C1 to left or C2 to the right
          3. If L2 &gt; R1, we have too many large elements on left of A2, we need to move C2 to the left
-      5. Because C1 and C2 are mutually determinable, we can just pick one. However, it's much more practical to use the shorter array as the basis, since all cut position on it is possible median. On the longer array, the position too far to the left or right is simply impossible.
-   7. For instance, \[1\], \[2 3 4 5 6 7 8\]. 1. Corner cases are when C2 == 0 and C2 == 2N2, where we can insert a imaginary element A\[-1\] = INT\_MIN and A\[2N2\] = INT\_MAX
+      3. Because C1 and C2 are mutually determinable, we can just pick one. However, it's much more practical to use the shorter array as the basis, since all cut position on it is possible median. On the longer array, the position too far to the left or right is simply impossible.
+
+   5. For instance, \[1\], \[2 3 4 5 6 7 8\]. 1. Corner cases are when C2 == 0 and C2 == 2N2, where we can insert a imaginary element A\[-1\] = INT\_MIN and A\[2N2\] = INT\_MAX
 
 ## Solution
 

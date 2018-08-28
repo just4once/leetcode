@@ -23,14 +23,14 @@ How many possible unique paths are there?
    2. Now for two dimensional array, the ways to get there will be way\[left\] and way\[top\]
    3. Time complexity O\(mn\)
    4. Space complexity O\(mn\)
-2. DP - Optimized Space
-   1. W
+2. DP - Optimized Space 1. W
 
-      e can save the space by using one dimensional array
+   e can save the space by using one dimensional array
 
-   2. We can choose the smaller one to save the space, for now we just stick with columns n
-   3. Time complexity O\(mn\)
-   4. Space complexity O\(n\)
+   1. We can choose the smaller one to save the space, for now we just stick with columns n
+   2. Time complexity O\(mn\)
+   3. Space complexity O\(n\)
+
 3. Math formula
    1. There are total of m + n - 2 steps, m -1 down and n - 1 right
    2. This question is essentially asking how many ways we can get by performing m - 1 down steps out of total m + n - 2 moves

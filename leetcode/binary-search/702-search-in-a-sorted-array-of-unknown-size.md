@@ -24,8 +24,7 @@ Output: -1
 Explanation: 2 does not exist in nums so return -1
 ```
 
-**Note:**    
-
+**Note:**
 
 1. You may assume that all elements in the array are unique.
 2. The value of each element in the array will be in the range \[-9999, 9999\].

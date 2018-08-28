@@ -16,7 +16,7 @@ Explanation: Flip the first zero will get the the maximum number of consecutive 
 After flipping, the maximum number of consecutive 1s is 4.
 ```
 
-**Note:** 
+**Note:**
 
 The input array will only contain 0 and 1.
 

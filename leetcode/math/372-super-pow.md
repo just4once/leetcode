@@ -32,9 +32,9 @@ Result: 1024
    5. Time complexity O\(n\)
    6. Space complexity O\(1\)
 2. Euler's Theorem/Fermat's Little Theorem
-   1. Euler's theorem, \[[https://en.wikipedia.org/wiki/Euler's\_theorem\]\(https://en.wikipedia.org/wiki/Euler's\_theorem](https://en.wikipedia.org/wiki/Euler's_theorem]%28https://en.wikipedia.org/wiki/Euler's_theorem)\)
-   2. Fermat's little theorem, \[[https://en.wikipedia.org/wiki/Fermat's\_little\_theorem\]\(https://en.wikipedia.org/wiki/Fermat's\_little\_theorem](https://en.wikipedia.org/wiki/Fermat's_little_theorem]%28https://en.wikipedia.org/wiki/Fermat's_little_theorem)\)
-   3. Euler's totient function, \[[https://en.wikipedia.org/wiki/Euler's\_totient\_function\]\(https://en.wikipedia.org/wiki/Euler's\_totient\_function](https://en.wikipedia.org/wiki/Euler's_totient_function]%28https://en.wikipedia.org/wiki/Euler's_totient_function)\)
+   1. Euler's theorem, \[\[[https://en.wikipedia.org/wiki/Euler's\_theorem\]\(https://en.wikipedia.org/wiki/Euler's\_theorem\]\(https://en.wikipedia.org/wiki/Euler's\_theorem\]\(https://en.wikipedia.org/wiki/Euler's\_theorem\)\](https://en.wikipedia.org/wiki/Euler's_theorem]%28https://en.wikipedia.org/wiki/Euler's_theorem]%28https://en.wikipedia.org/wiki/Euler's_theorem]%28https://en.wikipedia.org/wiki/Euler's_theorem%29\)\)
+   2. Fermat's little theorem, \[\[[https://en.wikipedia.org/wiki/Fermat's\_little\_theorem\]\(https://en.wikipedia.org/wiki/Fermat's\_little\_theorem\]\(https://en.wikipedia.org/wiki/Fermat's\_little\_theorem\]\(https://en.wikipedia.org/wiki/Fermat's\_little\_theorem\)\](https://en.wikipedia.org/wiki/Fermat's_little_theorem]%28https://en.wikipedia.org/wiki/Fermat's_little_theorem]%28https://en.wikipedia.org/wiki/Fermat's_little_theorem]%28https://en.wikipedia.org/wiki/Fermat's_little_theorem%29\)\)
+   3. Euler's totient function, \[\[[https://en.wikipedia.org/wiki/Euler's\_totient\_function\]\(https://en.wikipedia.org/wiki/Euler's\_totient\_function\]\(https://en.wikipedia.org/wiki/Euler's\_totient\_function\]\(https://en.wikipedia.org/wiki/Euler's\_totient\_function\)\](https://en.wikipedia.org/wiki/Euler's_totient_function]%28https://en.wikipedia.org/wiki/Euler's_totient_function]%28https://en.wikipedia.org/wiki/Euler's_totient_function]%28https://en.wikipedia.org/wiki/Euler's_totient_function%29\)\)
    4. Examples, [http://mathonline.wikidot.com/examples-using-euler-s-theorem](http://mathonline.wikidot.com/examples-using-euler-s-theorem)
    5. Three cases for reducing the power
       1. a is multiple of 1337, result is 0

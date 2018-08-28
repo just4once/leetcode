@@ -20,7 +20,7 @@ Given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13
    3. Time complexity O\(n^1.5\)
    4. Space complexity O\(n\)
 2. Math
-   1. Base on \[Lagrange's four-square theorem\]\([https://en.wikipedia.org/wiki/Lagrange's\_four-square\_theorem](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem)\), the answer is limit by 4
+   1. Base on \[Lagrange's four-square theorem\]\(\[[https://en.wikipedia.org/wiki/Lagrange's\_four-square\_theorem\]\(https://en.wikipedia.org/wiki/Lagrange's\_four-square\_theorem\)\](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem]%28https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem%29\)\), the answer is limit by 4
    2. The number representation can be found here, [http://www.alpertron.com.ar/4SQUARES.HTM](http://www.alpertron.com.ar/4SQUARES.HTM)
    3. Perfect squares has one factor
    4. If the representation is 4^k\*\(8\*m + 7\), there are 4 factors

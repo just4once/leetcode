@@ -42,8 +42,7 @@ target = "k"
 Output: "c"
 ```
 
-**Note:**    
-
+**Note:**
 
 1. letters has a length in range \[2, 10000\].
 2. letters consists of lowercase letters, and contains at least 2 unique letters.
