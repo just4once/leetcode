@@ -269,6 +269,6 @@
   * [euclidean-algorithm](other/euclidean-algorithm.md)
   * [rabin-karp-rolling-hash](other/rabin-karp-rolling-hash.md)
   * [summation-identities](other/summation-identities.md)
-* [template](template-1/README.md)
-  * [leetcode](template-1/leetcode.md)
+* [template](template/README.md)
+  * [leetcode](template/leetcode.md)
 
