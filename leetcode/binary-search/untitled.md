@@ -2,6 +2,8 @@
 
 ## Question {#question}
 
+[https://leetcode.com/problems/k-th-smallest-prime-fraction/description/](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
+
 A sorted list A contains 1, plus some number of primes. Then, for every p &lt; q in the list, we consider the fraction p/q.
 
 What is the K-th smallest fraction considered? Return your answer as an array of ints, where answer\[0\] = p and answer\[1\] = q.
