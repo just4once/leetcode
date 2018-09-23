@@ -2,11 +2,7 @@
 
 ## Question {#question}
 
-**Example:**
 
-```text
-
-```
 
 ## Thought Process {#thought-process}
 
