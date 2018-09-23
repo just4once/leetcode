@@ -265,6 +265,8 @@
     * [852-peak-index-in-a-mountain-array](leetcode/binary-search/852-peak-index-in-a-mountain-array.md)
     * [862-shortest-subarray-with-sum-at-least-k](leetcode/binary-search/862-shortest-subarray-with-sum-at-least-k.md)
     * [875-koko-eating-bananas](leetcode/binary-search/875-koko-eating-bananas.md)
+    * [878-nth-magical-number](leetcode/binary-search/878-nth-magical-number.md)
+    * [887-super-egg-drop](leetcode/binary-search/887-super-egg-drop.md)
   * [dynamic-programing](leetcode/dynamic-programing/README.md)
     * [174-dungeon-game](leetcode/dynamic-programing/174-dungeon-game.md)
   * [bit-manipulation](leetcode/bit-manipulation-1/README.md)
