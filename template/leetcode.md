@@ -4,6 +4,8 @@
 
 
 
+
+
 ## Thought Process {#thought-process}
 
 1. asd

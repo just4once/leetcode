@@ -8,10 +8,6 @@ To clone the repo
 git clone https://github.com/just4once/leetcode.git
 ```
 
-{% hint style="success" %}
-Success.
-{% endhint %}
-
 To clone the repo with username
 
 ```
