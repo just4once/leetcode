@@ -8,7 +8,7 @@
 
 ## Thought Process {#thought-process}
 
-1. asd
+1. a
 
 ## Solution
 
