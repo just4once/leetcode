@@ -35,7 +35,9 @@ Explanation:
    3. Time complexity O\(3^n\)
    4. Space complexity O\(3^n\)
 2. Divide and Conquer \(Cached\)
-   1. 
+   1. Avoid repetitive calculation
+   2. Time complexity O\(?\)
+   3. Space complexity o\(?\)
 3. asd
 
 ## Solution
@@ -59,6 +61,39 @@ class Solution {
             }
         }
         if (res.size() == 0) res.add(Integer.parseInt(input));
+        return res;
+    }
+}
+```
+
+```java
+class Solution {
+    
+    public List<Integer> diffWaysToCompute(String input) {
+        // Use cache to avoid repeative calculaiton
+        Map<String, List<Integer>> cache = new HashMap<>();
+        return search(input, cache);
+    }
+    
+    private List<Integer> search(String input, Map<String, List<Integer>> cache) {
+        if (cache.containsKey(input)) return cache.get(input);
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (c == '+' || c == '-' || c == '*') {
+                List<Integer> left = diffWaysToCompute(input.substring(0, i));
+                List<Integer> right = diffWaysToCompute(input.substring(i + 1, input.length()));
+                for (int n1 : left) {
+                    for (int n2 : right) {
+                        if (c == '+') res.add(n1 + n2);
+                        else if (c == '-') res.add(n1 - n2);
+                        else res.add(n1 * n2);
+                    }
+                }
+            }
+        }
+        if (res.size() == 0) res.add(Integer.parseInt(input));
+        cache.put(input, res);
         return res;
     }
 }
