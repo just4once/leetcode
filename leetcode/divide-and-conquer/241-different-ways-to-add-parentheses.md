@@ -34,11 +34,34 @@ Explanation:
    2. From the return list, we can add the corresponding value based on operators to our list
    3. Time complexity O\(3^n\)
    4. Space complexity O\(3^n\)
-2. 
+2. Divide and Conquer \(Cached\)
+   1. 
+3. asd
+
 ## Solution
 
 ```java
-
+class Solution {
+    public List<Integer> diffWaysToCompute(String input) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (c == '+' || c == '-' || c == '*') {
+                List<Integer> left = diffWaysToCompute(input.substring(0, i));
+                List<Integer> right = diffWaysToCompute(input.substring(i + 1, input.length()));
+                for (int n1 : left) {
+                    for (int n2 : right) {
+                        if (c == '+') res.add(n1 + n2);
+                        else if (c == '-') res.add(n1 - n2);
+                        else res.add(n1 * n2);
+                    }
+                }
+            }
+        }
+        if (res.size() == 0) res.add(Integer.parseInt(input));
+        return res;
+    }
+}
 ```
 
 ## Additional {#additional}
