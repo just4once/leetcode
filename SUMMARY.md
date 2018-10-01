@@ -60,6 +60,7 @@
     * [218-the-skyline-problem](leetcode/divide-and-conquer/218-the-skyline-problem.md)
     * [241-different-ways-to-add-parentheses](leetcode/divide-and-conquer/241-different-ways-to-add-parentheses.md)
     * [282-expression-add-operators](leetcode/divide-and-conquer/282-expression-add-operators.md)
+    * [426-convert-binary-search-tree-to-sorted-doubly-linked-list](leetcode/divide-and-conquer/426-convert-binary-search-tree-to-sorted-doubly-linked-list.md)
   * [hash-table](leetcode/hash-table/README.md)
     * [003-longest-substring-without-repeating-characters](leetcode/hash-table/003-longest-substring-without-repeating-characters.md)
     * [030-substring-with-concatenation-of-all-words](leetcode/hash-table/030-substring-with-concatenation-of-all-words.md)
